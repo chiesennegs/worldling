@@ -162,25 +162,29 @@ export default function Home({ progress }: { progress: Progress }) {
           </div>
           <div className="trail">
             <button onClick={() => go("/country/LBN")}>
-              <span>🇱🇧</span>
+              <span className="trail-symbol">🇱🇧</span>
               <strong>Lebanon</strong>
               <small>A place</small>
             </button>
             <ChevronRight />
             <button onClick={() => go("/language/ara")}>
-              <Glyph className="arabic" text="ع" scriptId="arabic" />
+              <span className="trail-symbol">
+                <Glyph className="arabic" text="ع" scriptId="arabic" />
+              </span>
               <strong>Arabic</strong>
               <small>A language</small>
             </button>
             <ChevronRight />
             <button onClick={() => go("/letter/arabic-alif")}>
-              <Glyph text="ا" scriptId="arabic" />
+              <span className="trail-symbol">
+                <Glyph text="ا" scriptId="arabic" />
+              </span>
               <strong>Alif</strong>
               <small>A letter</small>
             </button>
             <ChevronRight />
             <button onClick={() => go("/letter/phoenician-aleph")}>
-              <span>𐤀</span>
+              <span className="trail-symbol">𐤀</span>
               <strong>Aleph</strong>
               <small>An ancestor</small>
             </button>

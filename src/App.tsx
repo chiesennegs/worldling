@@ -43,7 +43,6 @@ import {
   Quiz,
   ProgressView,
   AlphabetComparison,
-  States,
   PlaceDetail,
 } from "./screens";
 
@@ -300,7 +299,7 @@ export default function App() {
                   {
                     home: "Overview",
                     compare: "Compare alphabets",
-                    states: "U.S. states & capitals",
+                    states: "World & places",
                     place: "Place explorer",
                     world: "World & places",
                     writing: "Writing systems",
@@ -381,13 +380,24 @@ export default function App() {
         <main ref={mainContent}>
           <LetterFormToggle scope={mainContent} />
           {active === "home" && <Home progress={progress} />}
-          {active === "world" && <World />}
+          {(active === "world" || active === "states") && (
+            <World
+              initialTab={
+                active === "states" || id === "states"
+                  ? "States"
+                  : id === "countries"
+                    ? "Countries"
+                    : id === "flags"
+                      ? "Flags"
+                      : "Map"
+              }
+            />
+          )}
           {active === "country" && (
             <CountryDetail id={id} saved={saved} bookmark={bookmark} />
           )}
           {active === "writing" && <Writing />}
           {active === "compare" && <AlphabetComparison />}
-          {active === "states" && <States />}
           {active === "place" && (
             <PlaceDetail id={id} saved={saved} bookmark={bookmark} />
           )}

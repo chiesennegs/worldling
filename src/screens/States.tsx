@@ -1,22 +1,36 @@
-import { ChevronLeft } from "lucide-react";
-import { PageTitle, Source } from "../components/ui";
+import { useState } from "react";
+import { Source } from "../components/ui";
 import StatesTable from "../components/StatesTable";
-import { stateSource } from "../data/us-states";
-import { go } from "../navigation";
+import { subdivisionCollections } from "../data/subdivision-collections";
 export default function States() {
+  const [countryCode, setCountryCode] = useState(
+    subdivisionCollections[0].countryCode,
+  );
+  const collection = subdivisionCollections.find(
+    (c) => c.countryCode === countryCode,
+  )!;
   return (
-    <>
-      <button className="back" onClick={() => go("/world")}>
-        <ChevronLeft size={16} />
-        World & places
-      </button>
-      <PageTitle
-        eyebrow="PLACES / UNITED STATES"
-        title="Fifty states. Fifty capitals."
-        description="Explore the United States, one state and capital at a time. Washington, D.C. is the federal district and is not included among the 50 states."
-      />
-      <StatesTable />
-      <Source items={[stateSource]} />
-    </>
+    <section aria-label="States, provinces and capitals">
+      <div className="section-title">
+        <h2>States, provinces & capitals</h2>
+        <label className="select-label">
+          Country{" "}
+          <select
+            aria-label="Country for states and provinces"
+            value={countryCode}
+            onChange={(e) => setCountryCode(e.target.value)}
+          >
+            {subdivisionCollections.map((c) => (
+              <option key={c.countryCode} value={c.countryCode}>
+                {c.countryName}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <p className="muted">{collection.description}</p>
+      <StatesTable key={countryCode} collection={collection} />
+      <Source items={collection.sources} />
+    </section>
   );
 }

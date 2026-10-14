@@ -544,3 +544,78 @@ test("map pinch preserves its focal point, follows the midpoint, and clamps zoom
     { x: 500, y: 267.5 },
   );
 });
+
+test("ocean labels retain a subdued screen size through zoom and responsive widths", async () => {
+  const { oceanLabelStyle } = await import("../map-labels");
+  for (const width of [280, 600, 1000, 1500]) {
+    for (const zoom of [1, 2, 8, 16]) {
+      const style = oceanLabelStyle(zoom, width);
+      assert.ok(Math.abs((style.fontSize * zoom * width) / 1000 - 10) < 1e-9);
+      assert.ok(
+        Math.abs((style.letterSpacing * zoom * width) / 1000 - 1.2) < 1e-9,
+      );
+    }
+  }
+});
+
+test("States stays inside World navigation and mixed collections render without U.S. assumptions", async () => {
+  const { createElement } = await import("react");
+  const { renderToStaticMarkup } = await import("react-dom/server");
+  const { default: World } = await import("../screens/World");
+  const { default: StatesTable } = await import("../components/StatesTable");
+  const { subdivisionCollections, collectionForPlace } =
+    await import("./subdivision-collections");
+  const html = renderToStaticMarkup(
+    createElement(World, { initialTab: "States" }),
+  );
+  for (const label of ["Map", "Countries", "Flags", "States"]) {
+    assert.match(html, new RegExp(`>${label}</button>`));
+  }
+  assert.match(html, /Find your place in the world/);
+  assert.match(html, /Country for states and provinces/);
+  assert.doesNotMatch(html, /Filter countries|Filter by region/);
+  for (const entry of subdivisionCollections[0].entries) {
+    assert.equal(collectionForPlace(entry.id).subdivision, entry);
+    assert.equal(collectionForPlace(entry.capitalId).subdivision, entry);
+  }
+  // Synthetic fixture exercises terminology and mixed types without claiming curated Canadian data.
+  const fixture = {
+    countryCode: "TEST",
+    countryName: "Example country",
+    divisionLabel: "Province / territory",
+    divisionPlural: "provinces and territories",
+    description: "Test",
+    sources: [],
+    entries: [
+      {
+        id: "province-test",
+        type: "subdivision" as const,
+        countryCode: "TEST",
+        kind: "province" as const,
+        code: "T-P",
+        name: "Example province",
+        capital: "Province capital",
+        capitalId: "capital-province-test",
+      },
+      {
+        id: "territory-test",
+        type: "subdivision" as const,
+        countryCode: "TEST",
+        kind: "territory" as const,
+        code: "T-T",
+        name: "Example territory",
+        capital: "Territory capital",
+        capitalId: "capital-territory-test",
+      },
+    ],
+  };
+  const mixed = renderToStaticMarkup(
+    createElement(StatesTable, { collection: fixture }),
+  );
+  assert.match(mixed, /2 of 2/);
+  assert.match(mixed, /Example country/);
+  assert.match(mixed, />Type<\/th>/);
+  assert.match(mixed, />province<\/td>/);
+  assert.match(mixed, />territory<\/td>/);
+  assert.doesNotMatch(mixed, /U\.S\.|United States|50|state-practice/);
+});

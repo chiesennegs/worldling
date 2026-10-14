@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowUpRight, SlidersHorizontal } from "lucide-react";
-import { countries, languages } from "../data/knowledge";
+import { countries } from "../data/knowledge";
 import { go } from "../navigation";
 import { PageTitle } from "../components/ui";
 import WorldMap from "../Map";
+import States from "./States";
 
-export default function World() {
+export default function World({ initialTab = "Map" }: { initialTab?: string }) {
   const [region, setRegion] = useState("All regions");
   const [filter, setFilter] = useState("");
-  const [tab, setTab] = useState("Map");
+  const [tab, setTab] = useState(initialTab);
+  useEffect(() => setTab(initialTab), [initialTab]);
   const list = countries
     .filter(
       (c) =>
@@ -29,32 +31,36 @@ export default function World() {
             <button
               key={t}
               className={t === tab ? "active" : ""}
-              onClick={() => (t === "States" ? go("/states") : setTab(t))}
+              onClick={() =>
+                go(t === "Map" ? "/world" : `/world/${t.toLowerCase()}`)
+              }
             >
               {t}
             </button>
           ))}
         </div>
-        <label className="select-label">
-          <SlidersHorizontal size={15} />
-          <select
-            aria-label="Filter by region"
-            value={region}
-            onChange={(e) => setRegion(e.target.value)}
-          >
-            {[
-              "All regions",
-              "Africa",
-              "Americas",
-              "Asia",
-              "Europe",
-              "Oceania",
-              "Antarctic",
-            ].map((r) => (
-              <option key={r}>{r}</option>
-            ))}
-          </select>
-        </label>
+        {tab !== "States" && (
+          <label className="select-label">
+            <SlidersHorizontal size={15} />
+            <select
+              aria-label="Filter by region"
+              value={region}
+              onChange={(e) => setRegion(e.target.value)}
+            >
+              {[
+                "All regions",
+                "Africa",
+                "Americas",
+                "Asia",
+                "Europe",
+                "Oceania",
+                "Antarctic",
+              ].map((r) => (
+                <option key={r}>{r}</option>
+              ))}
+            </select>
+          </label>
+        )}
       </div>
       {tab === "Map" && (
         <>
@@ -69,40 +75,47 @@ export default function World() {
           </p>
         </>
       )}
-      <div className="section-title">
-        <h2>
-          {tab === "Flags"
-            ? "A world of flags"
-            : "Country & territory directory"}{" "}
-          <span className="count">{list.length}</span>
-        </h2>
-        <input
-          className="filter-input"
-          placeholder="Filter places…"
-          aria-label="Filter countries"
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-        />
-      </div>
-      <div className={tab === "Flags" ? "flag-grid" : "country-grid"}>
-        {list.map((c) => (
-          <button
-            className="country-card"
-            key={c.cca3}
-            onClick={() => go(`/country/${c.cca3}`)}
-          >
-            <span>{c.flag}</span>
-            <div>
-              <strong>{c.name}</strong>
-              <small>
-                {c.capital.join(" · ") || "No designated capital"} · {c.region}
-              </small>
-            </div>
-            <ArrowUpRight size={15} />
-          </button>
-        ))}
-      </div>
-      {!list.length && <p>No places match this filter.</p>}
+      {tab === "States" ? (
+        <States />
+      ) : (
+        <>
+          <div className="section-title">
+            <h2>
+              {tab === "Flags"
+                ? "A world of flags"
+                : "Country & territory directory"}{" "}
+              <span className="count">{list.length}</span>
+            </h2>
+            <input
+              className="filter-input"
+              placeholder="Filter places…"
+              aria-label="Filter countries"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            />
+          </div>
+          <div className={tab === "Flags" ? "flag-grid" : "country-grid"}>
+            {list.map((c) => (
+              <button
+                className="country-card"
+                key={c.cca3}
+                onClick={() => go(`/country/${c.cca3}`)}
+              >
+                <span>{c.flag}</span>
+                <div>
+                  <strong>{c.name}</strong>
+                  <small>
+                    {c.capital.join(" · ") || "No designated capital"} ·{" "}
+                    {c.region}
+                  </small>
+                </div>
+                <ArrowUpRight size={15} />
+              </button>
+            ))}
+          </div>
+          {!list.length && <p>No places match this filter.</p>}
+        </>
+      )}
     </>
   );
 }

@@ -12,7 +12,7 @@ Keep this editorial backlog alongside the generated [record inventory](CURATION_
 - [ ] Expand dialect-specific, context-specific pronunciation and full transliteration standards. Existing romanization and IPA are educational approximations.
 - [ ] Source recorded normal/slow pronunciation and expand handwriting/historical traditions beyond the bundled representative fonts. Eight modern scripts now have offline handwritten font renderings; historical forms and facsimiles remain pending. System speech is a fallback; no professional audio collection has been curated.
 - [ ] Expand the single Arabic word example to sourced words in other writing systems, with segmentation and contextual-form explanations.
-- [ ] Replace representative subdivision lists with complete sourced records. U.S. coverage is the 50 states and capitals; D.C. and territories, non-U.S. subdivisions, and subdivision geometry remain unimplemented.
+- [ ] Replace representative subdivision lists with complete sourced records. The shared country registry and mixed province/territory table are ready; Canada is the next candidate (10 provinces, 3 territories), with capitals, codes, provenance, and stable IDs still to curate. U.S. coverage is the 50 states and capitals; D.C. and territories, non-U.S. subdivisions, and subdivision geometry remain unimplemented.
 - [ ] Review country metadata, capital status, boundaries, flags, and disputed/de facto geography. Coarse polygons omit small places; geographic label anchors do not provide their boundaries. Obtain higher-resolution geometry and verify anchors, including distant dependencies.
 
 ## Deferred interactions and assets

@@ -1,3 +1,4 @@
+import { subdivisionCollectionByCountry } from "../src/data/subdivision-collections";
 import { handwritingStyles } from "../src/data/handwriting";
 import { readFileSync, writeFileSync } from "node:fs";
 import { geoNaturalEarth1, geoPath } from "d3-geo";
@@ -112,7 +113,7 @@ section(
 section(
   "Countries with only representative subdivision names",
   Object.keys(subdivisions)
-    .filter((id) => id !== "USA")
+    .filter((id) => !subdivisionCollectionByCountry.has(id))
     .map((id) => `${countries.find((c) => c.cca3 === id)?.name} (${id})`),
 );
 section(

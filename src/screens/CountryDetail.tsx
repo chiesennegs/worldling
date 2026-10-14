@@ -1,4 +1,5 @@
 import { demographics, wikipediaURL } from "../data/demographics";
+import { subdivisionCollectionByCountry } from "../data/subdivision-collections";
 import StatesTable from "../components/StatesTable";
 import { ArrowRight, ChevronLeft, MapPin, Lightbulb } from "lucide-react";
 import { countries, scripts, languages, subdivisions } from "../data/knowledge";
@@ -152,13 +153,15 @@ export default function CountryDetail({
             <Section
               title="A closer look"
               subtitle={
-                id === "USA"
-                  ? "All 50 states and their capitals."
+                subdivisionCollectionByCountry.has(id)
+                  ? subdivisionCollectionByCountry.get(id)!.description
                   : "A representative selection of first-level subdivisions."
               }
             >
-              {id === "USA" ? (
-                <StatesTable />
+              {subdivisionCollectionByCountry.has(id) ? (
+                <StatesTable
+                  collection={subdivisionCollectionByCountry.get(id)}
+                />
               ) : (
                 <div className="chips">
                   {subdivisions[id].map((s) => (

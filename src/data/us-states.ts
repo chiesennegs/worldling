@@ -2,6 +2,7 @@ import type { Entity, Provenance } from "./schema";
 export interface Subdivision extends Entity {
   type: "subdivision";
   countryCode: string;
+  kind: "state" | "province" | "territory";
   code: string;
   capitalId: string;
   capital: string;
@@ -69,6 +70,7 @@ export const usStates: Subdivision[] = rows.split("\n").map((row) => {
     id: `subdivision-USA-${name}`,
     type: "subdivision",
     countryCode: "USA",
+    kind: "state",
     code: `US-${code}`,
     name,
     capital,

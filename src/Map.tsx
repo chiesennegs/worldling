@@ -5,6 +5,7 @@ import type { FeatureCollection, Feature } from "geojson";
 import { Plus, Minus, LocateFixed } from "lucide-react";
 import {
   visibleCountryLabels,
+  oceanLabelStyle,
   countryLabelFontSize,
   type MapLabel,
 } from "./map-labels";
@@ -200,7 +201,7 @@ export default function WorldMap({
                       <text
                         key={ocean.name}
                         className="ocean"
-                        fontSize={labelFontSize * 0.9}
+                        style={oceanLabelStyle(zoom, mapWidth)}
                         x={point[0]}
                         y={point[1]}
                         textAnchor="middle"

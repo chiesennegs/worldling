@@ -5,6 +5,11 @@ export interface MapLabel {
   area: number;
   anchor?: [number, number];
 }
+/** Keep ocean type at 10 CSS pixels, independent of geographic zoom. */
+export function oceanLabelStyle(zoom: number, mapWidth: number) {
+  const unitsPerPixel = 1000 / Math.max(1, mapWidth) / zoom;
+  return { fontSize: 10 * unitsPerPixel, letterSpacing: 1.2 * unitsPerPixel };
+}
 export const countryLabelZoom = 2;
 export const countryLabelFontSize = 14;
 export const countryLabelMaxZoom = 16;

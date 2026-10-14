@@ -1,6 +1,6 @@
 import { ChevronLeft, ArrowRight } from "lucide-react";
 import { entityById, related } from "../data/graph";
-import { usStates, stateSource } from "../data/us-states";
+import { collectionForPlace } from "../data/subdivision-collections";
 import { go } from "../navigation";
 import {
   PageTitle,
@@ -21,7 +21,7 @@ export default function PlaceDetail({
 }) {
   const entity = entityById.get(id);
   if (!entity) return <p>This place was not found.</p>;
-  const state = usStates.find((s) => s.id === id || s.capitalId === id);
+  const { collection, subdivision: state } = collectionForPlace(id);
   const parents = related(
     id,
     entity.type === "capital" ? "HAS_CAPITAL" : "HAS_SUBDIVISION",
@@ -30,18 +30,23 @@ export default function PlaceDetail({
   const capitals = related(id, "HAS_CAPITAL");
   return (
     <>
-      <button className="back" onClick={() => go(state ? "/states" : "/world")}>
+      <button
+        className="back"
+        onClick={() => go(state ? "/world/states" : "/world")}
+      >
         <ChevronLeft size={16} />
-        {state ? "U.S. states & capitals" : "World & places"}
+        {state
+          ? `${collection?.countryName} ${collection?.divisionPlural} & capitals`
+          : "World & places"}
       </button>
       <PageTitle
-        eyebrow={`PLACES / ${state ? "UNITED STATES / " : ""}${entity.type === "capital" ? "CAPITAL CITY" : "STATE / PROVINCE"}`}
+        eyebrow={`PLACES / ${collection ? `${collection.countryName.toUpperCase()} / ` : ""}${entity.type === "capital" ? "CAPITAL CITY" : state ? state.kind.toUpperCase() : "STATE / PROVINCE"}`}
         title={entity.name}
         description={
           entity.type === "capital"
             ? `Capital of ${parents.map((p) => p.entity.name).join(", ")}.`
             : state
-              ? `${state.name} is one of the 50 U.S. states.`
+              ? `${state.name} is a ${state.kind} of ${collection!.countryName}.`
               : "A first-level subdivision."
         }
       >
@@ -49,8 +54,11 @@ export default function PlaceDetail({
       </PageTitle>
       {state && (
         <div className="facts">
-          <Fact label="STATE" value={state.name} />
-          <Fact label="STATE CAPITAL" value={state.capital} />
+          <Fact label={state.kind.toUpperCase()} value={state.name} />
+          <Fact
+            label={`${state.kind.toUpperCase()} CAPITAL`}
+            value={state.capital}
+          />
           <Fact label="SUBDIVISION CODE" value={state.code} />
         </div>
       )}
@@ -66,7 +74,9 @@ export default function PlaceDetail({
             <EntityLink key={p.entity.id} entity={p.entity} />
           ))}
           {state && entity.type === "capital" && (
-            <EntityLink entity={entityById.get("country-USA")!} />
+            <EntityLink
+              entity={entityById.get(`country-${collection!.countryCode}`)!}
+            />
           )}
         </div>
       </Section>
@@ -79,9 +89,12 @@ export default function PlaceDetail({
           </div>
         </Section>
       )}
-      {state && (
-        <button className="primary" onClick={() => go("/quiz/state-capitals")}>
-          Practice state capitals
+      {collection?.practiceQuizId && (
+        <button
+          className="primary"
+          onClick={() => go(`/quiz/${collection!.practiceQuizId}`)}
+        >
+          Practice {collection.divisionPlural} and capitals
           <ArrowRight size={16} />
         </button>
       )}

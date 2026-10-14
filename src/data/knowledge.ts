@@ -1,5 +1,8 @@
 import { alphabetGraphemes } from "./alphabets";
-import { usStates, stateSource } from "./us-states";
+import {
+  subdivisionCollections,
+  subdivisionCollectionByCountry,
+} from "./subdivision-collections";
 import type {
   Entity,
   Script,
@@ -600,16 +603,22 @@ link(
   "A representative /a/ value; no historical ancestry is asserted.",
 );
 export const subdivisions: Record<string, string[]> = {
-  USA: usStates.map((s) => s.name),
   CAN: ["Ontario", "Quebec", "British Columbia"],
   LBN: ["Beirut", "Mount Lebanon", "North Lebanon"],
   PRT: ["Lisbon", "Porto", "Faro"],
+  ...Object.fromEntries(
+    subdivisionCollections.map((c) => [
+      c.countryCode,
+      c.entries.map((s) => s.name),
+    ]),
+  ),
 };
 for (const [code, names] of Object.entries(subdivisions))
   for (const name of names) {
-    const state =
-      code === "USA" ? usStates.find((s) => s.name === name) : undefined;
-    const id = `subdivision-${code}-${name}`;
+    const state = subdivisionCollectionByCountry
+      .get(code)
+      ?.entries.find((s) => s.name === name);
+    const id = state?.id || `subdivision-${code}-${name}`;
     entities.push(state || { id, type: "subdivision", name });
     link(`country-${code}`, id, "HAS_SUBDIVISION", state?.provenance?.[0]);
     if (state) {
@@ -617,9 +626,9 @@ for (const [code, names] of Object.entries(subdivisions))
         id: state.capitalId,
         type: "capital",
         name: state.capital,
-        provenance: [stateSource],
+        provenance: state.provenance,
       });
-      link(id, state.capitalId, "HAS_CAPITAL", stateSource);
+      link(id, state.capitalId, "HAS_CAPITAL", state.provenance?.[0]);
     }
   }
 export const quizzes: QuizDefinition[] = [

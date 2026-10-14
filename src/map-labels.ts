@@ -6,7 +6,7 @@ export interface MapLabel {
   anchor?: [number, number];
 }
 export const countryLabelZoom = 2;
-export const countryLabelFontSize = 10;
+export const countryLabelFontSize = 14;
 export const countryLabelMaxZoom = 16;
 
 /** Place readable labels in screen/viewBox space. At close zooms, short leader
@@ -34,7 +34,7 @@ export function visibleCountryLabels(
     const width = label.name.length * fontSize * 0.6 + 10;
     const offsets: [number, number][] = [[0, 0]];
     if (zoom >= 4) {
-      for (const distance of [1.8, 3.6, 5.4]) {
+      for (const distance of [2, 4, 6]) {
         const dy = fontSize * distance;
         offsets.push(
           [0, -dy],

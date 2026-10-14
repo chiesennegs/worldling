@@ -1,3 +1,4 @@
+import { MapGestures, mapPoint } from "./map-gestures";
 import { useEffect, useMemo, useState, useRef } from "react";
 import { geoNaturalEarth1, geoPath, geoGraticule10 } from "d3-geo";
 import type { FeatureCollection, Feature } from "geojson";
@@ -27,16 +28,9 @@ export default function WorldMap({
   );
   const [world, setWorld] = useState<FeatureCollection>();
   const [error, setError] = useState(false);
-  const [zoom, setZoom] = useState(1);
-  const moved = useRef(false);
+  const gestures = useRef(new MapGestures());
+  const [{ zoom, pan }, setView] = useState(gestures.current.view);
   const [hover, setHover] = useState("");
-  const [pan, setPan] = useState({ x: 0, y: 0 });
-  const [drag, setDrag] = useState<{
-    x: number;
-    y: number;
-    px: number;
-    py: number;
-  }>();
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/world.json`)
       .then((r) => {
@@ -54,6 +48,26 @@ export default function WorldMap({
     });
     observer.observe(svg);
     return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+    const wheel = (e: WheelEvent) => {
+      if (!e.ctrlKey) return;
+      e.preventDefault();
+      const point = mapPoint(
+        { x: e.clientX, y: e.clientY },
+        svg.getBoundingClientRect(),
+      );
+      setView(
+        gestures.current.zoomAt(
+          point,
+          gestures.current.view.zoom * Math.exp(-e.deltaY * 0.01),
+        ),
+      );
+    };
+    svg.addEventListener("wheel", wheel, { passive: false });
+    return () => svg.removeEventListener("wheel", wheel);
   }, []);
   const projection = useMemo(
     () => geoNaturalEarth1().scale(175).translate([500, 270]),
@@ -140,24 +154,27 @@ export default function WorldMap({
           viewBox="0 0 1000 535"
           aria-label="Interactive world map"
           onPointerDown={(e) => {
-            moved.current = false;
-            if (e.button === 0)
-              setDrag({ x: e.clientX, y: e.clientY, px: pan.x, py: pan.y });
+            if (e.pointerType === "mouse" && e.button !== 0) return;
+            const rect = e.currentTarget.getBoundingClientRect();
+            gestures.current.down(
+              e.pointerId,
+              mapPoint({ x: e.clientX, y: e.clientY }, rect),
+            );
+            (e.target as Element).setPointerCapture(e.pointerId);
           }}
           onPointerMove={(e) => {
-            if (
-              drag &&
-              Math.abs(e.clientX - drag.x) + Math.abs(e.clientY - drag.y) > 4
-            ) {
-              moved.current = true;
-              setPan({
-                x: drag.px + (e.clientX - drag.x) * (1000 / mapWidth),
-                y: drag.py + (e.clientY - drag.y) * (1000 / mapWidth),
-              });
-            }
+            const rect = e.currentTarget.getBoundingClientRect();
+            setView(
+              gestures.current.move(
+                e.pointerId,
+                mapPoint({ x: e.clientX, y: e.clientY }, rect),
+                1000 / rect.width,
+              ),
+            );
           }}
-          onPointerUp={() => setDrag(undefined)}
-          onPointerLeave={() => setDrag(undefined)}
+          onPointerUp={(e) => gestures.current.up(e.pointerId)}
+          onPointerCancel={(e) => gestures.current.up(e.pointerId)}
+          onLostPointerCapture={(e) => gestures.current.up(e.pointerId)}
         >
           <defs>
             <pattern
@@ -213,7 +230,9 @@ export default function WorldMap({
                     onMouseLeave={() => setHover("")}
                     onFocus={() => setHover(c?.name || f.properties?.name)}
                     onBlur={() => setHover("")}
-                    onClick={() => !moved.current && c && onCountry(c.cca3)}
+                    onClick={() =>
+                      !gestures.current.moved && c && onCountry(c.cca3)
+                    }
                     onKeyDown={(e) => {
                       if (c && (e.key === "Enter" || e.key === " ")) {
                         e.preventDefault();
@@ -254,7 +273,9 @@ export default function WorldMap({
                     onMouseLeave={() => setHover("")}
                     onFocus={() => setHover(label.name)}
                     onBlur={() => setHover("")}
-                    onClick={() => !moved.current && onCountry(label.id)}
+                    onClick={() =>
+                      !gestures.current.moved && onCountry(label.id)
+                    }
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
@@ -276,21 +297,26 @@ export default function WorldMap({
           <span className="zoom-level">{zoom.toFixed(1)}×</span>
           <button
             aria-label="Zoom in"
-            onClick={() => setZoom((z) => Math.min(z * 1.4, 16))}
+            disabled={zoom >= 16}
+            onClick={() =>
+              setView(gestures.current.zoomAt({ x: 500, y: 267 }, zoom * 1.4))
+            }
           >
             <Plus size={17} />
           </button>
           <button
             aria-label="Zoom out"
-            onClick={() => setZoom((z) => Math.max(z / 1.4, 1))}
+            disabled={zoom <= 1}
+            onClick={() =>
+              setView(gestures.current.zoomAt({ x: 500, y: 267 }, zoom / 1.4))
+            }
           >
             <Minus size={17} />
           </button>
           <button
             aria-label="Reset map"
             onClick={() => {
-              setZoom(1);
-              setPan({ x: 0, y: 0 });
+              setView(gestures.current.reset());
             }}
           >
             <LocateFixed size={17} />

@@ -40,83 +40,94 @@ export default function Genealogy() {
             </span>
             <span>Approximate emergence · not to scale</span>
           </div>
-          <svg viewBox="0 0 1040 580" aria-label="Script family tree">
-            <defs>
-              <marker
-                id="arrow"
-                viewBox="0 0 10 10"
-                refX="9"
-                refY="5"
-                markerWidth="5"
-                markerHeight="5"
-                orient="auto-start-reverse"
-              >
-                <path d="M0 0L10 5L0 10" fill="#a0ae98" />
-              </marker>
-            </defs>
-            {relationships
-              .filter((r) => r.type === "DERIVED_FROM")
-              .map((r) => {
-                const a = positions[r.to],
-                  b = positions[r.from];
+          <div
+            className="tree-canvas"
+            tabIndex={0}
+            role="region"
+            aria-label="Scrollable script family tree"
+          >
+            <svg viewBox="0 0 1040 580" aria-label="Script family tree">
+              <defs>
+                <marker
+                  id="arrow"
+                  viewBox="0 0 10 10"
+                  refX="9"
+                  refY="5"
+                  markerWidth="5"
+                  markerHeight="5"
+                  orient="auto-start-reverse"
+                >
+                  <path d="M0 0L10 5L0 10" fill="#a0ae98" />
+                </marker>
+              </defs>
+              {relationships
+                .filter((r) => r.type === "DERIVED_FROM")
+                .map((r) => {
+                  const a = positions[r.to],
+                    b = positions[r.from];
+                  return (
+                    a &&
+                    b && (
+                      <path
+                        key={r.from}
+                        d={`M${a[0]} ${a[1] + 62} V${(a[1] + b[1] + 62) / 2} H${b[0]} V${b[1]}`}
+                        fill="none"
+                        stroke="#a0ae98"
+                        strokeWidth="1.6"
+                        markerEnd="url(#arrow)"
+                      />
+                    )
+                  );
+                })}
+              {Object.entries(positions).map(([id, [x, y]]) => {
+                const n = scripts.find((s) => s.id === id)!;
                 return (
-                  a &&
-                  b && (
-                    <path
-                      key={r.from}
-                      d={`M${a[0]} ${a[1] + 62} V${(a[1] + b[1] + 62) / 2} H${b[0]} V${b[1]}`}
-                      fill="none"
-                      stroke="#a0ae98"
-                      strokeWidth="1.6"
-                      markerEnd="url(#arrow)"
-                    />
-                  )
+                  <g
+                    key={id}
+                    data-script={id}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Explore ${n.name}`}
+                    className={`tree-node ${selected === id ? "selected" : ""}`}
+                    transform={`translate(${x - 86},${y})`}
+                    onClick={() => setSelected(id)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        setSelected(id);
+                      }
+                    }}
+                  >
+                    <rect width="172" height="65" rx="8" />
+                    <text x="15" y="26" className="tree-name">
+                      {n.name}
+                    </text>
+                    <text x="15" y="47" className="tree-date">
+                      {n.period}
+                    </text>
+                    {letterVariants(id, mode).map((variant, i, variants) => (
+                      <text
+                        key={variant}
+                        x="149"
+                        y={variants.length === 2 ? 25 + i * 25 : 37}
+                        className="tree-symbol"
+                        style={
+                          variant === "handwritten"
+                            ? {
+                                fontFamily: `"${handwritingStyles[id].family}"`,
+                              }
+                            : undefined
+                        }
+                      >
+                        {id === "proto-sinaitic" ? "◌" : n.sample.slice(0, 2)}
+                      </text>
+                    ))}
+                  </g>
                 );
               })}
-            {Object.entries(positions).map(([id, [x, y]]) => {
-              const n = scripts.find((s) => s.id === id)!;
-              return (
-                <g
-                  key={id}
-                  role="button"
-                  tabIndex={0}
-                  aria-label={`Explore ${n.name}`}
-                  className={`tree-node ${selected === id ? "selected" : ""}`}
-                  transform={`translate(${x - 86},${y})`}
-                  onClick={() => setSelected(id)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                      e.preventDefault();
-                      setSelected(id);
-                    }
-                  }}
-                >
-                  <rect width="172" height="65" rx="8" />
-                  <text x="15" y="26" className="tree-name">
-                    {n.name}
-                  </text>
-                  <text x="15" y="47" className="tree-date">
-                    {n.period}
-                  </text>
-                  {letterVariants(id, mode).map((variant, i, variants) => (
-                    <text
-                      key={variant}
-                      x="149"
-                      y={variants.length === 2 ? 25 + i * 25 : 37}
-                      className="tree-symbol"
-                      style={
-                        variant === "handwritten"
-                          ? { fontFamily: `"${handwritingStyles[id].family}"` }
-                          : undefined
-                      }
-                    >
-                      {id === "proto-sinaitic" ? "◌" : n.sample.slice(0, 2)}
-                    </text>
-                  ))}
-                </g>
-              );
-            })}
-          </svg>
+            </svg>
+          </div>
+          <p className="muted">Scroll sideways to explore the family tree.</p>
           <p>
             One representative family, not a complete history of writing. Early
             alphabetic origins remain debated. Ancient direction and letter

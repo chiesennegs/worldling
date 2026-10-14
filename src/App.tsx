@@ -1,6 +1,6 @@
 import { LetterFormToggle } from "./components/LetterForms";
 import { audioProvider } from "./audio";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   Globe2,
   Compass,
@@ -56,6 +56,9 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobile, setMobile] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
+  const sidebar = useRef<HTMLElement>(null);
+  const mainContent = useRef<HTMLElement>(null);
   const [progress, setProgress] = useState<Progress>(loadProgress);
   const [saved, setSaved] = useState<string[]>(() => {
     try {
@@ -84,6 +87,53 @@ export default function App() {
       window.removeEventListener("beforeinstallprompt", i);
     };
   }, []);
+  useEffect(() => {
+    if (!mobile) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const panel = sidebar.current;
+    const controls = () =>
+      Array.from(
+        panel?.querySelectorAll<HTMLButtonElement>("button:not(:disabled)") ||
+          [],
+      ).filter((button) => button.getClientRects().length);
+    controls()[0]?.focus();
+    const key = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setMobile(false);
+      }
+      if (e.key === "Tab") {
+        const buttons = controls(),
+          first = buttons[0],
+          last = buttons[buttons.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last?.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first?.focus();
+        }
+      }
+    };
+    const resize = () => {
+      if (window.innerWidth > 760) setMobile(false);
+    };
+    window.addEventListener("keydown", key);
+    window.addEventListener("resize", resize);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", key);
+      window.removeEventListener("resize", resize);
+      menuButton.current?.focus();
+    };
+  }, [mobile]);
+  function navigateMenu(path: string, selected = false) {
+    setMobile(false);
+    setSearchOpen(false);
+    if (mobile && selected) return;
+    go(path);
+  }
   useEffect(() => {
     if (!toast) return;
     const timer = setTimeout(() => setToast(""), 3500);
@@ -115,6 +165,11 @@ export default function App() {
   const [section, id] = route.slice(1).split("/");
   const active = section || "home";
   const results = search(query);
+  const navActive = (key: string) =>
+    active === key ||
+    (key === "world" &&
+      ["country", "language", "states", "place"].includes(active)) ||
+    (key === "writing" && ["script", "letter"].includes(active));
   const nav = [
     ["home", "Your atlas", Compass, "/"],
     ["world", "World & places", Globe2, "/world"],
@@ -125,8 +180,33 @@ export default function App() {
   ];
   return (
     <div className="app">
-      <aside className={`sidebar ${mobile ? "open" : ""}`}>
-        <button className="brand" onClick={() => go("/")}>
+      {mobile && (
+        <button
+          className="nav-backdrop"
+          aria-label="Dismiss navigation"
+          tabIndex={-1}
+          onClick={() => setMobile(false)}
+        />
+      )}
+      <aside
+        ref={sidebar}
+        id="navigation-panel"
+        className={`sidebar ${mobile ? "open" : ""}`}
+        role={mobile ? "dialog" : undefined}
+        aria-modal={mobile || undefined}
+        aria-label="Navigation"
+      >
+        <button
+          className="sidebar-close"
+          aria-label="Close navigation"
+          onClick={() => setMobile(false)}
+        >
+          <X size={22} />
+        </button>
+        <button
+          className="brand"
+          onClick={() => navigateMenu("/", active === "home")}
+        >
           <span className="brand-icon">
             <Globe2 size={27} />
           </span>
@@ -140,17 +220,10 @@ export default function App() {
             return (
               <button
                 key={key as string}
-                className={
-                  active === key ||
-                  (key === "world" &&
-                    ["country", "language", "states", "place"].includes(
-                      active,
-                    )) ||
-                  (key === "writing" && ["script", "letter"].includes(active))
-                    ? "active"
-                    : ""
+                className={navActive(key as string) ? "active" : ""}
+                onClick={() =>
+                  navigateMenu(path as string, navActive(key as string))
                 }
-                onClick={() => go(path as string)}
               >
                 <I size={19} />
                 {label as string}
@@ -161,14 +234,16 @@ export default function App() {
           <p className="learn-label">LEARN</p>
           <button
             className={active === "learn" || active === "quiz" ? "active" : ""}
-            onClick={() => go("/learn")}
+            onClick={() =>
+              navigateMenu("/learn", active === "learn" || active === "quiz")
+            }
           >
             <GraduationCap size={20} />
             Practice & play<span className="new-pill">NEW</span>
           </button>
           <button
             className={active === "progress" ? "active" : ""}
-            onClick={() => go("/progress")}
+            onClick={() => navigateMenu("/progress", active === "progress")}
           >
             <Flame size={19} />
             Your progress
@@ -176,7 +251,7 @@ export default function App() {
           <p className="learn-label">YOUR COLLECTION</p>
           <button
             className={active === "saved" ? "active" : ""}
-            onClick={() => go("/saved")}
+            onClick={() => navigateMenu("/saved", active === "saved")}
           >
             <Bookmark size={18} />
             Saved discoveries<span className="nav-count">{saved.length}</span>
@@ -205,10 +280,12 @@ export default function App() {
           )}
         </div>
       </aside>
-      <div className="main-wrap">
+      <div className="main-wrap" inert={mobile || undefined}>
         <header>
           <button
+            ref={menuButton}
             className="mobile-menu"
+            aria-controls="navigation-panel"
             aria-label="Open navigation"
             aria-expanded={mobile}
             onClick={() => setMobile(!mobile)}
@@ -284,7 +361,10 @@ export default function App() {
                 </div>
               )}
             </div>
-            <button className="streak" onClick={() => go("/progress")}>
+            <button
+              className="streak"
+              onClick={() => navigateMenu("/progress", active === "progress")}
+            >
               <Flame size={18} />
               <b>{progress.streak}</b>
               <span>answer streak</span>
@@ -292,14 +372,14 @@ export default function App() {
             <button
               className="avatar"
               aria-label="Your local progress"
-              onClick={() => go("/progress")}
+              onClick={() => navigateMenu("/progress", active === "progress")}
             >
               W
             </button>
           </div>
         </header>
-        <main>
-          <LetterFormToggle />
+        <main ref={mainContent}>
+          <LetterFormToggle scope={mainContent} />
           {active === "home" && <Home progress={progress} />}
           {active === "world" && <World />}
           {active === "country" && (

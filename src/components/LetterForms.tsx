@@ -1,4 +1,11 @@
-import { createContext, useContext, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useLayoutEffect,
+  type RefObject,
+  type ReactNode,
+} from "react";
 import {
   defaultLetterDisplayMode,
   handwritingStyles,
@@ -35,8 +42,33 @@ export function LetterFormProvider({ children }: { children: ReactNode }) {
   );
 }
 export const useLetterForms = () => useContext(LetterFormContext);
-export function LetterFormToggle() {
+export function LetterFormToggle({
+  scope,
+}: {
+  scope: RefObject<HTMLElement | null>;
+}) {
   const { mode, setMode } = useLetterForms();
+  const [relevant, setRelevant] = useState(false);
+  useLayoutEffect(() => {
+    const content = scope.current;
+    if (!content) return;
+    const update = () =>
+      setRelevant(
+        Array.from(content.querySelectorAll<HTMLElement>("[data-script]")).some(
+          (element) => !!handwritingStyles[element.dataset.script || ""],
+        ),
+      );
+    update();
+    const observer = new MutationObserver(update);
+    observer.observe(content, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["data-script"],
+    });
+    return () => observer.disconnect();
+  }, [scope]);
+  if (!relevant) return null;
   return (
     <div className="letter-display-toolbar">
       <span>Letter forms</span>

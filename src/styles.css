@@ -8,9 +8,10 @@
   color: #263b30;
   background: #f7f7f2;
   font-synthesis: none;
-  font-size: 14px;
+  font-size: 100%;
+  --sidebar-width: clamp(16.25rem, 18vw, 18.125rem);
   --green: #284d38;
-  --muted: #80877d;
+  --muted: #62705f;
   --line: #e2e5db;
   --serif: Georgia, "Times New Roman", serif;
 }
@@ -78,19 +79,19 @@ h3 {
 }
 h1 {
   font-family: var(--serif);
-  font-size: 40px;
+  font-size: clamp(2.125rem, 1.875rem + 0.8vw, 2.5rem);
   letter-spacing: -1.35px;
   line-height: 1.2;
   margin-bottom: 12px;
 }
 h2 {
   font-family: var(--serif);
-  font-size: 24px;
+  font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   letter-spacing: -0.5px;
 }
 h3 {
   font-family: var(--serif);
-  font-size: 23px;
+  font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   letter-spacing: -0.5px;
 }
 p {
@@ -118,7 +119,7 @@ p {
   gap: 9px;
   font-family: var(--serif);
   font-weight: bold;
-  font-size: 31px;
+  font-size: clamp(1.647rem, 1.453rem + 0.8vw, 1.938rem);
   letter-spacing: -1.8px;
   padding: 0 5px;
 }
@@ -132,13 +133,13 @@ p {
   margin-left: -7px;
 }
 .sidebar-label {
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.7px;
   color: #5f6e54;
   margin: 13px 7px 30px;
 }
 .sidebar nav p {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.6px;
   font-weight: 650;
   color: #5f6e54;
@@ -150,7 +151,7 @@ p {
   align-items: center;
   text-align: left;
   gap: 11px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   font-weight: 500;
   padding: 12px;
   border-radius: 6px;
@@ -180,7 +181,7 @@ p {
   margin-top: 29px;
 }
 .new-pill {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 0.6px;
   background: #e4e7d6;
   color: #6c784e;
@@ -190,7 +191,7 @@ p {
 }
 .nav-count {
   margin-left: auto;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .sidebar-bottom {
   margin-top: auto;
@@ -202,16 +203,16 @@ p {
 }
 .sidebar-bottom > strong {
   font-family: var(--serif);
-  font-size: 15px;
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   font-weight: 500;
 }
 .sidebar-bottom > p {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin: 6px 0 22px;
 }
 .offline {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 0.65px;
   color: #5f6e54;
   display: flex;
@@ -232,7 +233,7 @@ p {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .main-wrap {
   margin-left: 239px;
@@ -252,7 +253,7 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   white-space: nowrap;
 }
@@ -282,11 +283,11 @@ header {
   background: none;
   min-width: 0;
   width: 100%;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #374c3b;
 }
 .search-box kbd {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .search-results {
   position: absolute;
@@ -303,7 +304,7 @@ header {
   border-radius: 8px;
 }
 .search-title {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1px;
   display: flex;
   justify-content: space-between;
@@ -311,7 +312,7 @@ header {
   margin-bottom: 8px;
 }
 .search-results > p {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   padding: 12px;
 }
 .streak {
@@ -319,7 +320,7 @@ header {
   align-items: center;
   gap: 5px;
   white-space: nowrap;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   padding: 0;
 }
@@ -339,7 +340,7 @@ header {
   height: 31px;
   width: 31px;
   font-family: var(--serif);
-  font-size: 13px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .mobile-menu {
   display: none;
@@ -350,7 +351,7 @@ main {
   padding: 39px 39px 0;
 }
 .eyebrow {
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.6px;
   line-height: 1.7;
   font-weight: 600;
@@ -367,14 +368,14 @@ main {
   margin-bottom: 12px;
 }
 .page-title > div > p {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
   line-height: 1.65;
   margin: 0;
   max-width: 760px;
 }
 .edition {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.1px;
   color: #5f6e54;
   white-space: nowrap;
@@ -384,7 +385,7 @@ main {
 }
 .edition > span {
   display: block;
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1px;
   color: #5f6e54;
 }
@@ -408,18 +409,18 @@ main {
   padding: 22px 23px 18px;
 }
 .panel-heading h2 {
-  font-size: 24px;
+  font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   margin: 6px 0 0;
 }
 .panel-heading .eyebrow {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.2px;
 }
 .text-button {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   font-weight: 600;
   padding: 0;
   white-space: nowrap;
@@ -454,7 +455,7 @@ main {
   right: 18px;
   z-index: 2;
   pointer-events: none;
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   letter-spacing: 1px;
 }
@@ -465,7 +466,7 @@ main {
   font-weight: 600;
 }
 .map-top > span:last-child {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 0.2px;
 }
 .map-top i {
@@ -515,7 +516,7 @@ main {
   z-index: 3;
 }
 .map-bottom > span {
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #6a7b61;
   background: #f1f4e9cc;
   padding: 4px 7px;
@@ -561,7 +562,7 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   padding: 12px 20px;
   color: #5f6e54;
 }
@@ -587,7 +588,7 @@ main {
   flex-direction: column;
 }
 .discovery-card .eyebrow {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.2px;
   display: flex;
   align-items: center;
@@ -596,12 +597,12 @@ main {
   white-space: nowrap;
 }
 .spark {
-  font-size: 16px;
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   color: #5f6e54;
 }
 .hero-glyph {
   font-family: var(--serif);
-  font-size: 108px;
+  font-size: 6.75rem;
   line-height: 1.15;
   color: #394c2d;
   position: relative;
@@ -609,7 +610,7 @@ main {
   margin: 7px 0 0;
 }
 .hero-glyph > span {
-  font-size: 109px;
+  font-size: 6.812rem;
   position: absolute;
   right: 0;
   top: -4px;
@@ -617,11 +618,11 @@ main {
   z-index: -1;
 }
 .discovery-card h2 {
-  font-size: 28px;
+  font-size: clamp(1.488rem, 1.312rem + 0.8vw, 1.75rem);
   margin: 0 0 9px;
 }
 .discovery-card p {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin: 0 0 18px;
   line-height: 1.75;
@@ -635,11 +636,11 @@ main {
 .mini-evolution > span {
   text-align: center;
   font-family: var(--serif);
-  font-size: 25px;
+  font-size: clamp(1.328rem, 1.172rem + 0.8vw, 1.562rem);
 }
 .mini-evolution small {
   font-family: Inter, sans-serif;
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   display: block;
   margin-top: 5px;
@@ -655,7 +656,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   font-weight: 600;
 }
 .discovery-card > button:hover {
@@ -672,11 +673,11 @@ main {
   margin-bottom: 16px;
 }
 .section-title h2 {
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   margin: 0;
 }
 .section-title > span {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.5px;
   color: #5f6e54;
 }
@@ -732,7 +733,7 @@ main {
   pointer-events: none;
 }
 .entry-art.flags {
-  font-size: 39px;
+  font-size: clamp(2.072rem, 1.828rem + 0.8vw, 2.438rem);
   letter-spacing: 6px;
   transform: rotate(-7deg);
   padding-left: 60px;
@@ -740,26 +741,26 @@ main {
 }
 .entry-art.flags span {
   transform: translateY(-7px);
-  font-size: 45px;
+  font-size: 2.812rem;
 }
 .entry-art.glyphs {
   font-family: var(--serif);
-  font-size: 46px;
+  font-size: 2.875rem;
   gap: 21px;
   padding-left: 55px;
   color: #5f6e54;
 }
 .entry-art.glyphs span {
-  font-size: 55px;
+  font-size: 3.438rem;
   color: #4e6448;
   transform: rotate(-10deg);
 }
 .entry-card h3 {
   margin: 7px 0 8px;
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
 }
 .entry-card p {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   line-height: 1.7;
   max-width: 260px;
@@ -769,7 +770,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1.2px;
   color: #5b7051;
   margin-top: auto;
@@ -780,17 +781,17 @@ main {
   text-align: center;
   padding-left: 50px;
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   color: #5f6e54;
   line-height: 1;
 }
 .root-art > div {
-  font-size: 23px;
+  font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   line-height: 1.15;
   color: #5f6e54;
 }
 .root-art > span:last-child {
-  font-size: 29px;
+  font-size: clamp(1.541rem, 1.359rem + 0.8vw, 1.812rem);
 }
 .bottom-grid {
   display: grid;
@@ -805,10 +806,10 @@ main {
   background: #fafaf5;
 }
 .journey-panel .section-title h2 {
-  font-size: 21px;
+  font-size: clamp(1.25rem, 0.9844rem + 0.8vw, 1.312rem);
 }
 .journey-panel .section-title > span {
-  font-size: 6px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .trail {
   display: flex;
@@ -827,16 +828,16 @@ main {
 .trail > button > span {
   height: 39px;
   font-family: var(--serif);
-  font-size: 28px;
+  font-size: clamp(1.488rem, 1.312rem + 0.8vw, 1.75rem);
   line-height: 1;
 }
 .trail > button > strong {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   font-weight: 550;
   line-height: 1.9;
 }
 .trail > button > small {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 .trail > svg {
@@ -855,7 +856,7 @@ main {
   margin-left: 8px;
 }
 .journey-panel > p {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin: 0;
 }
@@ -880,20 +881,20 @@ main {
   color: #6a7c51;
 }
 .practice-prompt .eyebrow {
-  font-size: 6px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1px;
 }
 .practice-prompt h3 {
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   margin: 8px 0;
 }
 .practice-prompt p {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin-bottom: 16px;
 }
 .practice-prompt .text-button {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 footer {
   display: flex;
@@ -902,7 +903,7 @@ footer {
   border-top: 1px solid var(--line);
   padding: 21px 0;
   margin-top: 31px;
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 footer > span {
@@ -911,7 +912,7 @@ footer > span {
   gap: 7px;
 }
 .footer-star {
-  font-size: 16px;
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   color: #5f6e54;
 }
 .primary,
@@ -920,7 +921,7 @@ footer > span {
   align-items: center;
   justify-content: center;
   gap: 9px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   font-weight: 500;
   border-radius: 6px;
   padding: 12px 16px;
@@ -945,7 +946,7 @@ footer > span {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   padding: 0;
   margin: 0 0 20px;
@@ -967,7 +968,7 @@ footer > span {
 .tabs button {
   padding: 9px 16px;
   border-radius: 5px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   text-transform: capitalize;
   color: #5f6e54;
 }
@@ -990,15 +991,15 @@ footer > span {
   border: 0;
   background: transparent;
   color: inherit;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .map-note {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   margin: 12px 0 30px;
 }
 .muted {
   color: #5f6e54;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   line-height: 1.7;
 }
 .filter-input {
@@ -1006,14 +1007,14 @@ footer > span {
   background: #fffef8;
   padding: 10px 13px;
   border-radius: 5px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   max-width: 200px;
   min-width: 0;
   color: #455c3d;
 }
 .count {
   font-family: Inter, sans-serif;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   display: inline-block;
   color: #5f6e54;
   margin-left: 8px;
@@ -1042,7 +1043,7 @@ footer > span {
   background: #edf2e3;
 }
 .country-card > span {
-  font-size: 30px;
+  font-size: clamp(1.594rem, 1.406rem + 0.8vw, 1.875rem);
   flex: none;
 }
 .country-card > div {
@@ -1050,12 +1051,12 @@ footer > span {
 }
 .country-card strong {
   display: block;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   font-weight: 550;
 }
 .country-card small {
   display: block;
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   line-height: 1.5;
   margin-top: 5px;
@@ -1075,7 +1076,7 @@ footer > span {
   text-align: center;
 }
 .flag-grid .country-card > span {
-  font-size: 59px;
+  font-size: 3.688rem;
 }
 .flag-grid .country-card svg {
   display: none;
@@ -1105,7 +1106,7 @@ footer > span {
 }
 .facts small,
 .progress-stats small {
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1px;
   color: #5f6e54;
   display: block;
@@ -1114,7 +1115,7 @@ footer > span {
 .facts strong,
 .progress-stats strong {
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -1122,7 +1123,7 @@ footer > span {
   margin: 29px 0;
 }
 .detail-section > h2 {
-  font-size: 24px;
+  font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   margin-bottom: 14px;
 }
 .detail-section > p {
@@ -1150,12 +1151,12 @@ footer > span {
   background: #eaf0df;
 }
 .entity-link strong {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   display: block;
   font-weight: 550;
 }
 .entity-link small {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   display: block;
   text-transform: capitalize;
@@ -1168,7 +1169,7 @@ footer > span {
 }
 .entity-symbol {
   font-family: var(--serif);
-  font-size: 29px;
+  font-size: clamp(1.541rem, 1.359rem + 0.8vw, 1.812rem);
   min-width: 24px;
 }
 .entity-link.small {
@@ -1185,11 +1186,11 @@ footer > span {
 }
 .note-card h3 {
   margin-top: 12px;
-  font-size: 23px;
+  font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   color: #334e2f;
 }
 .note-card p {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   margin: 6px 0 13px;
 }
 .note-card svg {
@@ -1205,7 +1206,7 @@ footer > span {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   border: 1px solid #dbe2d0;
   background: #edf2e3;
   border-radius: 30px;
@@ -1215,14 +1216,14 @@ footer > span {
 .tag {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   padding: 5px 9px;
 }
 .sources {
   border-top: 1px solid #dde4d4;
   margin: 26px 0;
   padding: 17px 0;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 .sources summary {
@@ -1241,7 +1242,7 @@ footer > span {
 }
 .sources small {
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 0.5px;
 }
 .script-grid {
@@ -1268,7 +1269,7 @@ footer > span {
   color: #5f6e54;
 }
 .script-card .tag {
-  font-size: 7px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .script-sample {
   height: 107px;
@@ -1276,17 +1277,17 @@ footer > span {
   align-items: center;
   justify-content: center;
   font-family: var(--serif);
-  font-size: 42px;
+  font-size: 2.625rem;
   color: #57754b;
   white-space: nowrap;
   overflow: hidden;
 }
 .script-card h3 {
   margin: 0 0 8px;
-  font-size: 23px;
+  font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
 }
 .script-card p {
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin: 0;
   line-height: 1.6;
@@ -1312,18 +1313,18 @@ footer > span {
 }
 .writing-banner > span {
   font-family: var(--serif);
-  font-size: 55px;
+  font-size: 3.438rem;
   color: #6c845b;
   line-height: 1.6;
   min-width: 30%;
   text-align: center;
 }
 .writing-banner h2 {
-  font-size: 30px;
+  font-size: clamp(1.594rem, 1.406rem + 0.8vw, 1.875rem);
   margin: 8px 0;
 }
 .writing-banner p {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
   max-width: 570px;
   margin: 0;
@@ -1337,7 +1338,7 @@ footer > span {
   background: #eef2e5;
   padding: 21px;
   margin-top: 30px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #6a805a;
 }
 .note-strip > span {
@@ -1358,7 +1359,7 @@ footer > span {
 }
 .script-detail-hero > span {
   font-family: var(--serif);
-  font-size: 75px;
+  font-size: 4.688rem;
   min-width: 25%;
   color: #526e42;
   text-align: center;
@@ -1387,18 +1388,18 @@ footer > span {
 }
 .letter-tile > span {
   font-family: var(--serif);
-  font-size: 61px;
+  font-size: 3.812rem;
   color: #506d42;
   height: 80px;
   line-height: 1;
 }
 .letter-tile strong {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   font-weight: 500;
   margin-top: 6px;
 }
 .letter-tile small {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin-top: 6px;
 }
@@ -1409,7 +1410,7 @@ footer > span {
 }
 .relationship-label {
   display: block;
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1px;
   color: #5f6e54;
   margin: 10px 0;
@@ -1431,12 +1432,12 @@ footer > span {
 }
 .glyph-stage > span {
   font-family: var(--serif);
-  font-size: 180px;
+  font-size: 11.25rem;
   color: #345632;
   line-height: 1.2;
 }
 .glyph-stage > small {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin: 15px 0 20px;
 }
@@ -1444,7 +1445,7 @@ footer > span {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   border: 1px solid #d2ddc6;
   padding: 10px 13px;
   border-radius: 30px;
@@ -1453,7 +1454,7 @@ footer > span {
   padding: 18px 0;
 }
 .letter-info h2 {
-  font-size: 30px;
+  font-size: clamp(1.594rem, 1.406rem + 0.8vw, 1.875rem);
   margin-top: 17px;
 }
 .letter-info .facts {
@@ -1464,10 +1465,10 @@ footer > span {
   margin: 26px 0;
 }
 .letter-info .facts strong {
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
 }
 .origin-note {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
   border-left: 2px solid #bacba4;
   padding-left: 15px;
@@ -1488,11 +1489,11 @@ footer > span {
   flex-direction: column;
 }
 .forms span {
-  font-size: 53px;
+  font-size: 3.312rem;
   font-family: var(--serif);
 }
 .forms small {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   text-transform: capitalize;
   color: #5f6e54;
   margin-top: 12px;
@@ -1523,18 +1524,18 @@ footer > span {
   min-width: 102px;
 }
 .evolution-step > button > span {
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 1.2;
   font-family: var(--serif);
   color: #536f43;
   margin-bottom: 9px;
 }
 .evolution-step strong {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   font-weight: 500;
 }
 .evolution-step small {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin-top: 7px;
 }
@@ -1544,11 +1545,11 @@ footer > span {
   gap: 27px;
 }
 .relationship-grid h3 {
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   margin-bottom: 10px;
 }
 .relationship-grid p {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .genealogy-layout {
   display: grid;
@@ -1562,7 +1563,7 @@ footer > span {
   padding: 21px;
 }
 .tree-legend {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   display: flex;
   justify-content: space-between;
@@ -1584,7 +1585,7 @@ footer > span {
   margin-top: 18px;
 }
 .tree-panel > p {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin: 12px 0 0;
 }
@@ -1604,19 +1605,19 @@ footer > span {
 }
 .tree-name {
   font:
-    14px Inter,
+    clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem) Inter,
     sans-serif;
   fill: #3c5c31;
 }
 .tree-date {
   font:
-    9px Inter,
+    clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem) Inter,
     sans-serif;
   fill: #849875;
 }
 .tree-symbol {
   font:
-    20px Georgia,
+    clamp(1.25rem, 0.9375rem + 0.8vw, 1.25rem) Georgia,
     serif;
   fill: #8a9e7c;
   text-anchor: middle;
@@ -1629,17 +1630,17 @@ footer > span {
 }
 .tree-big-glyph {
   font-family: var(--serif);
-  font-size: 52px;
+  font-size: 3.25rem;
   text-align: center;
   padding: 23px 0;
   color: #5f6e54;
   overflow: hidden;
 }
 .tree-detail > h2 {
-  font-size: 29px;
+  font-size: clamp(1.541rem, 1.359rem + 0.8vw, 1.812rem);
 }
 .tree-detail > p {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 .tree-detail > .eyebrow {
@@ -1648,10 +1649,10 @@ footer > span {
 }
 .tree-detail > .primary {
   width: 100%;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .tree-detail .detail-section h2 {
-  font-size: 20px;
+  font-size: clamp(1.25rem, 0.9375rem + 0.8vw, 1.25rem);
 }
 .word-lab {
   border: 1px solid #dce4d0;
@@ -1664,7 +1665,7 @@ footer > span {
   align-items: center;
   justify-content: space-between;
   padding: 21px 25px;
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1px;
   color: #5f6e54;
 }
@@ -1676,7 +1677,7 @@ footer > span {
 }
 .natural-word,
 .colored-word {
-  font-size: 136px;
+  font-size: 8.5rem;
   line-height: 1.7;
   font-family: Arial, sans-serif;
 }
@@ -1723,7 +1724,7 @@ footer > span {
 }
 .separated-word button > span {
   font-family: Arial, sans-serif;
-  font-size: 91px;
+  font-size: 5.688rem;
   display: block;
   line-height: 1.2;
 }
@@ -1731,12 +1732,12 @@ footer > span {
 .separated-word small {
   font-family: Inter, sans-serif;
   display: block;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   margin-top: 13px;
   direction: ltr;
 }
 .separated-word small {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   margin-top: 7px;
 }
 .word-reading {
@@ -1744,13 +1745,13 @@ footer > span {
   align-items: center;
   justify-content: center;
   gap: 18px;
-  font-size: 13px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
   margin: 0 0 36px;
 }
 .word-reading strong {
   font-family: var(--serif);
-  font-size: 24px;
+  font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   font-weight: 500;
   color: #4b6a3e;
 }
@@ -1763,7 +1764,7 @@ footer > span {
 }
 .word-reading button.slow-audio {
   border-radius: 5px;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   padding: 7px;
 }
 .decomposition-steps {
@@ -1780,7 +1781,7 @@ footer > span {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   padding: 8px 10px;
   border-radius: 5px;
   color: #5f6e54;
@@ -1791,7 +1792,7 @@ footer > span {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   background: #e9eedf;
   border-radius: 50%;
 }
@@ -1811,12 +1812,12 @@ footer > span {
   gap: 15px;
 }
 .word-controls > span {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 .word-controls .primary,
 .word-controls .secondary {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   padding: 10px 14px;
 }
 .highlighted .entity-link {
@@ -1824,7 +1825,7 @@ footer > span {
   border-color: #5f6e54;
 }
 .readable {
-  font-size: 13px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
   line-height: 1.9;
 }
@@ -1841,10 +1842,10 @@ footer > span {
 }
 .learning-banner h2 {
   margin: 13px 0 7px;
-  font-size: 29px;
+  font-size: clamp(1.541rem, 1.359rem + 0.8vw, 1.812rem);
 }
 .learning-banner p {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
   margin: 0;
   max-width: 590px;
@@ -1860,12 +1861,12 @@ footer > span {
 }
 .learning-stat strong {
   font-family: var(--serif);
-  font-size: 54px;
+  font-size: 3.375rem;
   font-weight: 400;
   color: #66854f;
 }
 .learning-stat small {
-  font-size: 8px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   letter-spacing: 1px;
   color: #5f6e54;
 }
@@ -1899,7 +1900,7 @@ footer > span {
   margin: 22px 0 8px;
 }
 .quiz-card p {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin-bottom: 22px;
 }
@@ -1910,11 +1911,11 @@ footer > span {
   margin: 16px 0 25px;
 }
 .quiz-header h1 {
-  font-size: 35px;
+  font-size: clamp(1.859rem, 1.641rem + 0.8vw, 2.188rem);
   margin: 10px 0 0;
 }
 .quiz-header > span {
-  font-size: 13px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .progress-track {
   height: 5px;
@@ -1934,19 +1935,19 @@ footer > span {
 .quiz-instruction {
   text-align: center;
   color: #5f6e54;
-  font-size: 14px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   margin: 32px 0 12px;
 }
 .quiz-prompt {
   text-align: center;
   font-family: var(--serif);
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.5;
   color: #395c31;
   margin: 25px 0 35px;
 }
 .glyph-prompt {
-  font-size: 114px;
+  font-size: 7.125rem;
   margin: 10px 0 25px;
 }
 .quiz-options {
@@ -1964,7 +1965,7 @@ footer > span {
   background: #fafcf5;
   padding: 16px 20px;
   border-radius: 7px;
-  font-size: 14px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .quiz-options > button:hover:not(:disabled) {
   background: #e8f0dd;
@@ -1979,7 +1980,7 @@ footer > span {
   border-radius: 4px;
   background: #edf1e5;
   color: #5f6e54;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   flex: none;
 }
 .quiz-options > button > svg {
@@ -1999,7 +2000,7 @@ footer > span {
   opacity: 1;
 }
 .flag-option {
-  font-size: 44px;
+  font-size: 2.75rem;
 }
 .answer-feedback {
   display: flex;
@@ -2017,21 +2018,21 @@ footer > span {
   border-color: #dfdac7;
 }
 .answer-feedback strong {
-  font-size: 13px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .answer-feedback p {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   margin: 8px 0;
 }
 .answer-feedback .text-button {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .quiz-note {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin: 35px 0;
 }
@@ -2041,7 +2042,7 @@ footer > span {
   text-align: center;
 }
 .finish-symbol {
-  font-size: 69px;
+  font-size: 4.312rem;
   color: #5f6e54;
   margin-bottom: 20px;
 }
@@ -2049,17 +2050,17 @@ footer > span {
   margin-top: 15px;
 }
 .quiz-finished p {
-  font-size: 14px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
 }
 .finish-score {
   font-family: var(--serif);
-  font-size: 100px;
+  font-size: 6.25rem;
   color: #536f42;
   margin: 20px 0 35px;
 }
 .finish-score span {
-  font-size: 35px;
+  font-size: clamp(1.859rem, 1.641rem + 0.8vw, 2.188rem);
   color: #5f6e54;
 }
 .quiz-finished > .text-button {
@@ -2077,7 +2078,7 @@ footer > span {
   padding: 30px;
 }
 .progress-stats strong {
-  font-size: 45px;
+  font-size: 2.812rem;
 }
 .empty-state {
   padding: 55px 25px;
@@ -2094,7 +2095,7 @@ footer > span {
   color: #426334;
 }
 .empty-state p {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .empty-state .primary {
   margin-top: 10px;
@@ -2118,18 +2119,18 @@ footer > span {
   width: 45%;
 }
 .mastery-list strong {
-  font-size: 13px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   font-weight: 500;
   display: block;
 }
 .mastery-list small {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   display: block;
   margin-top: 7px;
 }
 .mastery-list b {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
 }
 .mastery-track {
@@ -2155,13 +2156,13 @@ footer > span {
   padding: 15px 23px;
   box-shadow: 0 8px 30px #1b322825;
   z-index: 100;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   max-width: 90vw;
   line-height: 1.6;
 }
 .map-error {
   padding: 60px 25px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
 }
 .quiz-map {
@@ -2187,22 +2188,22 @@ footer > span {
     padding-top: 26px;
   }
   .hero-glyph {
-    font-size: 145px;
+    font-size: 9.062rem;
   }
   .discovery-card h2 {
-    font-size: 32px;
+    font-size: clamp(1.7rem, 1.5rem + 0.8vw, 2rem);
   }
   .discovery-card p {
-    font-size: 13px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   }
   .mini-evolution > span {
-    font-size: 34px;
+    font-size: clamp(1.806rem, 1.594rem + 0.8vw, 2.125rem);
   }
   .mini-evolution small {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .discovery-card > button {
-    font-size: 12px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -2210,17 +2211,17 @@ footer > span {
     height: 98px;
   }
   .entry-card p {
-    font-size: 12px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
     max-width: 310px;
   }
   .entry-card h3 {
-    font-size: 26px;
+    font-size: clamp(1.381rem, 1.219rem + 0.8vw, 1.625rem);
   }
   .entry-bottom {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .practice-prompt h3 {
-    font-size: 26px;
+    font-size: clamp(1.381rem, 1.219rem + 0.8vw, 1.625rem);
   }
 }
 @media (max-width: 1200px) {
@@ -2230,7 +2231,7 @@ footer > span {
     padding-right: 15px;
   }
   .brand {
-    font-size: 29px;
+    font-size: clamp(1.541rem, 1.359rem + 0.8vw, 1.812rem);
   }
   .main-wrap {
     margin-left: 210px;
@@ -2250,7 +2251,7 @@ footer > span {
     gap: 15px;
   }
   h1 {
-    font-size: 34px;
+    font-size: clamp(1.806rem, 1.594rem + 0.8vw, 2.125rem);
   }
   .edition {
     display: none;
@@ -2263,13 +2264,13 @@ footer > span {
     padding: 19px;
   }
   .panel-heading h2 {
-    font-size: 21px;
+    font-size: clamp(1.25rem, 0.9844rem + 0.8vw, 1.312rem);
   }
   .panel-heading .text-button {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .atlas-caption {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 11px 15px;
   }
   .atlas-caption > span:last-child {
@@ -2282,36 +2283,36 @@ footer > span {
     padding: 17px;
   }
   .entry-card h3 {
-    font-size: 20px;
+    font-size: clamp(1.25rem, 0.9375rem + 0.8vw, 1.25rem);
   }
   .entry-art.flags {
-    font-size: 29px;
+    font-size: clamp(1.541rem, 1.359rem + 0.8vw, 1.812rem);
     letter-spacing: 2px;
     padding-left: 30px;
   }
   .entry-art.flags span {
-    font-size: 34px;
+    font-size: clamp(1.806rem, 1.594rem + 0.8vw, 2.125rem);
   }
   .entry-art.glyphs {
     gap: 12px;
-    font-size: 37px;
+    font-size: clamp(1.966rem, 1.734rem + 0.8vw, 2.312rem);
     padding-left: 35px;
   }
   .entry-art.glyphs span {
-    font-size: 43px;
+    font-size: 2.688rem;
   }
   .entry-art {
     height: 70px;
     margin-top: -18px;
   }
   .root-art {
-    font-size: 18px;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   }
   .root-art > span:last-child {
-    font-size: 23px;
+    font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   }
   .entry-bottom {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 0.9px;
   }
   .bottom-grid {
@@ -2322,7 +2323,7 @@ footer > span {
     padding: 17px;
   }
   .journey-panel .section-title h2 {
-    font-size: 19px;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   }
   .journey-panel .section-title > span {
     display: none;
@@ -2332,14 +2333,14 @@ footer > span {
     padding: 17px;
   }
   .practice-prompt h3 {
-    font-size: 20px;
+    font-size: clamp(1.25rem, 0.9375rem + 0.8vw, 1.25rem);
   }
   .practice-icon {
     width: 38px;
     height: 38px;
   }
   .practice-prompt .eyebrow {
-    font-size: 5px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .country-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2358,10 +2359,10 @@ footer > span {
     padding: 24px;
   }
   .writing-banner > span {
-    font-size: 40px;
+    font-size: clamp(2.125rem, 1.875rem + 0.8vw, 2.5rem);
   }
   .script-sample {
-    font-size: 35px;
+    font-size: clamp(1.859rem, 1.641rem + 0.8vw, 2.188rem);
   }
   .flag-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2371,7 +2372,7 @@ footer > span {
     padding: 17px;
   }
   .facts strong {
-    font-size: 20px;
+    font-size: clamp(1.25rem, 0.9375rem + 0.8vw, 1.25rem);
   }
   .learning-banner {
     padding: 25px;
@@ -2397,15 +2398,15 @@ footer > span {
     width: calc(100% - 190px);
   }
   .sidebar nav button {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     gap: 9px;
     padding: 11px 9px;
   }
   .brand {
-    font-size: 27px;
+    font-size: clamp(1.434rem, 1.266rem + 0.8vw, 1.688rem);
   }
   .sidebar-label {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 1.4px;
   }
   .sidebar-bottom {
@@ -2413,19 +2414,19 @@ footer > span {
     padding-right: 6px;
   }
   .offline {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .sidebar-bottom > strong {
-    font-size: 13px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   }
   .sidebar-bottom > p {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   header {
     gap: 10px;
   }
   .breadcrumb {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     gap: 6px;
   }
   .search-box {
@@ -2438,10 +2439,10 @@ footer > span {
     display: none;
   }
   h1 {
-    font-size: 31px;
+    font-size: clamp(1.647rem, 1.453rem + 0.8vw, 1.938rem);
   }
   .page-title > div > p {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .home-grid {
     grid-template-columns: 1fr;
@@ -2460,14 +2461,14 @@ footer > span {
     grid-column: 1;
     grid-row: 2/5;
     margin: 0;
-    font-size: 120px;
+    font-size: 7.5rem;
   }
   .hero-glyph > span {
-    font-size: 100px;
+    font-size: 6.25rem;
   }
   .discovery-card h2 {
     grid-column: 2;
-    font-size: 27px;
+    font-size: clamp(1.434rem, 1.266rem + 0.8vw, 1.688rem);
   }
   .discovery-card p {
     grid-column: 2;
@@ -2504,13 +2505,13 @@ footer > span {
     padding-left: 0 !important;
   }
   .entry-card h3 {
-    font-size: 18px;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   }
   .entry-card p {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .entry-bottom {
-    font-size: 5px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .bottom-grid {
     grid-template-columns: 1fr;
@@ -2519,13 +2520,13 @@ footer > span {
     padding: 24px;
   }
   .practice-prompt .eyebrow {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .practice-prompt h3 {
-    font-size: 24px;
+    font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   }
   .practice-prompt p {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .practice-icon {
     width: 50px;
@@ -2544,7 +2545,7 @@ footer > span {
     display: none;
   }
   .page-title > .secondary {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 10px;
   }
   .genealogy-layout {
@@ -2589,13 +2590,13 @@ footer > span {
     padding: 14px;
   }
   .script-card h3 {
-    font-size: 21px;
+    font-size: clamp(1.25rem, 0.9844rem + 0.8vw, 1.312rem);
   }
   .script-card p {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .script-sample {
-    font-size: 31px;
+    font-size: clamp(1.647rem, 1.453rem + 0.8vw, 1.938rem);
     height: 90px;
   }
   .letter-detail {
@@ -2606,36 +2607,36 @@ footer > span {
     padding: 20px;
   }
   .glyph-stage > span {
-    font-size: 135px;
+    font-size: 8.438rem;
   }
   .audio-button {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 8px;
   }
   .letter-info h2 {
-    font-size: 25px;
+    font-size: clamp(1.328rem, 1.172rem + 0.8vw, 1.562rem);
   }
   .letter-info .facts strong {
-    font-size: 19px;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   }
   .script-detail-hero {
     padding: 23px;
     gap: 20px;
   }
   .script-detail-hero > span {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .script-detail-hero .facts {
     padding: 0;
   }
   .facts small {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .facts strong {
-    font-size: 18px;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   }
   .writing-banner > span {
-    font-size: 38px;
+    font-size: clamp(2.019rem, 1.781rem + 0.8vw, 2.375rem);
     min-width: 25%;
   }
   .scroll-tabs {
@@ -2655,23 +2656,23 @@ footer > span {
     display: none;
   }
   .decomposition-steps button {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .learning-stat {
     min-width: 110px;
     padding: 10px;
   }
   .learning-stat strong {
-    font-size: 43px;
+    font-size: 2.688rem;
   }
   .learning-stat small {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .learning-banner h2 {
-    font-size: 25px;
+    font-size: clamp(1.328rem, 1.172rem + 0.8vw, 1.562rem);
   }
   .learning-banner p {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .quiz-grid {
     grid-template-columns: 1fr 1fr;
@@ -2696,24 +2697,24 @@ footer > span {
     transform: translateX(0);
   }
   .brand {
-    font-size: 32px;
+    font-size: clamp(1.7rem, 1.5rem + 0.8vw, 2rem);
   }
   .sidebar-label {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .sidebar nav button {
-    font-size: 12px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
     padding: 12px;
     gap: 12px;
   }
   .sidebar-bottom > strong {
-    font-size: 15px;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   }
   .sidebar-bottom > p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .offline {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .main-wrap {
     margin: 0;
@@ -2747,7 +2748,7 @@ footer > span {
     padding: 8px;
   }
   .search-box input {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .search-box kbd {
     display: none;
@@ -2755,7 +2756,7 @@ footer > span {
   .avatar {
     height: 28px;
     width: 28px;
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .search-results {
     width: 310px;
@@ -2771,44 +2772,44 @@ footer > span {
     gap: 14px;
   }
   .page-title .eyebrow {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 1.4px;
     margin-bottom: 10px;
   }
   h1 {
-    font-size: 32px;
+    font-size: clamp(1.7rem, 1.5rem + 0.8vw, 2rem);
     letter-spacing: -0.8px;
   }
   .page-title > div > p {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     line-height: 1.8;
   }
   .panel-heading {
     padding: 19px 18px;
   }
   .panel-heading h2 {
-    font-size: 24px;
+    font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   }
   .panel-heading .eyebrow {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .panel-heading .text-button {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .map-top {
     left: 14px;
     right: 14px;
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .map-top > span:last-child {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .map-bottom {
     left: 12px;
     bottom: 10px;
   }
   .map-bottom > span {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .map-bottom button {
     padding: 6px;
@@ -2819,11 +2820,11 @@ footer > span {
   }
   .atlas-caption {
     padding: 11px 15px;
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .atlas-caption > span:last-child {
     display: flex;
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .discovery-card {
     grid-template-columns: 115px 1fr;
@@ -2831,26 +2832,26 @@ footer > span {
     padding: 20px;
   }
   .discovery-card > .eyebrow {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     margin-bottom: 11px;
   }
   .hero-glyph {
-    font-size: 110px;
+    font-size: 6.875rem;
   }
   .discovery-card h2 {
-    font-size: 26px;
+    font-size: clamp(1.381rem, 1.219rem + 0.8vw, 1.625rem);
   }
   .discovery-card p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .discovery-card > button {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .section-title h2 {
-    font-size: 23px;
+    font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   }
   .section-title > span {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 1px;
   }
   .entry-grid {
@@ -2878,50 +2879,50 @@ footer > span {
     top: 45px;
     width: 130px;
     height: 100px;
-    font-size: 34px !important;
+    font-size: clamp(1.806rem, 1.594rem + 0.8vw, 2.125rem) !important;
     margin: 0;
     z-index: 0;
     opacity: 0.8;
   }
   .entry-card h3 {
-    font-size: 24px;
+    font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
     margin: 40px 0 9px;
     max-width: 65%;
     position: relative;
     z-index: 1;
   }
   .entry-card p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     max-width: 60%;
     margin-bottom: 19px;
     position: relative;
     z-index: 1;
   }
   .entry-bottom {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 1.2px;
   }
   .entry-art.flags {
-    font-size: 28px !important;
+    font-size: clamp(1.488rem, 1.312rem + 0.8vw, 1.75rem) !important;
     right: 24px;
     width: 130px;
   }
   .entry-art.flags span {
-    font-size: 35px;
+    font-size: clamp(1.859rem, 1.641rem + 0.8vw, 2.188rem);
   }
   .entry-art.glyphs {
     gap: 13px;
-    font-size: 42px !important;
+    font-size: 2.625rem !important;
   }
   .entry-art.glyphs span {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .root-art {
     padding-top: 8px;
-    font-size: 25px !important;
+    font-size: clamp(1.328rem, 1.172rem + 0.8vw, 1.562rem) !important;
   }
   .root-art > span:last-child {
-    font-size: 31px;
+    font-size: clamp(1.647rem, 1.453rem + 0.8vw, 1.938rem);
   }
   .bottom-grid {
     margin-top: 25px;
@@ -2930,23 +2931,23 @@ footer > span {
     padding: 20px;
   }
   .journey-panel .section-title h2 {
-    font-size: 22px;
+    font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   }
   .journey-panel .section-title > span {
-    font-size: 5px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .trail {
     margin: 23px 0 16px;
     gap: 3px;
   }
   .trail > button > span {
-    font-size: 30px;
+    font-size: clamp(1.594rem, 1.406rem + 0.8vw, 1.875rem);
   }
   .trail > button > strong {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .trail > button > small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .trail-arrow {
     margin-left: 0;
@@ -2954,34 +2955,34 @@ footer > span {
     height: 29px;
   }
   .journey-panel > p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .practice-prompt {
     padding: 22px;
     gap: 18px;
   }
   .practice-prompt h3 {
-    font-size: 23px;
+    font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   }
   .practice-prompt .eyebrow {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .practice-prompt p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .practice-icon {
     height: 42px;
     width: 42px;
   }
   footer {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     gap: 10px;
     line-height: 1.6;
     margin-top: 25px;
     padding: 20px 0;
   }
   footer > span:last-child {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .toolbar {
     margin-top: 18px;
@@ -2991,10 +2992,10 @@ footer > span {
   }
   .select-label {
     padding: 7px;
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .select-label select {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     max-width: 95px;
   }
   .select-label svg {
@@ -3008,27 +3009,27 @@ footer > span {
     gap: 9px;
   }
   .country-card > span {
-    font-size: 27px;
+    font-size: clamp(1.434rem, 1.266rem + 0.8vw, 1.688rem);
   }
   .country-card strong {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .country-card small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .country-card svg {
     width: 12px;
   }
   .map-note {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .section-title .filter-input {
     max-width: 140px;
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 9px;
   }
   .section-title .count {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     margin-left: 3px;
   }
   .flag-grid {
@@ -3036,7 +3037,7 @@ footer > span {
     gap: 9px;
   }
   .flag-grid .country-card > span {
-    font-size: 45px;
+    font-size: 2.812rem;
   }
   .flag-grid .country-card small {
     display: none;
@@ -3045,7 +3046,7 @@ footer > span {
     min-height: 100px;
   }
   .back {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     margin-bottom: 20px;
   }
   .page-title > .secondary {
@@ -3062,17 +3063,17 @@ footer > span {
     gap: 13px;
   }
   .facts strong {
-    font-size: 21px;
+    font-size: clamp(1.25rem, 0.9844rem + 0.8vw, 1.312rem);
   }
   .facts small {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 0.7px;
   }
   .detail-section {
     margin: 27px 0;
   }
   .detail-section > h2 {
-    font-size: 24px;
+    font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   }
   .entity-grid {
     grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
@@ -3083,16 +3084,16 @@ footer > span {
     gap: 10px;
   }
   .entity-link strong {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .entity-link small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .entity-link svg {
     width: 13px;
   }
   .entity-symbol {
-    font-size: 26px;
+    font-size: clamp(1.381rem, 1.219rem + 0.8vw, 1.625rem);
   }
   .writing-banner {
     display: block;
@@ -3100,18 +3101,18 @@ footer > span {
   }
   .writing-banner > span {
     display: block;
-    font-size: 42px;
+    font-size: 2.625rem;
     margin-bottom: 24px;
     line-height: 1;
   }
   .writing-banner h2 {
-    font-size: 28px;
+    font-size: clamp(1.488rem, 1.312rem + 0.8vw, 1.75rem);
   }
   .writing-banner p {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .writing-banner .eyebrow {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .scroll-tabs {
     max-width: 100%;
@@ -3119,7 +3120,7 @@ footer > span {
   }
   .scroll-tabs button {
     padding: 8px 10px;
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .script-grid {
     grid-template-columns: 1fr 1fr;
@@ -3129,17 +3130,17 @@ footer > span {
     padding: 17px;
   }
   .script-sample {
-    font-size: 37px;
+    font-size: clamp(1.966rem, 1.734rem + 0.8vw, 2.312rem);
     height: 92px;
   }
   .script-card h3 {
-    font-size: 24px;
+    font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   }
   .script-card p {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .script-card .tag {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .note-strip {
     flex-wrap: wrap;
@@ -3147,12 +3148,12 @@ footer > span {
     gap: 12px;
   }
   .note-strip > span {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     flex-basis: 80%;
   }
   .note-strip > .text-button {
     margin-left: 32px;
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .script-detail-hero {
     display: block;
@@ -3160,17 +3161,17 @@ footer > span {
   }
   .script-detail-hero > span {
     display: block;
-    font-size: 70px;
+    font-size: 4.375rem;
     margin: 0 0 30px;
   }
   .script-detail-hero .facts {
     gap: 10px;
   }
   .script-detail-hero .facts strong {
-    font-size: 17px;
+    font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   }
   .script-detail-hero .facts small {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .letter-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -3180,7 +3181,7 @@ footer > span {
     padding: 17px;
   }
   .letter-tile > span {
-    font-size: 55px;
+    font-size: 3.438rem;
     height: 65px;
   }
   .two-columns {
@@ -3197,29 +3198,29 @@ footer > span {
     padding: 20px;
   }
   .glyph-stage > span {
-    font-size: 145px;
+    font-size: 9.062rem;
     line-height: 1.1;
   }
   .glyph-stage > small {
     margin: 10px 0 15px;
   }
   .audio-button {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .letter-info {
     padding: 5px 0;
   }
   .letter-info h2 {
-    font-size: 29px;
+    font-size: clamp(1.541rem, 1.359rem + 0.8vw, 1.812rem);
   }
   .letter-info .facts {
     margin: 24px 0;
   }
   .letter-info .facts strong {
-    font-size: 24px;
+    font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
   }
   .letter-info .facts small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .forms {
     gap: 10px;
@@ -3229,10 +3230,10 @@ footer > span {
     padding: 17px;
   }
   .forms span {
-    font-size: 47px;
+    font-size: 2.938rem;
   }
   .forms small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .evolution {
     padding: 19px;
@@ -3245,13 +3246,13 @@ footer > span {
     min-width: 85px;
   }
   .evolution-step > button > span {
-    font-size: 51px;
+    font-size: 3.188rem;
   }
   .evolution-step strong {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .evolution-step small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .tree-panel {
     padding: 16px;
@@ -3261,37 +3262,37 @@ footer > span {
     min-width: 600px;
   }
   .tree-legend {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     gap: 8px;
   }
   .tree-panel > p {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .tree-detail {
     padding: 20px;
   }
   .tree-detail > .primary {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 10px;
   }
   .tree-detail > h2 {
-    font-size: 27px;
+    font-size: clamp(1.434rem, 1.266rem + 0.8vw, 1.688rem);
   }
   .tree-detail > p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .tree-detail .sources {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .tree-big-glyph {
-    font-size: 43px;
+    font-size: 2.688rem;
   }
   .word-lab-top {
     padding: 17px;
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .word-lab-top .tag {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 0.5px;
   }
   .word-stage {
@@ -3299,7 +3300,7 @@ footer > span {
   }
   .natural-word,
   .colored-word {
-    font-size: 112px;
+    font-size: 7rem;
   }
   .separated-word {
     gap: 6px;
@@ -3309,21 +3310,21 @@ footer > span {
     padding: 8px 9px;
   }
   .separated-word button > span {
-    font-size: 65px;
+    font-size: 4.062rem;
   }
   .separated-word strong {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .separated-word small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .word-reading {
     gap: 12px;
     margin-bottom: 28px;
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .word-reading strong {
-    font-size: 23px;
+    font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   }
   .word-reading button {
     padding: 7px;
@@ -3334,7 +3335,7 @@ footer > span {
     justify-content: flex-start;
   }
   .decomposition-steps button {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 6px;
     flex-basis: 31%;
     white-space: nowrap;
@@ -3342,7 +3343,7 @@ footer > span {
   .decomposition-steps button > span {
     width: 15px;
     height: 15px;
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     flex: none;
   }
   .word-controls {
@@ -3350,7 +3351,7 @@ footer > span {
   }
   .word-controls .primary,
   .word-controls .secondary {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 9px 11px;
     gap: 6px;
   }
@@ -3359,20 +3360,20 @@ footer > span {
     gap: 17px;
   }
   .learning-banner h2 {
-    font-size: 25px;
+    font-size: clamp(1.328rem, 1.172rem + 0.8vw, 1.562rem);
   }
   .learning-banner p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .learning-stat {
     min-width: 85px;
     padding: 5px 0 5px 15px;
   }
   .learning-stat strong {
-    font-size: 37px;
+    font-size: clamp(1.966rem, 1.734rem + 0.8vw, 2.312rem);
   }
   .learning-stat small {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 0.5px;
     text-align: center;
     line-height: 1.8;
@@ -3385,37 +3386,37 @@ footer > span {
     min-height: 225px;
   }
   .quiz-card h3 {
-    font-size: 24px;
+    font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
     margin-top: 22px;
   }
   .quiz-card p {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .quiz-card .entry-bottom {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     letter-spacing: 0.5px;
   }
   .quiz-header h1 {
-    font-size: 30px;
+    font-size: clamp(1.594rem, 1.406rem + 0.8vw, 1.875rem);
   }
   .quiz-header > .eyebrow {
-    font-size: 6px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .quiz-header > span {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .quiz-header > span .muted {
     display: none;
   }
   .quiz-instruction {
-    font-size: 13px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
     margin-top: 28px;
   }
   .quiz-prompt {
-    font-size: 40px;
+    font-size: clamp(2.125rem, 1.875rem + 0.8vw, 2.5rem);
   }
   .glyph-prompt {
-    font-size: 100px;
+    font-size: 6.25rem;
   }
   .quiz-options {
     gap: 10px;
@@ -3423,13 +3424,13 @@ footer > span {
   .quiz-options > button {
     padding: 13px;
     gap: 9px;
-    font-size: 12px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
     min-height: 65px;
   }
   .option-key {
     width: 21px;
     height: 21px;
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .quiz-options > button > svg {
     width: 15px;
@@ -3443,42 +3444,42 @@ footer > span {
     width: 100%;
   }
   .answer-feedback strong {
-    font-size: 12px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   }
   .quiz-finished {
     margin: 35px 0;
   }
   .quiz-finished h1 {
-    font-size: 34px;
+    font-size: clamp(1.806rem, 1.594rem + 0.8vw, 2.125rem);
   }
   .quiz-finished p {
-    font-size: 12px;
+    font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   }
   .finish-score {
-    font-size: 85px;
+    font-size: 5.312rem;
   }
   .progress-stats {
     padding: 24px;
     gap: 25px;
   }
   .progress-stats strong {
-    font-size: 40px;
+    font-size: clamp(2.125rem, 1.875rem + 0.8vw, 2.5rem);
   }
   .progress-stats small {
-    font-size: 7px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .mastery-list > div {
     gap: 15px;
     padding: 17px;
   }
   .mastery-list strong {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .mastery-list small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .mastery-list b {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .mastery-list > div > div:first-child {
     width: 50%;
@@ -3487,7 +3488,7 @@ footer > span {
     padding: 40px 20px;
   }
   .toast {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     width: calc(100% - 35px);
     text-align: center;
   }
@@ -3504,7 +3505,7 @@ footer > span {
     width: 164px;
   }
   .breadcrumb {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .breadcrumb > svg,
   .breadcrumb > span {
@@ -3514,13 +3515,13 @@ footer > span {
     padding: 25px 15px 0;
   }
   h1 {
-    font-size: 30px;
+    font-size: clamp(1.594rem, 1.406rem + 0.8vw, 1.875rem);
   }
   .panel-heading h2 {
-    font-size: 21px;
+    font-size: clamp(1.25rem, 0.9844rem + 0.8vw, 1.312rem);
   }
   .panel-heading .text-button {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .atlas-caption > span:last-child {
     display: none;
@@ -3529,7 +3530,7 @@ footer > span {
     grid-template-columns: 1fr;
   }
   .entry-card h3 {
-    font-size: 22px;
+    font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   }
   .entry-art {
     right: 20px;
@@ -3545,10 +3546,10 @@ footer > span {
     padding: 13px;
   }
   .script-card h3 {
-    font-size: 22px;
+    font-size: clamp(1.25rem, 1.031rem + 0.8vw, 1.375rem);
   }
   .script-sample {
-    font-size: 32px;
+    font-size: clamp(1.7rem, 1.5rem + 0.8vw, 2rem);
   }
   .learning-banner {
     display: block;
@@ -3557,7 +3558,7 @@ footer > span {
     display: none;
   }
   .quiz-card h3 {
-    font-size: 21px;
+    font-size: clamp(1.25rem, 0.9844rem + 0.8vw, 1.312rem);
   }
   .quiz-options {
     grid-template-columns: 1fr;
@@ -3607,7 +3608,7 @@ footer > span {
   flex-wrap: wrap;
 }
 .alphabet-select legend {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   padding: 0 7px;
 }
 .alphabet-select label {
@@ -3618,7 +3619,7 @@ footer > span {
   border: 1px solid #dce5cf;
   border-radius: 6px;
   padding: 12px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   cursor: pointer;
 }
 .alphabet-select input {
@@ -3627,7 +3628,7 @@ footer > span {
   height: 16px;
 }
 .alphabet-select small {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 .comparison-note {
@@ -3636,12 +3637,12 @@ footer > span {
   border-radius: 5px;
   padding: 18px 21px;
   margin-bottom: 22px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #526749;
 }
 .comparison-note p {
   margin: 7px 0 0;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .table-scroll {
   width: 100%;
@@ -3661,14 +3662,14 @@ footer > span {
 .states-table caption {
   text-align: left;
   padding: 13px 18px;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   background: #f0f3e8;
   line-height: 1.7;
 }
 .comparison-table th,
 .states-table th {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   font-weight: 600;
   background: #e9efdf;
   padding: 16px;
@@ -3708,7 +3709,7 @@ footer > span {
 }
 .comparison-table tbody th {
   border-top: 1px solid #dbe3d0;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .comparison-letters {
   display: flex;
@@ -3728,17 +3729,17 @@ footer > span {
 }
 .comparison-letters > button > span {
   font-family: var(--serif);
-  font-size: 34px;
+  font-size: clamp(1.806rem, 1.594rem + 0.8vw, 2.125rem);
   display: block;
   line-height: 1.2;
 }
 .comparison-letters > button > span > small {
-  font-size: 23px;
+  font-size: clamp(1.25rem, 1.078rem + 0.8vw, 1.438rem);
   margin-left: 5px;
 }
 .comparison-letters > button > small {
   display: block;
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
   margin-top: 8px;
 }
@@ -3751,17 +3752,17 @@ footer > span {
   margin-top: 30px;
 }
 .alphabet-notes p {
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: #5f6e54;
   max-width: 900px;
 }
 .states-table td {
   padding: 16px;
   border-top: 1px solid #e1e7d7;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .states-table td:nth-child(2) {
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 .states-table tbody tr:hover td {
@@ -3786,11 +3787,11 @@ footer > span {
     gap: 8px;
   }
   .alphabet-select label {
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
     padding: 9px;
   }
   .alphabet-select small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .comparison-table td {
     min-width: 115px;
@@ -3803,24 +3804,24 @@ footer > span {
     padding: 13px;
   }
   .comparison-table tbody th {
-    font-size: 10px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .comparison-letters > button > span {
-    font-size: 30px;
+    font-size: clamp(1.594rem, 1.406rem + 0.8vw, 1.875rem);
   }
   .comparison-letters > button > small {
-    font-size: 8px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .states-table td,
   .states-table th {
     padding: 12px;
-    font-size: 11px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .state-toolbar .select-label select {
     max-width: 70px;
   }
   .toolbar > span.muted {
-    font-size: 9px;
+    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   }
   .sidebar nav p.learn-label {
     margin-top: 20px;
@@ -3841,7 +3842,7 @@ footer > span {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .comparison-sort select {
   max-width: 220px;
@@ -3853,7 +3854,7 @@ footer > span {
 }
 .comparison-table th .alphabet-sort-button {
   margin-top: 12px;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #586c46;
   justify-content: flex-start;
   gap: 6px;
@@ -3861,7 +3862,7 @@ footer > span {
 .comparison-letters > button > .letter-meaning,
 .letter-tile .letter-meaning {
   color: #3d5830;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   line-height: 1.4;
   max-width: 150px;
 }
@@ -3887,18 +3888,18 @@ footer > span {
   display: block;
   color: #5f6e54;
   margin-top: 5px;
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .meaning-glyph {
   font-family: var(--serif);
-  font-size: 35px;
+  font-size: clamp(1.859rem, 1.641rem + 0.8vw, 2.188rem);
 }
 
 .historical-row-note {
   white-space: normal;
   max-width: 160px;
   display: block;
-  font-size: 10px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   font-weight: 400;
   line-height: 1.5;
   margin-top: 8px;
@@ -3920,7 +3921,7 @@ footer > span {
   outline: none;
 }
 .zoom-level {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 .demographic-facts {
@@ -3995,7 +3996,7 @@ footer > span {
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 24px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
   color: var(--muted);
 }
 .letter-form-toggle {
@@ -4008,7 +4009,7 @@ footer > span {
 .letter-form-toggle button {
   padding: 7px 12px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
 .letter-form-toggle button[aria-pressed="true"] {
   background: #fff;
@@ -4016,7 +4017,7 @@ footer > span {
   box-shadow: 0 1px 3px #263b3015;
 }
 .letter-display-toolbar > small {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .glyph-forms {
   display: inline-flex;
@@ -4046,7 +4047,7 @@ footer > span {
 .glyph-forms .glyph-form-caption {
   display: block;
   font:
-    9px/1.3 Inter,
+    clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem)/1.3 Inter,
     -apple-system,
     sans-serif;
   color: #68795e;
@@ -4058,7 +4059,7 @@ footer > span {
 }
 .letter-tile > .glyph-forms {
   height: auto;
-  font-size: 36px;
+  font-size: clamp(1.912rem, 1.688rem + 0.8vw, 2.25rem);
   min-height: 75px;
 }
 .script-sample {
@@ -4083,16 +4084,16 @@ footer > span {
   width: auto;
 }
 .entity-symbol .glyph-forms {
-  font-size: 24px;
+  font-size: clamp(1.275rem, 1.125rem + 0.8vw, 1.5rem);
 }
 .glyph-stage > .glyph-forms {
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 .forms > div > .glyph-forms {
-  font-size: 53px;
+  font-size: 3.312rem;
 }
 .forms .glyph-forms .glyph-form-caption {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
 }
 .meaning-glyph.glyph-forms {
   min-width: 65px;
@@ -4106,15 +4107,15 @@ footer > span {
   flex-wrap: wrap;
 }
 .writing-banner-glyphs .glyph-forms {
-  font-size: 38px;
+  font-size: clamp(2.019rem, 1.781rem + 0.8vw, 2.375rem);
 }
 .hero-letter-forms .glyph-forms {
   flex-direction: row;
   gap: 24px;
-  font-size: 90px;
+  font-size: 5.625rem;
 }
 .entry-art .glyph-forms {
-  font-size: 40px;
+  font-size: clamp(2.125rem, 1.875rem + 0.8vw, 2.5rem);
 }
 .entry-art .glyph-forms .glyph-variant,
 .entry-art .glyph-forms .glyph-ink {
@@ -4122,7 +4123,7 @@ footer > span {
   transform: none;
 }
 .entry-art .glyph-forms .glyph-form-caption {
-  font-size: 9px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   transform: none;
 }
 .root-art > span {
@@ -4163,10 +4164,10 @@ footer > span {
   padding: 10px;
 }
 .word-rendering .separated-word button > span {
-  font-size: 58px;
+  font-size: 3.625rem;
 }
 .word-form-caption {
-  font-size: 11px;
+  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
 @media (max-width: 600px) {
@@ -4177,16 +4178,408 @@ footer > span {
     display: none;
   }
   .glyph-stage > .glyph-forms {
-    font-size: 80px;
+    font-size: 5rem;
   }
   .writing-banner-glyphs .glyph-forms {
-    font-size: 26px;
+    font-size: clamp(1.381rem, 1.219rem + 0.8vw, 1.625rem);
   }
   .hero-letter-forms .glyph-forms {
-    font-size: 65px;
+    font-size: 4.062rem;
   }
   .word-rendering .natural-word,
   .word-rendering .colored-word {
-    font-size: 82px;
+    font-size: 5.125rem;
+  }
+}
+
+/* Readable type and layouts that remain inside the device viewport. */
+body {
+  line-height: 1.6;
+}
+.app,
+.main-wrap,
+main {
+  min-width: 0;
+}
+.app {
+  width: 100%;
+}
+.sidebar {
+  width: var(--sidebar-width);
+}
+.main-wrap {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+}
+.sidebar nav button {
+  white-space: normal;
+}
+.sidebar nav button svg {
+  flex: none;
+}
+.sidebar-label,
+.offline {
+  white-space: normal;
+}
+header,
+.header-actions,
+.breadcrumb,
+.search-box {
+  min-width: 0;
+}
+.search-box input {
+  width: 100%;
+  min-width: 0;
+  font-size: 1rem;
+}
+input,
+select,
+textarea {
+  font-size: 1rem;
+}
+.page-title > div,
+.detail-grid > *,
+.two-columns > *,
+.home-grid > *,
+.bottom-grid > *,
+.facts > div {
+  min-width: 0;
+}
+.page-title h1,
+.facts strong,
+.entity-link strong {
+  overflow-wrap: anywhere;
+}
+.page-title {
+  gap: 16px;
+}
+.script-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+.country-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+}
+.table-scroll,
+.scroll-tabs {
+  min-width: 0;
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+.filter-input {
+  min-width: 0;
+  max-width: 100%;
+}
+.toolbar,
+.state-toolbar,
+.section-title,
+footer {
+  flex-wrap: wrap;
+}
+.glyph-forms .glyph-form-caption {
+  font-size: 0.8125rem;
+}
+.map svg {
+  touch-action: none;
+  user-select: none;
+}
+.nav-backdrop,
+.sidebar-close {
+  display: none;
+}
+@media (max-width: 760px) {
+  .main-wrap {
+    margin-left: 0;
+    width: 100%;
+  }
+  .sidebar {
+    width: min(20rem, calc(100vw - 3rem));
+    z-index: 60;
+    padding-top: 12px;
+  }
+  .sidebar-close {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex: none;
+  }
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: #172c2466;
+  }
+  .sidebar nav button {
+    min-height: 48px;
+  }
+  .sidebar-bottom {
+    padding-top: 24px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    gap: 8px;
+    padding: 12px 16px;
+    height: auto;
+    min-height: 72px;
+  }
+  header .breadcrumb {
+    display: none;
+  }
+  .header-actions {
+    display: contents;
+  }
+  .mobile-menu {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  header .search-box {
+    width: 100%;
+    min-width: 0;
+  }
+  header .avatar {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  header .streak {
+    display: none;
+  }
+  .search-results {
+    position: fixed;
+    top: 76px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-height: calc(100dvh - 100px);
+    overflow-y: auto;
+  }
+  main {
+    padding: 24px 16px 0;
+  }
+  button,
+  input,
+  select,
+  summary {
+    min-height: 44px;
+  }
+  input,
+  select {
+    font-size: 1rem !important;
+  }
+  .tabs button {
+    flex: none;
+  }
+  .toolbar {
+    gap: 12px;
+  }
+  .select-label select {
+    max-width: none;
+  }
+  .section-title input {
+    width: 100%;
+  }
+  .page-title > button {
+    flex: none;
+  }
+  .letter-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+  .script-grid,
+  .compact {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  }
+  .entry-card .entry-art {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 12px 0;
+    justify-content: flex-start;
+  }
+  .entry-card h3,
+  .entry-card p {
+    max-width: 100%;
+  }
+  .trail {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .trail > button:not(.trail-arrow) {
+    min-width: 90px;
+  }
+  .facts {
+    flex-wrap: wrap;
+  }
+  .facts > div {
+    flex: 1 1 120px;
+  }
+  .forms > div {
+    max-width: 100%;
+  }
+  .word-lab-top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .word-reading,
+  .word-controls,
+  .quiz-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .decomposition-steps {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+  .decomposition-steps button {
+    flex: none;
+  }
+  .map-top > span:last-child {
+    display: none;
+  }
+  .map-bottom {
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .map-bottom > span {
+    max-width: 100%;
+    width: fit-content;
+    background: #f7f7f2e8;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .map-bottom > div {
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: center;
+    gap: 4px;
+  }
+  .map-bottom button {
+    width: 44px;
+    height: 44px;
+  }
+  .state-toolbar .select-label select {
+    max-width: none;
+  }
+  .comparison-sort {
+    flex-wrap: wrap;
+  }
+  .comparison-table th:first-child {
+    min-width: 120px;
+    max-width: 160px;
+    white-space: normal;
+  }
+  .historical-row-note {
+    min-width: 0;
+    width: 130px;
+  }
+  footer {
+    gap: 12px;
+  }
+}
+
+/* Body copy remains readable even where older card rules used caption sizes. */
+main p {
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+}
+.country-card > div {
+  min-width: 0;
+}
+.country-card strong,
+.sources a {
+  overflow-wrap: anywhere;
+}
+.tree-canvas {
+  overflow-x: auto;
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+}
+.tree-canvas svg {
+  display: block;
+  min-width: 1040px;
+  width: 100%;
+}
+.genealogy-layout > *,
+.tree-panel {
+  min-width: 0;
+}
+@media (max-width: 760px) {
+  .facts {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr));
+  }
+  .discovery-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .discovery-card .hero-glyph {
+    margin: 0;
+  }
+  .header-actions .search-box > svg {
+    flex: none;
+  }
+  .map-bottom button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+  .tree-panel {
+    padding: 16px;
+  }
+  .tree-legend {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+.entry-card .entry-art {
+  height: auto;
+  min-height: 82px;
+  margin-top: 12px;
+}
+.script-card p,
+.country-card small {
+  font-size: 0.9375rem;
+}
+@media (max-width: 760px) {
+  header .search-box {
+    height: 44px;
+    padding: 0 10px;
+  }
+  header .search-box input {
+    height: 100%;
+    min-height: 0;
+  }
+  .entry-card .card-top {
+    position: static;
+    inset: auto;
+  }
+  .entry-card h3 {
+    margin-top: 12px;
+  }
+  .progress-stats {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+  }
+  .progress-stats > div {
+    min-width: 0;
   }
 }

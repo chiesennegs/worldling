@@ -505,3 +505,42 @@ test("letter display defaults to both and retains print for scripts without cura
   assert.deepEqual(letterVariants("phoenician", "handwritten"), ["print"]);
   assert.deepEqual(letterVariants(undefined, "both"), ["print"]);
 });
+
+test("map pinch preserves its focal point, follows the midpoint, and clamps zoom", async () => {
+  const { MapGestures, zoomMapAt, mapPoint } = await import("../map-gestures");
+  const start = { zoom: 2, pan: { x: 50, y: -20 } },
+    from = { x: 620, y: 180 },
+    to = { x: 650, y: 210 };
+  const zoomed = zoomMapAt(start, from, to, 4);
+  const world = (view: typeof start, point: typeof from) => ({
+    x: (point.x - 500 - view.pan.x) / view.zoom,
+    y: (point.y - 267 - view.pan.y) / view.zoom,
+  });
+  assert.deepEqual(world(zoomed, to), world(start, from));
+  assert.equal(zoomMapAt(start, from, to, 100).zoom, 16);
+  assert.equal(zoomMapAt(start, from, to, 0).zoom, 1);
+  const gestures = new MapGestures();
+  gestures.down(1, { x: 400, y: 267 });
+  gestures.down(2, { x: 600, y: 267 });
+  gestures.move(1, { x: 300, y: 267 });
+  gestures.move(2, { x: 700, y: 267 });
+  assert.equal(gestures.view.zoom, 2);
+  assert.deepEqual(gestures.view.pan, { x: 0, y: 0 });
+  assert.equal(gestures.moved, true);
+  gestures.up(2);
+  const before = gestures.view;
+  gestures.move(1, { x: 310, y: 277 });
+  assert.equal(gestures.view.zoom, before.zoom);
+  assert.deepEqual(gestures.view.pan, { x: 10, y: 10 });
+  gestures.up(1);
+  gestures.up(1);
+  gestures.down(3, { x: 500, y: 267 });
+  gestures.move(3, { x: 501, y: 267 });
+  assert.equal(gestures.moved, false);
+  gestures.up(3);
+  assert.deepEqual(gestures.reset(), { zoom: 1, pan: { x: 0, y: 0 } });
+  assert.deepEqual(
+    mapPoint({ x: 200, y: 300 }, { left: 0, top: 0, width: 400, height: 600 }),
+    { x: 500, y: 267.5 },
+  );
+});

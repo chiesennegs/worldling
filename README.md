@@ -2,7 +2,6 @@
 
 [Live on GitHub Pages](https://chiesennegs.github.io/worldling/) · [Public source repository](https://github.com/chiesennegs/worldling)
 
-
 A local-first, interconnected atlas of places, languages, writing systems, and letters. React + TypeScript + Vite; no backend or account. Bundled map geometry, local progress, global graph search, and an installable offline production build.
 
 ## Run
@@ -123,3 +122,13 @@ npm run preview
 ```
 
 Open the preview at `/worldling/`. The manifest, map, fonts, and service worker all resolve inside that deployment path. Cache cleanup is scoped to this project so other Pages apps on the same origin retain their caches. Routes use URL fragments, so country and letter links do not require server rewrites. Fonts, map data, and other bundled third-party content retain their included licenses and provenance.
+
+## Mobile and touchscreen behavior
+
+Typography uses rem-based adaptive sizes, with 16px body text and a readable caption floor instead of the old 6–11px mobile rules. Phone headers use a flexible three-column layout for menu, search, and profile; search overlays stay inside the screen. Larger touch controls, wrapping toolbars, flexible cards, and independently scrollable tables/genealogy keep content usable on narrow screens.
+
+The navigation drawer closes through its backdrop, close button, Escape, or the active menu item. Background content is inert while open; focus stays in the drawer and returns to the menu button on dismissal. Selecting an active parent item on mobile dismisses the drawer without leaving a detail page.
+
+All atlas instances use pointer capture for one-finger pan and two-finger zoom/pan. Pinch keeps the geography under the gesture midpoint stable, handles finger transitions/cancellation, suppresses accidental country clicks after gestures, and clamps zoom to 1–16×. Ctrl-wheel touchpad pinch also zooms the map; page scrolling and browser zoom remain available outside the map. Gesture coordinates account for SVG letterboxing.
+
+The Letter forms control observes the visible content and appears only when a curated handwritten sample is actually rendered, including relevant quizzes and saved items. Country pages with script samples retain it; country directories, state pages, progress, geography quizzes, and empty collections omit it.

@@ -41,6 +41,7 @@ export default function WordLab({
               className="word-rendering"
               key={variant}
               data-variant={variant}
+              data-script={w.scriptId}
             >
               <div className={`word-stage stage-${stage}`} dir="rtl">
                 {stage === 0 ? (

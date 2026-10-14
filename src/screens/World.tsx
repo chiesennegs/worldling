@@ -60,12 +60,12 @@ export default function World() {
         <>
           <WorldMap onCountry={(id) => go(`/country/${id}`)} region={region} />
           <p className="muted map-note">
-            Drag to pan; use + / − to zoom. Country names appear from 2× zoom as
-            space allows. Zoom up to 16× for small countries; from 4×, leader
-            lines connect displaced labels to their locations. Places absent
-            from the coarse boundary map use geographic anchors and clickable
-            names. Boundaries reflect Natural Earth’s de facto map, not a
-            political position.
+            Drag to pan; pinch with two fingers or use + / − to zoom. Country
+            names appear from 2× zoom as space allows. Zoom up to 16× for small
+            countries; from 4×, leader lines connect displaced labels to their
+            locations. Places absent from the coarse boundary map use geographic
+            anchors and clickable names. Boundaries reflect Natural Earth’s de
+            facto map, not a political position.
           </p>
         </>
       )}

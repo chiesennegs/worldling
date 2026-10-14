@@ -22,3 +22,19 @@ export function entityPath(e: Entity) {
                 ? `/script/${writingSystems.find((w) => w.id === e.id)?.scriptId}`
                 : "/world";
 }
+
+/** Location.hash encodes spaces and non-ASCII names. Decode each segment only,
+ * preserving route boundaries and tolerating malformed bookmarked escapes.
+ */
+export function routeSegments(route: string) {
+  return route
+    .replace(/^\//, "")
+    .split("/")
+    .map((segment) => {
+      try {
+        return decodeURIComponent(segment);
+      } catch {
+        return segment;
+      }
+    });
+}

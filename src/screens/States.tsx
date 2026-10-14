@@ -1,30 +1,36 @@
-import { useState } from "react";
 import { Source } from "../components/ui";
 import StatesTable from "../components/StatesTable";
 import { subdivisionCollections } from "../data/subdivision-collections";
-export default function States() {
-  const [countryCode, setCountryCode] = useState(
-    subdivisionCollections[0].countryCode,
-  );
-  const collection = subdivisionCollections.find(
-    (c) => c.countryCode === countryCode,
-  )!;
+export default function States({
+  countryCode = "USA",
+  onCountryChange,
+}: {
+  countryCode?: string;
+  onCountryChange?: (code: string) => void;
+}) {
+  const collection =
+    subdivisionCollections.find((c) => c.countryCode === countryCode) ||
+    subdivisionCollections[0];
   return (
-    <section aria-label="States, provinces and capitals">
+    <section aria-label="Administrative subdivisions and capitals">
       <div className="section-title">
-        <h2>States, provinces & capitals</h2>
+        <h2>
+          {collection.countryName}: {collection.divisionPlural}
+        </h2>
         <label className="select-label">
           Country{" "}
           <select
-            aria-label="Country for states and provinces"
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
+            aria-label="Country for subdivisions"
+            value={collection.countryCode}
+            onChange={(e) => onCountryChange?.(e.target.value)}
           >
-            {subdivisionCollections.map((c) => (
-              <option key={c.countryCode} value={c.countryCode}>
-                {c.countryName}
-              </option>
-            ))}
+            {[...subdivisionCollections]
+              .sort((a, b) => a.countryName.localeCompare(b.countryName))
+              .map((c) => (
+                <option key={c.countryCode} value={c.countryCode}>
+                  {c.countryName}
+                </option>
+              ))}
           </select>
         </label>
       </div>

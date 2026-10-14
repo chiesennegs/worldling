@@ -568,11 +568,11 @@ test("States stays inside World navigation and mixed collections render without 
   const html = renderToStaticMarkup(
     createElement(World, { initialTab: "States" }),
   );
-  for (const label of ["Map", "Countries", "Flags", "States"]) {
+  for (const label of ["Map", "Countries", "Flags", "Subdivisions"]) {
     assert.match(html, new RegExp(`>${label}</button>`));
   }
   assert.match(html, /Find your place in the world/);
-  assert.match(html, /Country for states and provinces/);
+  assert.match(html, /Country for subdivisions/);
   assert.doesNotMatch(html, /Filter countries|Filter by region/);
   for (const entry of subdivisionCollections[0].entries) {
     assert.equal(collectionForPlace(entry.id).subdivision, entry);
@@ -615,7 +615,176 @@ test("States stays inside World navigation and mixed collections render without 
   assert.match(mixed, /2 of 2/);
   assert.match(mixed, /Example country/);
   assert.match(mixed, />Type<\/th>/);
-  assert.match(mixed, />province<\/td>/);
-  assert.match(mixed, />territory<\/td>/);
+  assert.match(mixed, /.*>province<\/td>/);
+  assert.match(mixed, /.*>territory<\/td>/);
   assert.doesNotMatch(mixed, /U\.S\.|United States|50|state-practice/);
+});
+
+test("international subdivisions have complete typed coverage, sourced capitals, and stable Canadian IDs", async () => {
+  const { subdivisionCollectionByCountry } =
+    await import("./subdivision-collections");
+  const expected = {
+    CAN: { province: 10, territory: 3 },
+    JPN: { prefecture: 47 },
+    BRA: { state: 26, "federal district": 1 },
+  };
+  for (const [code, kinds] of Object.entries(expected)) {
+    const collection = subdivisionCollectionByCountry.get(code)!;
+    const counts: Record<string, number> = {};
+    for (const entry of collection.entries) {
+      counts[entry.kind] = (counts[entry.kind] || 0) + 1;
+      assert.equal(entry.countryCode, code);
+      assert.ok(
+        entry.provenance?.every((source) =>
+          source.sourceURL.startsWith("https://"),
+        ),
+      );
+      assert.ok(
+        relationships.some(
+          (r) =>
+            r.from === `country-${code}` &&
+            r.to === entry.id &&
+            r.type === "HAS_SUBDIVISION" &&
+            r.provenance,
+        ),
+      );
+      assert.ok(
+        relationships.some(
+          (r) =>
+            r.from === entry.id &&
+            r.to === entry.capitalId &&
+            r.type === "HAS_CAPITAL" &&
+            r.provenance,
+        ),
+      );
+      assert.equal(entityById.get(entry.capitalId)?.name, entry.capital);
+    }
+    assert.deepEqual(counts, kinds);
+    assert.equal(
+      new Set(collection.entries.map((s) => s.code)).size,
+      collection.entries.length,
+    );
+    assert.equal(
+      new Set(collection.entries.map((s) => s.capitalId)).size,
+      collection.entries.length,
+    );
+  }
+  for (const name of ["Ontario", "Quebec", "British Columbia"]) {
+    assert.ok(
+      subdivisionCollectionByCountry
+        .get("CAN")!
+        .entries.some((s) => s.id === `subdivision-CAN-${name}`),
+    );
+  }
+  const japan = subdivisionCollectionByCountry.get("JPN")!.entries;
+  assert.equal(japan.find((s) => s.code === "JP-13")?.capital, "Shinjuku");
+  assert.equal(
+    japan.filter((s) => s.localType === "Urban prefecture (fu)").length,
+    2,
+  );
+  assert.equal(
+    japan.filter((s) => s.localType === "Prefecture (ken)").length,
+    43,
+  );
+  const district = subdivisionCollectionByCountry
+    .get("BRA")!
+    .entries.find((s) => s.code === "BR-DF")!;
+  assert.equal(district.kind, "federal district");
+  assert.equal(district.capital, "Brasília");
+  assert.equal(district.capitalLabel, "Government seat");
+  assert.ok(
+    search("Sao Paulo").some((e) => e.id === "subdivision-BRA-São Paulo"),
+  );
+  assert.ok(search("Quebec City").some((e) => e.id === "capital-CA-QC"));
+});
+
+test("each subdivision quiz keeps all questions and choices within its country", async () => {
+  const { subdivisionCollections } = await import("./subdivision-collections");
+  for (const collection of subdivisionCollections) {
+    const def = quizzes.find((q) => q.id === collection.practiceQuizId)!;
+    const capitals = new Set(collection.entries.map((s) => s.capitalId));
+    const subdivisions = new Set(collection.entries.map((s) => s.id));
+    const pairs = quizPairs(def);
+    assert.equal(pairs.length, collection.entries.length);
+    assert.ok(
+      pairs.every(
+        (p) => subdivisions.has(p.prompt.id) && capitals.has(p.answer.id),
+      ),
+    );
+    for (let i = 0; i < 20; i++) {
+      const question = makeQuestion(def.id);
+      assert.ok(question.options.every((option) => capitals.has(option.id)));
+    }
+  }
+  const reverse = quizPairs(quizzes.find((q) => q.id === "capital-states")!);
+  assert.equal(reverse.length, 50);
+  assert.ok(reverse.every((p) => p.answer.id.startsWith("subdivision-USA-")));
+});
+
+test("country-specific directories and exceptional government seats render with accurate terminology", async () => {
+  const { createElement } = await import("react");
+  const { renderToStaticMarkup } = await import("react-dom/server");
+  const { default: World } = await import("../screens/World");
+  const { default: PlaceDetail } = await import("../screens/PlaceDetail");
+  for (const [countryCode, title, count] of [
+    ["CAN", "Province / territory", 13],
+    ["JPN", "Prefecture", 47],
+    ["BRA", "State / federal district", 27],
+  ] as const) {
+    const markup = renderToStaticMarkup(
+      createElement(World, {
+        initialTab: "States",
+        initialCountry: countryCode,
+      }),
+    );
+    assert.ok(markup.includes(`<th scope="col">${title}</th>`));
+    assert.match(markup, new RegExp(`${count} of ${count}`));
+    assert.match(markup, new RegExp(`value="${countryCode}" selected=""`));
+    assert.doesNotMatch(
+      markup,
+      /Country &amp; territory directory|Filter by region/,
+    );
+  }
+  const seat = renderToStaticMarkup(
+    createElement(PlaceDetail, {
+      id: "capital-JP-13",
+      saved: [],
+      bookmark: () => {},
+    }),
+  );
+  assert.match(seat, /JAPAN \/ GOVERNMENT SEAT/);
+  assert.match(seat, /special wards/);
+  const district = renderToStaticMarkup(
+    createElement(PlaceDetail, {
+      id: "subdivision-BRA-Distrito Federal",
+      saved: [],
+      bookmark: () => {},
+    }),
+  );
+  assert.match(district, /FEDERAL DISTRICT/);
+  assert.match(district, /Government seat/);
+  assert.match(district, /Brasília/);
+});
+
+test("hash routes decode international place names and keep country selection", async () => {
+  const { routeSegments } = await import("../navigation");
+  for (const id of [
+    "subdivision-BRA-São Paulo",
+    "subdivision-BRA-Espírito Santo",
+    "subdivision-CAN-British Columbia",
+    "capital-JP-13",
+  ]) {
+    const [section, decoded] = routeSegments(
+      `/place/${encodeURIComponent(id)}`,
+    );
+    assert.equal(section, "place");
+    assert.equal(decoded, id);
+    assert.ok(entityById.has(decoded));
+  }
+  assert.deepEqual(routeSegments("/world/states/JPN"), [
+    "world",
+    "states",
+    "JPN",
+  ]);
+  assert.deepEqual(routeSegments("/place/bad%escape"), ["place", "bad%escape"]);
 });

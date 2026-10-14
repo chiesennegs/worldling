@@ -6,7 +6,19 @@ import { PageTitle } from "../components/ui";
 import WorldMap from "../Map";
 import States from "./States";
 
-export default function World({ initialTab = "Map" }: { initialTab?: string }) {
+export default function World({
+  initialTab = "Map",
+  initialCountry,
+}: {
+  initialTab?: string;
+  initialCountry?: string;
+}) {
+  const [subdivisionCountry, setSubdivisionCountry] = useState(
+    initialCountry || "USA",
+  );
+  useEffect(() => {
+    if (initialCountry) setSubdivisionCountry(initialCountry);
+  }, [initialCountry]);
   const [region, setRegion] = useState("All regions");
   const [filter, setFilter] = useState("");
   const [tab, setTab] = useState(initialTab);
@@ -32,10 +44,16 @@ export default function World({ initialTab = "Map" }: { initialTab?: string }) {
               key={t}
               className={t === tab ? "active" : ""}
               onClick={() =>
-                go(t === "Map" ? "/world" : `/world/${t.toLowerCase()}`)
+                go(
+                  t === "Map"
+                    ? "/world"
+                    : t === "States"
+                      ? `/world/states/${subdivisionCountry}`
+                      : `/world/${t.toLowerCase()}`,
+                )
               }
             >
-              {t}
+              {t === "States" ? "Subdivisions" : t}
             </button>
           ))}
         </div>
@@ -76,7 +94,10 @@ export default function World({ initialTab = "Map" }: { initialTab?: string }) {
         </>
       )}
       {tab === "States" ? (
-        <States />
+        <States
+          countryCode={subdivisionCountry}
+          onCountryChange={(code) => go(`/world/states/${code}`)}
+        />
       ) : (
         <>
           <div className="section-title">

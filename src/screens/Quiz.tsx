@@ -1,3 +1,4 @@
+import { collectionForPlace } from "../data/subdivision-collections";
 import { Glyph } from "../components/LetterForms";
 import { useState } from "react";
 import {
@@ -78,6 +79,7 @@ export default function Quiz({
         </button>
       </div>
     );
+  const promptSubdivision = collectionForPlace(question.prompt.id).subdivision;
   const isGlyph =
     question.prompt.type === "grapheme" || question.prompt.type === "flag";
   return (
@@ -102,8 +104,8 @@ export default function Quiz({
         <p className="quiz-instruction">
           {def.map
             ? "Select the country represented by this flag."
-            : def.id === "state-capitals"
-              ? "What is the capital of this U.S. state?"
+            : def.subdivisionCountryCode && !def.reverse
+              ? `What is the ${promptSubdivision?.capitalLabel?.toLowerCase() || "capital"} of this ${promptSubdivision?.kind || "subdivision"}?`
               : def.id === "capital-states"
                 ? "Which U.S. state has this capital?"
                 : def.id === "flags"

@@ -1,3 +1,4 @@
+import { searchText } from "../search-text";
 import { useState } from "react";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 import {
@@ -12,12 +13,13 @@ export default function StatesTable({
 }) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<"name" | "capital">("name");
-  const showKind = new Set(collection.entries.map((s) => s.kind)).size > 1;
+  const showKind =
+    new Set(collection.entries.map((s) => s.localType || s.kind)).size > 1;
   const list = collection.entries
     .filter((s) =>
-      `${s.name} ${s.code} ${s.capital} ${s.kind}`
-        .toLowerCase()
-        .includes(query.toLowerCase()),
+      searchText(
+        `${s.name} ${s.code} ${s.capital} ${s.kind} ${s.localType || ""}`,
+      ).includes(searchText(query)),
     )
     .sort((a, b) => a[sort].localeCompare(b[sort]));
   return (
@@ -54,7 +56,7 @@ export default function StatesTable({
               <th scope="col">{collection.divisionLabel}</th>
               {showKind && <th scope="col">Type</th>}
               <th scope="col">Code</th>
-              <th scope="col">Capital</th>
+              <th scope="col">{collection.capitalColumnLabel || "Capital"}</th>
             </tr>
           </thead>
           <tbody>
@@ -66,13 +68,18 @@ export default function StatesTable({
                     <ArrowUpRight size={13} />
                   </button>
                 </td>
-                {showKind && <td>{s.kind}</td>}
-                <td>{s.code}</td>
+                {showKind && (
+                  <td className="subdivision-kind">{s.localType || s.kind}</td>
+                )}
+                <td className="subdivision-code">{s.code}</td>
                 <td>
                   <button onClick={() => go(`/place/${s.capitalId}`)}>
                     {s.capital}
                     <ArrowUpRight size={13} />
                   </button>
+                  {s.capitalLabel && (
+                    <small className="seat-label">{s.capitalLabel}</small>
+                  )}
                 </td>
               </tr>
             ))}
@@ -82,13 +89,19 @@ export default function StatesTable({
       {!list.length && (
         <p className="muted">No places or capitals match this search.</p>
       )}
+      {collection.entries
+        .filter((s) => s.capitalNote)
+        .map((s) => (
+          <p className="muted" key={s.id}>
+            {s.capitalNote}
+          </p>
+        ))}
       {collection.practiceQuizId && (
         <button
           className="text-button state-practice"
           onClick={() => go(`/quiz/${collection.practiceQuizId}`)}
         >
-          Practice {collection.divisionPlural} and capitals{" "}
-          <ArrowRight size={16} />
+          Practice {collection.countryName} capitals <ArrowRight size={16} />
         </button>
       )}
     </>

@@ -3761,7 +3761,8 @@ footer > span {
   border-top: 1px solid #e1e7d7;
   font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
 }
-.states-table td:nth-child(2) {
+.states-table .subdivision-code,
+.states-table .subdivision-kind {
   font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
   color: #5f6e54;
 }
@@ -4582,4 +4583,14 @@ main p {
   .progress-stats > div {
     min-width: 0;
   }
+}
+
+.states-table .subdivision-kind {
+  text-transform: capitalize;
+}
+.states-table .seat-label {
+  display: block;
+  margin-top: 6px;
+  color: #5f6e54;
+  font-size: 0.8125rem;
 }

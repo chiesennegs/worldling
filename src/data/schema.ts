@@ -136,6 +136,7 @@ export interface Country {
   independent: boolean;
 }
 export interface QuizDefinition {
+  subdivisionCountryCode?: string;
   id: string;
   name: string;
   description: string;

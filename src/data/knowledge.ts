@@ -603,7 +603,6 @@ link(
   "A representative /a/ value; no historical ancestry is asserted.",
 );
 export const subdivisions: Record<string, string[]> = {
-  CAN: ["Ontario", "Quebec", "British Columbia"],
   LBN: ["Beirut", "Mount Lebanon", "North Lebanon"],
   PRT: ["Lisbon", "Porto", "Faro"],
   ...Object.fromEntries(
@@ -627,14 +626,28 @@ for (const [code, names] of Object.entries(subdivisions))
         type: "capital",
         name: state.capital,
         provenance: state.provenance,
+        description: state.capitalNote,
       });
       link(id, state.capitalId, "HAS_CAPITAL", state.provenance?.[0]);
     }
   }
 export const quizzes: QuizDefinition[] = [
+  ...subdivisionCollections
+    .filter((c) => c.countryCode !== "USA" && c.practiceQuizId)
+    .map((c) => ({
+      id: c.practiceQuizId!,
+      name: `${c.countryName}: capitals & government seats`,
+      description: `Connect ${c.countryName}'s ${c.divisionPlural} to their capitals or government seats.`,
+      icon: "globe",
+      promptType: "subdivision" as const,
+      answerType: "capital" as const,
+      relation: "HAS_CAPITAL" as const,
+      subdivisionCountryCode: c.countryCode,
+    })),
   {
     id: "state-capitals",
-    name: "States & their capitals",
+    subdivisionCountryCode: "USA",
+    name: "U.S. states & their capitals",
     description: "Connect all 50 U.S. states to their capital cities.",
     icon: "globe",
     promptType: "subdivision",
@@ -642,7 +655,8 @@ export const quizzes: QuizDefinition[] = [
   },
   {
     id: "capital-states",
-    name: "From capital to state",
+    subdivisionCountryCode: "USA",
+    name: "U.S. capital to state",
     description: "Which U.S. state calls this city its capital?",
     icon: "globe",
     promptType: "capital",

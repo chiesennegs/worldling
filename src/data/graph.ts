@@ -1,5 +1,7 @@
+import { searchText } from "../search-text";
 import mapCodes from "./map-codes.json";
 import { entities, relationships, quizzes, countries } from "./knowledge";
+import { collectionForPlace } from "./subdivision-collections";
 import type { Entity, Progress, QuizDefinition, RelationType } from "./schema";
 export const entityById = new Map(entities.map((e) => [e.id, e]));
 export function related(id: string, type?: RelationType, inverse = false) {
@@ -29,13 +31,12 @@ export function ancestors(id: string, type: RelationType): Entity[] {
   return result;
 }
 export function search(query: string) {
-  const q = query.trim().toLocaleLowerCase();
+  const q = searchText(query.trim());
   if (!q) return [];
   const direct = entities.filter(
     (e) =>
       !["name", "sound", "flag", "writing-system"].includes(e.type) &&
-      (e.name.toLocaleLowerCase().includes(q) ||
-        e.symbol?.toLocaleLowerCase() === q),
+      (searchText(e.name).includes(q) || e.symbol?.toLocaleLowerCase() === q),
   );
   const connected = direct
     .filter((e) => e.type === "script" || e.type === "language")
@@ -55,6 +56,10 @@ export function quizPairs(def: QuizDefinition) {
       (p) =>
         p.prompt?.type === def.promptType &&
         p.answer &&
+        (!def.subdivisionCountryCode ||
+          collectionForPlace(
+            p.prompt.type === "subdivision" ? p.prompt.id : p.answer.id,
+          ).collection?.countryCode === def.subdivisionCountryCode) &&
         (!def.answerType || p.answer.type === def.answerType) &&
         (!def.map ||
           (countries.find((c) => `country-${c.cca3}` === p.answer.id)

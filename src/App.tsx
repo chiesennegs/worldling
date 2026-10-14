@@ -27,7 +27,7 @@ import {
   recordAttempt,
 } from "./data/graph";
 import type { Script, Progress } from "./data/schema";
-import { go, entityPath } from "./navigation";
+import { go, entityPath, routeSegments } from "./navigation";
 import { EntityLink, PageTitle, Save } from "./components/ui";
 import {
   Home,
@@ -161,7 +161,7 @@ export default function App() {
     const notice = await audioProvider.play({ text, language, rate });
     if (notice) setToast(notice);
   }
-  const [section, id] = route.slice(1).split("/");
+  const [section, id, subdivisionCountry] = routeSegments(route);
   const active = section || "home";
   const results = search(query);
   const navActive = (key: string) =>
@@ -382,6 +382,7 @@ export default function App() {
           {active === "home" && <Home progress={progress} />}
           {(active === "world" || active === "states") && (
             <World
+              initialCountry={subdivisionCountry}
               initialTab={
                 active === "states" || id === "states"
                   ? "States"

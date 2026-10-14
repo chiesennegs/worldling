@@ -1,12 +1,6 @@
-import type { Entity, Provenance } from "./schema";
-export interface Subdivision extends Entity {
-  type: "subdivision";
-  countryCode: string;
-  kind: "state" | "province" | "territory";
-  code: string;
-  capitalId: string;
-  capital: string;
-}
+import type { Provenance } from "./schema";
+import type { Subdivision } from "./subdivision-types";
+export type { Subdivision } from "./subdivision-types";
 export const stateSource: Provenance = {
   source: "U.S. Department of State — State Capitals (archived mirror)",
   sourceURL: "https://countrystudies.us/united-states/geography-24.htm",

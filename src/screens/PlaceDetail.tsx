@@ -32,7 +32,9 @@ export default function PlaceDetail({
     <>
       <button
         className="back"
-        onClick={() => go(state ? "/world/states" : "/world")}
+        onClick={() =>
+          go(state ? `/world/states/${collection!.countryCode}` : "/world")
+        }
       >
         <ChevronLeft size={16} />
         {state
@@ -40,11 +42,12 @@ export default function PlaceDetail({
           : "World & places"}
       </button>
       <PageTitle
-        eyebrow={`PLACES / ${collection ? `${collection.countryName.toUpperCase()} / ` : ""}${entity.type === "capital" ? "CAPITAL CITY" : state ? state.kind.toUpperCase() : "STATE / PROVINCE"}`}
+        eyebrow={`PLACES / ${collection ? `${collection.countryName.toUpperCase()} / ` : ""}${entity.type === "capital" ? state?.capitalLabel?.toUpperCase() || "CAPITAL CITY" : state ? state.kind.toUpperCase() : "STATE / PROVINCE"}`}
         title={entity.name}
         description={
           entity.type === "capital"
-            ? `Capital of ${parents.map((p) => p.entity.name).join(", ")}.`
+            ? state?.capitalNote ||
+              `Capital of ${parents.map((p) => p.entity.name).join(", ")}.`
             : state
               ? `${state.name} is a ${state.kind} of ${collection!.countryName}.`
               : "A first-level subdivision."
@@ -54,9 +57,15 @@ export default function PlaceDetail({
       </PageTitle>
       {state && (
         <div className="facts">
-          <Fact label={state.kind.toUpperCase()} value={state.name} />
           <Fact
-            label={`${state.kind.toUpperCase()} CAPITAL`}
+            label={(state.localType || state.kind).toUpperCase()}
+            value={state.name}
+          />
+          <Fact
+            label={
+              state.capitalLabel?.toUpperCase() ||
+              `${state.kind.toUpperCase()} CAPITAL`
+            }
             value={state.capital}
           />
           <Fact label="SUBDIVISION CODE" value={state.code} />
@@ -81,7 +90,7 @@ export default function PlaceDetail({
         </div>
       </Section>
       {capitals.length > 0 && (
-        <Section title="Its capital">
+        <Section title={state?.capitalLabel || "Its capital"}>
           <div className="entity-grid">
             {capitals.map((c) => (
               <EntityLink key={c.entity.id} entity={c.entity} />
@@ -94,7 +103,7 @@ export default function PlaceDetail({
           className="primary"
           onClick={() => go(`/quiz/${collection!.practiceQuizId}`)}
         >
-          Practice {collection.divisionPlural} and capitals
+          Practice {collection.countryName} capitals
           <ArrowRight size={16} />
         </button>
       )}

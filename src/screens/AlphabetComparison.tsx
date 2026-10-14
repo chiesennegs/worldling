@@ -1,6 +1,11 @@
 import { Glyph } from "../components/LetterForms";
 import { useState } from "react";
-import { ArrowUpRight, ChevronLeft, ArrowUpDown } from "lucide-react";
+import {
+  ArrowUpRight,
+  ChevronLeft,
+  ArrowUpDown,
+  ChevronRight,
+} from "lucide-react";
 import {
   alphabets,
   comparisonRows,
@@ -15,6 +20,12 @@ import { historicalSources } from "../data/historical-correspondence";
 import { PageTitle, Source } from "../components/ui";
 import { go } from "../navigation";
 export default function AlphabetComparison() {
+  const [familyExpanded, setFamilyExpanded] = useState(
+    () =>
+      typeof window === "undefined" ||
+      !window.matchMedia("(max-width: 760px)").matches,
+  );
+
   const [selected, setSelected] = useState([
     "latin",
     "greek",
@@ -23,6 +34,7 @@ export default function AlphabetComparison() {
     "hebrew",
   ]);
   const [mode, setMode] = useState<ComparisonMode>(defaultComparisonMode);
+  const showFamilyColumn = mode !== "historical" || familyExpanded;
   const [sort, setSort] = useState<ComparisonSort>();
   const activeSort = selected.includes(sort?.alphabetId || "")
     ? sort
@@ -103,6 +115,23 @@ export default function AlphabetComparison() {
             ))}
           </select>
         </label>
+        {mode === "historical" && columns.length > 0 && (
+          <button
+            className="secondary family-column-toggle"
+            aria-expanded={familyExpanded}
+            aria-controls="alphabet-comparison"
+            onClick={() => setFamilyExpanded((expanded) => !expanded)}
+          >
+            {familyExpanded ? (
+              <ChevronLeft size={16} />
+            ) : (
+              <ChevronRight size={16} />
+            )}
+            {familyExpanded
+              ? "Collapse historical family"
+              : "Show historical family"}
+          </button>
+        )}
         <span className="muted">{rows.length} correspondence rows</span>
       </div>
       <div className="comparison-note" role="note">
@@ -132,6 +161,19 @@ export default function AlphabetComparison() {
           label.
         </p>
       </div>
+      {mode === "historical" && columns.length > 0 && !familyExpanded && (
+        <details className="historical-family-notes">
+          <summary>Historical family notes ({rows.length})</summary>
+          <dl>
+            {rows.map((row) => (
+              <div key={row.key}>
+                <dt>{row.label}</dt>
+                <dd>{row.note}</dd>
+              </div>
+            ))}
+          </dl>
+        </details>
+      )}
       {columns.length ? (
         <div
           className="table-scroll comparison-scroll"
@@ -139,7 +181,7 @@ export default function AlphabetComparison() {
           role="region"
           aria-label="Scrollable alphabet comparison"
         >
-          <table className="comparison-table">
+          <table id="alphabet-comparison" className="comparison-table">
             <caption>
               {mode === "historical"
                 ? "Historical letter families"
@@ -151,13 +193,15 @@ export default function AlphabetComparison() {
             </caption>
             <thead>
               <tr>
-                <th scope="col">
-                  {mode === "historical"
-                    ? "Historical family"
-                    : mode === "sound"
-                      ? "Sound family"
-                      : "Romanization"}
-                </th>
+                {showFamilyColumn && (
+                  <th className="family-column" scope="col">
+                    {mode === "historical"
+                      ? "Historical family"
+                      : mode === "sound"
+                        ? "Sound family"
+                        : "Romanization"}
+                  </th>
+                )}
                 {columns.map((a) => (
                   <th
                     key={a.id}
@@ -201,13 +245,20 @@ export default function AlphabetComparison() {
             </thead>
             <tbody>
               {rows.map((row) => (
-                <tr key={row.key}>
-                  <th scope="row">
-                    {row.label}
-                    {row.note && (
-                      <small className="historical-row-note">{row.note}</small>
-                    )}
-                  </th>
+                <tr
+                  key={row.key}
+                  aria-label={mode === "historical" ? row.label : undefined}
+                >
+                  {showFamilyColumn && (
+                    <th className="family-column" scope="row">
+                      {row.label}
+                      {row.note && (
+                        <small className="historical-row-note">
+                          {row.note}
+                        </small>
+                      )}
+                    </th>
+                  )}
                   {row.cells.map((cell) => (
                     <td key={cell.alphabet.id}>
                       {cell.letters.length ? (

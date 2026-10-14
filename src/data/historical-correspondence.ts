@@ -2,6 +2,14 @@ import type { Provenance } from "./schema";
 
 export const historicalSources: Provenance[] = [
   {
+    source: "Unicode — Hebrew and Arabic letter forms",
+    sourceURL:
+      "https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-9/",
+    confidence: "high",
+    notes:
+      "Dot patterns distinguish several Arabic letters sharing a basic skeleton. Shared shapes alone do not establish historical ancestry.",
+  },
+  {
     source: "History of the alphabet — comparative script chart",
     sourceURL:
       "https://en.wikipedia.org/wiki/History_of_the_alphabet#Letter_names_and_order",
@@ -20,7 +28,7 @@ export const historicalSources: Provenance[] = [
 export interface HistoricalFamily {
   key: string;
   label: string;
-  note?: string;
+  note: string;
   members: Record<string, string[]>;
 }
 // Phoenician-order families, followed by Greek additions. These are curated
@@ -34,7 +42,7 @@ function family(
   cyrillic: string,
   arabic: string,
   hebrew: string,
-  note?: string,
+  note: string,
 ): HistoricalFamily {
   return {
     key,
@@ -83,7 +91,16 @@ export const historicalFamilies: HistoricalFamily[] = [
     "gimel",
     "Latin G was developed by modifying C.",
   ),
-  family("dalet", "Dalet family", "d", "delta", "de", "dal,dhal", "dalet"),
+  family(
+    "dalet",
+    "Dalet family",
+    "d",
+    "delta",
+    "de",
+    "dal,dhal",
+    "dalet",
+    "Delta led to Latin D and Cyrillic De. Arabic Dal and Dhal share a basic shape, distinguished by a dot.",
+  ),
   family(
     "he",
     "He family",
@@ -104,7 +121,16 @@ export const historicalFamilies: HistoricalFamily[] = [
     "vav",
     "Includes digamma and upsilon branches; Cyrillic U developed from the Greek ou digraph.",
   ),
-  family("zayin", "Zayin family", "z", "zeta", "ze", "zay", "zayin"),
+  family(
+    "zayin",
+    "Zayin family",
+    "z",
+    "zeta",
+    "ze",
+    "zay",
+    "zayin",
+    "Zeta, Latin Z and Cyrillic Ze belong here. Their shapes have changed more than the familiar z sound suggests.",
+  ),
   family(
     "het",
     "Het family",
@@ -123,6 +149,7 @@ export const historicalFamilies: HistoricalFamily[] = [
     "",
     "ta-emphatic,za-emphatic",
     "tet",
+    "The Greek branch is Theta. Its modern /θ/ sound differs from Hebrew Tet; basic Latin has no single inherited letter displayed here.",
   ),
   family(
     "yod",
@@ -134,11 +161,56 @@ export const historicalFamilies: HistoricalFamily[] = [
     "yod",
     "Latin J developed as a variant of I.",
   ),
-  family("kaf", "Kaf family", "k", "kappa", "ka", "kaf", "kaf"),
-  family("lamed", "Lamed family", "l", "lambda", "el", "lam", "lamed"),
-  family("mem", "Mem family", "m", "mu", "em", "mim", "mem"),
-  family("nun", "Nun family", "n", "nu", "en", "nun", "nun"),
-  family("samekh", "Samekh family", "", "xi", "", "", "samekh"),
+  family(
+    "kaf",
+    "Kaf family",
+    "k",
+    "kappa",
+    "ka",
+    "kaf",
+    "kaf",
+    "Kappa connects Latin K and Cyrillic Ka. Arabic Kaf and Hebrew Kaf follow the Semitic branch, despite different modern shapes.",
+  ),
+  family(
+    "lamed",
+    "Lamed family",
+    "l",
+    "lambda",
+    "el",
+    "lam",
+    "lamed",
+    "Greek Lambda, Latin L and Cyrillic El share this lineage. Their modern forms can look quite different while retaining l sounds.",
+  ),
+  family(
+    "mem",
+    "Mem family",
+    "m",
+    "mu",
+    "em",
+    "mim",
+    "mem",
+    "Mu, Latin M and Cyrillic Em continue the Greek branch. Arabic Mim and Hebrew Mem follow the Semitic branch.",
+  ),
+  family(
+    "nun",
+    "Nun family",
+    "n",
+    "nu",
+    "en",
+    "nun",
+    "nun",
+    "Nu, Latin N and Cyrillic En belong together. Cyrillic Н looks like Latin H, but represents an n sound.",
+  ),
+  family(
+    "samekh",
+    "Samekh family",
+    "",
+    "xi",
+    "",
+    "",
+    "samekh",
+    "Greek Xi belongs here and represents /ks/. Latin X is displayed in the western Greek Chi family, despite the similar sound.",
+  ),
   family(
     "ayin",
     "Ayin family",
@@ -149,17 +221,71 @@ export const historicalFamilies: HistoricalFamily[] = [
     "ayin",
     "Greek omega developed as a modification of omicron.",
   ),
-  family("pe", "Pe family", "p", "pi", "pe", "fa", "pe"),
-  family("tsade", "Tsade family", "", "", "", "sad,dad", "tsadi"),
-  family("qof", "Qof family", "q", "", "", "qaf", "qof"),
-  family("resh", "Resh family", "r", "rho", "er", "ra", "resh"),
-  family("shin", "Shin family", "s", "sigma", "es", "sin,shin", "shin"),
-  family("taw", "Taw family", "t", "tau", "te", "ta,tha", "tav"),
+  family(
+    "pe",
+    "Pe family",
+    "p",
+    "pi",
+    "pe",
+    "fa",
+    "pe",
+    "Greek Pi led to Latin P and Cyrillic Pe. Arabic Fa belongs to the Semitic branch, showing how a family can change sound.",
+  ),
+  family(
+    "tsade",
+    "Tsade family",
+    "",
+    "",
+    "",
+    "sad,dad",
+    "tsadi",
+    "Hebrew Tsadi and Arabic Sad and Dad are grouped here. The modern Greek and basic Latin alphabets shown have no assigned member.",
+  ),
+  family(
+    "qof",
+    "Qof family",
+    "q",
+    "",
+    "",
+    "qaf",
+    "qof",
+    "Latin Q came through the old Greek Qoppa branch. Qoppa is absent from the modern Greek alphabet displayed here.",
+  ),
+  family(
+    "resh",
+    "Resh family",
+    "r",
+    "rho",
+    "er",
+    "ra",
+    "resh",
+    "Greek Rho led to Latin R and Cyrillic Er. Cyrillic Р resembles Latin P, but its family and sound connect it to R.",
+  ),
+  family(
+    "shin",
+    "Shin family",
+    "s",
+    "sigma",
+    "es",
+    "sin,shin",
+    "shin",
+    "Greek Sigma, Latin S and Cyrillic Es share this family. Arabic Sin and Shin share a skeleton, with dots distinguishing them.",
+  ),
+  family(
+    "taw",
+    "Taw family",
+    "t",
+    "tau",
+    "te",
+    "ta,tha",
+    "tav",
+    "Greek Tau connects Latin T and Cyrillic Te. Arabic Ta and Tha have the same basic skeleton with different dot patterns.",
+  ),
   {
     key: "greek-phi",
     label: "Greek Phi family",
     members: { greek: ["phi"], cyrillic: ["ef"] },
-    note: "Greek addition; no Phoenician correspondence assigned here.",
+    note: "Phi was a Greek addition. Cyrillic Ef follows it, while Latin F belongs to the Waw family despite its similar modern sound.",
   },
   {
     key: "greek-chi",
@@ -171,6 +297,6 @@ export const historicalFamilies: HistoricalFamily[] = [
     key: "greek-psi",
     label: "Greek Psi",
     members: { greek: ["psi"] },
-    note: "Greek addition; no cross-script correspondence assigned here.",
+    note: "Psi is a Greek addition representing /ps/. Basic Latin usually writes that sound with two letters, so no single-letter match is supplied.",
   },
 ];

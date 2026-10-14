@@ -788,3 +788,46 @@ test("hash routes decode international place names and keep country selection", 
   ]);
   assert.deepEqual(routeSegments("/place/bad%escape"), ["place", "bad%escape"]);
 });
+
+test("every historical family has commentary and the mobile comparison releases its family column", async () => {
+  const { alphabets, comparisonRows } = await import("./alphabets");
+  const { historicalFamilies } = await import("./historical-correspondence");
+  const { createElement } = await import("react");
+  const { renderToStaticMarkup } = await import("react-dom/server");
+  const { default: AlphabetComparison } =
+    await import("../screens/AlphabetComparison");
+  assert.equal(historicalFamilies.length, 25);
+  assert.ok(
+    historicalFamilies.every((family) => family.note.trim().length > 20),
+  );
+  assert.ok(
+    comparisonRows(
+      alphabets.map((a) => a.id),
+      "historical",
+    ).every((row) => row.note?.trim()),
+  );
+  const previous = Object.getOwnPropertyDescriptor(globalThis, "window");
+  try {
+    for (const mobile of [true, false]) {
+      Object.defineProperty(globalThis, "window", {
+        configurable: true,
+        value: { matchMedia: () => ({ matches: mobile }) },
+      });
+      const html = renderToStaticMarkup(createElement(AlphabetComparison));
+      const table = html.slice(
+        html.indexOf("<table"),
+        html.indexOf("</table>"),
+      );
+      assert.equal(table.includes('class="family-column"'), !mobile);
+      assert.match(html, new RegExp(`aria-expanded="${!mobile}"`));
+      assert.equal(html.includes("Historical family notes ("), mobile);
+      assert.match(table, /aria-label="Aleph family"/);
+      assert.match(table, /Latin/);
+      assert.match(table, /Hebrew/);
+      assert.match(html, /Latin Q came through the old Greek Qoppa branch/);
+    }
+  } finally {
+    if (previous) Object.defineProperty(globalThis, "window", previous);
+    else Reflect.deleteProperty(globalThis, "window");
+  }
+});

@@ -1,0 +1,2439 @@
+{
+  "DZA": {
+    "population": "47,735,685 (2025 est.)",
+    "populationNote": "",
+    "establishment": "5 July 1962 (from France)",
+    "government": "presidential republic",
+    "religion": "Muslim (official; predominantly Sunni) 99%, other (includes Christian, Jewish, Ahmadi Muslim, Shia Muslim, Ibadi Muslim) <1% (2012 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ag.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Algeria"
+  },
+  "AGO": {
+    "population": "38,984,796 (2025 est.)",
+    "populationNote": "",
+    "establishment": "11 November 1975 (from Portugal)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 41.1%, Protestant 38.1%, other 8.6%, none 12.3% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ao.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Angola"
+  },
+  "BWA": {
+    "population": "2,521,534 (2025 est.)",
+    "populationNote": "",
+    "establishment": "30 September 1966 (from the UK)",
+    "government": "parliamentary republic",
+    "religion": "Christian 79.1%, Badimo 4.1%, other 1.4% (includes Baha'i, Hindu, Muslim, Rastafarian), none 15.2%, unspecified 0.3% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/bc.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Botswana"
+  },
+  "BEN": {
+    "population": "15,186,090 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 August 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Muslim 27.7%, Roman Catholic 25.5%, Protestant 13.5% (Celestial 6.7%, Methodist 3.4%, other Protestant 3.4%), Vodoun 11.6%, other Christian 9.5%, other traditional religions 2.6%, other 2.6%, none 5.8% (2013 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/bn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Benin"
+  },
+  "BDI": {
+    "population": "13,590,102 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1 July 1962 (from UN trusteeship under Belgian administration)",
+    "government": "presidential republic",
+    "religion": "Christian 93.9% (Roman Catholic 58.6%, Protestant 35.3% [includes Adventist 2.7% and other Protestant religions 32.6%]), Muslim 3.4%, other 1.3%, none 1.3% (2016-17 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/by.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Burundi"
+  },
+  "TCD": {
+    "population": "19,674,004 (2025 est.)",
+    "populationNote": "",
+    "establishment": "11 August 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Muslim 52.1%, Protestant 23.9%, Roman Catholic 20%, animist 0.3%, other Christian 0.2%, none 2.8%, unspecified 0.7% (2014-15 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/cd.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Chad"
+  },
+  "COG": {
+    "population": "6,097,665 (2024 est.)",
+    "populationNote": "",
+    "establishment": "15 August 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 33.1%, Awakening Churches/Christian Revival 22.3%, Protestant 19.9%, Salutiste 2.2%, Muslim 1.6%, Kimbanguist 1.5%, other 8.1%, none 11.3% (2007 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/cf.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Republic of the Congo"
+  },
+  "COD": {
+    "population": "119,038,825 (2025 est.)",
+    "populationNote": "",
+    "establishment": "30 June 1960 (from Belgium)",
+    "government": "semi-presidential republic",
+    "religion": "Christian 93/1% (Roman Catholic 29.9%, Protestant 26.7%, other Christian 36.5%), Kimbanguist 2.8%, Muslim 1.3%, other (includes syncretic sects and indigenous beliefs) 1.2%, none 1.3%, unspecified 0.2% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/cg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Democratic Republic of the Congo"
+  },
+  "CMR": {
+    "population": "31,518,954 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1960 (from French-administered UN trusteeship)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 33.1%, Muslim 30.6%, Protestant 27.1% other Christian 6.1%, animist 1.3%, other 0.7%, none 1.2% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/cm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cameroon"
+  },
+  "COM": {
+    "population": "911,707 (2025 est.)",
+    "populationNote": "",
+    "establishment": "6 July 1975 (from France)",
+    "government": "federal presidential republic",
+    "religion": "Muslim 98.1% (overwhelmingly Sunni Muslim, small Shia Muslim and Ahmadiyya Muslim populations), ethnic religionist 1.1%, Christian 0.6%, other 0.3% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/cn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Comoros"
+  },
+  "CAF": {
+    "population": "5,750,570 (2025 est.)",
+    "populationNote": "",
+    "establishment": "13 August 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 34.6%, Protestant 15.7%, other Christian 22.9%, Muslim 13.8%, ethnic religionist 12%, Baha'i 0.2%, agnostic/atheist 0.7% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ct.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Central African Republic"
+  },
+  "CPV": {
+    "population": "611,014 (2024 est.)",
+    "populationNote": "",
+    "establishment": "5 July 1975 (from Portugal)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic 72.5%, Protestant 4% (includes Adventist 1.9%, Nazarene 1.8%, Assembly of God 0.2%, God is Love 0.1%), Christian Rationalism 1.7%, Muslim 1.3%, Jehovah's Witness 1.2%, Church of Jesus Christ 1%, other Christian 1.3%, other 1.2%, none 15.6%, no response 0.4% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/cv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cape Verde"
+  },
+  "DJI": {
+    "population": "1,013,703 (2025 est.)",
+    "populationNote": "",
+    "establishment": "27 June 1977 (from France)",
+    "government": "presidential republic",
+    "religion": "Sunni Muslim 94% (nearly all Djiboutians), other 6% (mainly foreign-born residents - Shia Muslim, Christian, Hindu, Jewish, Baha'i, and atheist)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/dj.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Djibouti"
+  },
+  "EGY": {
+    "population": "112,870,457 (2025 est.)",
+    "populationNote": "",
+    "establishment": "28 February 1922 (from UK protectorate status; the military-led revolution that began on 23 July 1952 led to a republic being declared on 18 June 1953 and all British troops withdrawn on 18 June 1956)",
+    "government": "presidential republic",
+    "religion": "Muslim (predominantly Sunni) 90%, Christian (majority Coptic Orthodox, other Christians include Armenian Apostolic, Catholic, Maronite, Orthodox, and Anglican) 10%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/eg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Egypt"
+  },
+  "GNQ": {
+    "population": "1,795,834 (2024 est.)",
+    "populationNote": "",
+    "establishment": "12 October 1968 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 88%, Protestant 5%, Muslim 2%, other 5% (animist, Baha'i, Jewish) (2015 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ek.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Equatorial Guinea"
+  },
+  "ERI": {
+    "population": "6,416,435 (2025 est.)",
+    "populationNote": "",
+    "establishment": "24 May 1993 (from Ethiopia)",
+    "government": "authoritarian",
+    "religion": "Eritrean Orthodox, Roman Catholic, Evangelical Lutheran, Sunni Muslim",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/er.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Eritrea"
+  },
+  "ETH": {
+    "population": "121,372,632 (2025 est.)",
+    "populationNote": "",
+    "establishment": "oldest independent country in Africa and one of the oldest in the world, at least 2,000 years; may be traced to the Aksumite Kingdom, which appeared in the first century B.C.",
+    "government": "federal parliamentary republic",
+    "religion": "Ethiopian Orthodox 43.8%, Muslim 31.3%, Protestant 22.8%, Catholic 0.7%, traditional 0.6%, other 0.8% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/et.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Ethiopia"
+  },
+  "GMB": {
+    "population": "2,523,327 (2024 est.)",
+    "populationNote": "",
+    "establishment": "18 February 1965 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Muslim 96.4%, Christian 3.5%, other or none 0.1% (2019-20 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ga.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Gambia"
+  },
+  "GAB": {
+    "population": "2,513,738 (2025 est.)",
+    "populationNote": "",
+    "establishment": "17 August 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Protestant 46.4% (Revival Church 37%, other Protestant 9.4%), Roman Catholic 29.8%, other Christian 4%, Muslim 10.8%, traditional/animist 1.1%, other 0.9%, none 7% (2019-21 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/gb.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Gabon"
+  },
+  "GHA": {
+    "population": "35,336,133 (2025 est.)",
+    "populationNote": "",
+    "establishment": "6 March 1957 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Christian 71.3% (Pentecostal/Charismatic 31.6%, Protestant 17.4%, Catholic 10%, other 12.3%), Muslim 19.9%, traditionalist 3.2%, other 4.5%, none 1.1% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/gh.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Ghana"
+  },
+  "GIN": {
+    "population": "14,374,590 (2025 est.)",
+    "populationNote": "",
+    "establishment": "2 October 1958 (from France)",
+    "government": "presidential republic",
+    "religion": "Muslim 85.2%, Christian 13.4%, animist 0.2%, none 1.2% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/gv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Guinea"
+  },
+  "CIV": {
+    "population": "31,855,971 (2025 est.)",
+    "populationNote": "",
+    "establishment": "7 August 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Muslim 42.9%, Catholic 17.2%, Evangelical 11.8%, Methodist 1.7%, other Christian 3.2%, animist 3.6%, other religion 0.5%, none 19.1% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/iv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Ivory Coast"
+  },
+  "KEN": {
+    "population": "55,751,717 (2025 est.)",
+    "populationNote": "",
+    "establishment": "12 December 1963 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Christian 85.5% (Protestant 33.4%, Catholic 20.6%, Evangelical 20.4%, African Instituted Churches 7%, other Christian 4.1%), Muslim 10.9%, other 1.8%, none 1.6%, don't know/no answer 0.2% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ke.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Kenya"
+  },
+  "LBR": {
+    "population": "5,563,541 (2025 est.)",
+    "populationNote": "",
+    "establishment": "26 July 1847",
+    "government": "presidential republic",
+    "religion": "Christian 84.9%, Muslim 12%, Traditional 0.5%, other 0.1%, none 2.6% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/li.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Liberia"
+  },
+  "LSO": {
+    "population": "2,222,962 (2025 est.)",
+    "populationNote": "",
+    "establishment": "4 October 1966 (from the UK)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Protestant 47.8% (Pentecostal 23.1%, Lesotho Evangelical 17.3%, Anglican 7.4%), Roman Catholic 39.3%, other Christian 9.1%, non-Christian 1.4%, none 2.3% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/lt.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Lesotho"
+  },
+  "LBY": {
+    "population": "7,361,263 (2024 est.)",
+    "populationNote": "note: immigrants make up just over 12% of the total population, according to UN data (2019)",
+    "establishment": "24 December 1951 (from UN trusteeship)",
+    "government": "in transition",
+    "religion": "Muslim (official; virtually all Sunni) 96.6%, Christian 2.7%, Buddhist <1%, Hindu <1%, Jewish <1%, folk religion <1%, other <1%, unaffiliated <1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ly.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Libya"
+  },
+  "MDG": {
+    "population": "31,345,040 (2025 est.)",
+    "populationNote": "",
+    "establishment": "26 June 1960 (from France)",
+    "government": "semi-presidential republic",
+    "religion": "Church of Jesus Christ in Madagascar/Malagasy Lutheran Church/Anglican Church 34%, Roman Catholic 32.3%, other Christian 8.1%, traditional/Animist 1.7%, Muslim 1.4%, other 0.6%, none 21.9% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ma.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Madagascar"
+  },
+  "MWI": {
+    "population": "21,763,309 (2024 est.)",
+    "populationNote": "",
+    "establishment": "6 July 1964 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Protestant 33.5% (includes Church of Central Africa Presbyterian 14.2%, Seventh Day Adventist/Baptist 9.4%, Pentecostal 7.6%, Anglican 2.3%), Roman Catholic 17.2%, other Christian 26.6%, Muslim 13.8%, traditionalist 1.1%, other 5.6%, none 2.1% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/mi.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Malawi"
+  },
+  "MLI": {
+    "population": "22,634,423 (2025 est.)",
+    "populationNote": "",
+    "establishment": "22 September 1960 (from France)",
+    "government": "semi-presidential republic",
+    "religion": "Muslim 93.9%, Christian 2.8%, animist 0.7%, none 2.5% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ml.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Mali"
+  },
+  "MAR": {
+    "population": "37,387,585 (2024 est.)",
+    "populationNote": "",
+    "establishment": "2 March 1956 (from France)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Muslim 99% (official; virtually all Sunni, <0.1% Shia), other 1% (includes Christian, Jewish, and Baha'i); note - Jewish about 3,000-3,500 (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/mo.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Morocco"
+  },
+  "MUS": {
+    "population": "1,311,375 (2025 est.)",
+    "populationNote": "",
+    "establishment": "12 March 1968 (from the UK)",
+    "government": "parliamentary republic",
+    "religion": "Hindu 48.5%, Roman Catholic 26.3%, Muslim 17.3%, other Christian 6.4%, other 0.6%, none 0.7%, unspecified 0.1% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/mp.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Mauritius"
+  },
+  "MRT": {
+    "population": "5,202,109 (2025 est.)",
+    "populationNote": "",
+    "establishment": "28 November 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Muslim (official) 100%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/mr.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Mauritania"
+  },
+  "MOZ": {
+    "population": "34,206,144 (2025 est.)",
+    "populationNote": "",
+    "establishment": "25 June 1975 (from Portugal)",
+    "government": "presidential republic",
+    "religion": "Catholic 27.3%, Islam 19.1%, Pentecostal 16.7%, Saio/Zione 16.3%, no religion 13.5%, other 4.3%, Anglican 1.7%, unknown 1.2% (2017 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/mz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Mozambique"
+  },
+  "NER": {
+    "population": "27,322,555 (2025 est.)",
+    "populationNote": "",
+    "establishment": "3 August 1960 (from France)",
+    "government": "formerly, semi-presidential republic",
+    "religion": "Muslim 95.5%, ethnic religionist 4.1%, Christian 0.3%, agnostics and other 0.1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ng.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Niger"
+  },
+  "NGA": {
+    "population": "244,344,065 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 October 1960 (from the UK)",
+    "government": "federal presidential republic",
+    "religion": "Muslim 53.5%, Roman Catholic 10.6%, other Christian 35.3%, other 0.6% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ni.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Nigeria"
+  },
+  "SSD": {
+    "population": "12,703,714 (2024 est.)",
+    "populationNote": "",
+    "establishment": "9 July 2011 (from Sudan)",
+    "government": "presidential republic",
+    "religion": "Christian 60.5%, folk religion 32.9%, Muslim 6.2%, other <1%, unaffiliated <1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/od.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "South Sudan"
+  },
+  "GNB": {
+    "population": "2,132,325 (2024 est.)",
+    "populationNote": "",
+    "establishment": "24 September 1973 (declared); 10 September 1974 (from Portugal)",
+    "government": "semi-presidential republic",
+    "religion": "Muslim 46.1%, folk religions 30.6%, Christian 18.9%, other or unaffiliated 4.4% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/pu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Guinea-Bissau"
+  },
+  "RWA": {
+    "population": "13,623,302 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1 July 1962 (from Belgium-administered UN trusteeship)",
+    "government": "presidential republic",
+    "religion": "Catholic 39.9%, Pentecostal 21.3%, Protestant 14.6%, Adventist 12.2%, other Christians 4.2%, no religion 3.0%, Muslim 2.0%, other religions 2.0%; less than 1%: Jehovah Witness, not specified, Animist (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/rw.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Rwanda"
+  },
+  "SYC": {
+    "population": "98,187 (2024 est.)",
+    "populationNote": "",
+    "establishment": "29 June 1976 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 76.2%, Protestant 10.5% (Anglican 6.1%, Pentecostal Assembly 1.5%, Seventh Day Adventist 1.2%, other Protestant 1.7%), other Christian 2.4%, Hindu 2.4%, Muslim 1.6%, other non-Christian 1.1%, unspecified 4.8%, none 0.9% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/se.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Seychelles"
+  },
+  "ZAF": {
+    "population": "61,089,926 (2025 est.)",
+    "populationNote": "",
+    "establishment": "31 May 1910 (Union of South Africa formed from four British colonies: Cape Colony, Natal, Transvaal, and Orange Free State); 22 August 1934 (Status of the Union Act); 31 May 1961 (republic declared); 27 April 1994 (majority rule)",
+    "government": "parliamentary republic",
+    "religion": "Christian 86%, ancestral, tribal, animist, or other traditional African religions 5.4%, Muslim 1.9%, other 1.5%, nothing in particular 5.2% (2015 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/sf.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "South Africa"
+  },
+  "SEN": {
+    "population": "18,847,519 (2024 est.)",
+    "populationNote": "",
+    "establishment": "4 April 1960 (from France); 20 August 1960 (full independence after federation with Mali is dissolved)",
+    "government": "presidential republic",
+    "religion": "Muslim 97.2% (most adhere to one of the four main Sufi brotherhoods), Christian 2.7% (mostly Roman Catholic) (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/sg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Senegal"
+  },
+  "SHN": {
+    "population": "7,943 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "parliamentary democracy",
+    "religion": "Anglican 63.2%, unspecified 11.4%, no religion 9%, Jehovah's Witness 3.8%, Baptist 2.3%, Salvation Army 2%, Roman Catholic 2.2%, Seventh Day Adventist 1.9%, New Apostolic 1.6%, other Christian 1.4%, other 1.1% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/sh.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Saint Helena, Ascension and Tristan da Cunha"
+  },
+  "SLE": {
+    "population": "9,331,203 (2025 est.)",
+    "populationNote": "",
+    "establishment": "27 April 1961 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Muslim 77.1%, Christian 22.9% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/sl.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Sierra Leone"
+  },
+  "SOM": {
+    "population": "20,324,160 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 July 1960 (from a merger of British Somaliland, which became independent from the UK on 26 June 1960, and Italian Somaliland, which became independent from the Italian-administered UN trusteeship on 1 July 1960 to form the Somali Republic)",
+    "government": "federal parliamentary republic",
+    "religion": "Muslim 99.9% (Sunni Muslim 98.1%, Shia Muslim 1.2%, Islamic schismatic 0.6%), ethnic religionist 0.1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/so.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Somalia"
+  },
+  "SDN": {
+    "population": "50,467,278 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1956 (from Egypt and the UK)",
+    "government": "presidential republic",
+    "religion": "Sunni Muslim, small Christian minority",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/su.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Sudan"
+  },
+  "TGO": {
+    "population": "9,143,439 (2025 est.)",
+    "populationNote": "",
+    "establishment": "27 April 1960 (from French-administered UN trusteeship)",
+    "government": "presidential republic",
+    "religion": "Christian 42.3%, folk religion 36.9%, Muslim 14%, Hindu <1%, Buddhist <1%, Jewish <1%, other <1%, none 6.2% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/to.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Togo"
+  },
+  "STP": {
+    "population": "223,561 (2024 est.)",
+    "populationNote": "",
+    "establishment": "12 July 1975 (from Portugal)",
+    "government": "semi-presidential republic",
+    "religion": "Catholic 55.7%, Adventist 4.1%, Assembly of God 3.4%, New Apostolic 2.9%, Mana 2.3%, Universal Kingdom of God 2%, Jehovah's Witness 1.2%, other 6.2%, none 21.2%, unspecified 1% (2012 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/tp.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "São Tomé and Príncipe"
+  },
+  "TUN": {
+    "population": "11,962,995 (2025 est.)",
+    "populationNote": "",
+    "establishment": "20 March 1956 (from France)",
+    "government": "parliamentary republic",
+    "religion": "Muslim (official; Sunni) 99%, other (includes Christian, Jewish, Shia Muslim, and Baha'i) <1%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ts.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Tunisia"
+  },
+  "TZA": {
+    "population": "69,145,464 (2025 est.)",
+    "populationNote": "",
+    "establishment": "26 April 1964 (Tanganyika united with Zanzibar to form the United Republic of Tanganyika and Zanzibar); 29 October 1964 (renamed United Republic of Tanzania); notable earlier dates: 9 December 1961 (Tanganyika became independent from UK-administered UN trusteeship); 10 December 1963 (Zanzibar became independent from UK)",
+    "government": "presidential republic",
+    "religion": "Christian 63.1%, Muslim 34.1%, folk religion 1.1%, Buddhist <1%, Hindu <1%, Jewish <1%, other <1%, unspecified 1.6% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/tz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Tanzania"
+  },
+  "UGA": {
+    "population": "50,863,850 (2025 est.)",
+    "populationNote": "",
+    "establishment": "9 October 1962 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Protestant 45.1% (Anglican 32.0%, Pentecostal/Born Again/Evangelical 11.1%, Seventh Day Adventist 1.7%, Baptist .3%), Roman Catholic 39.3%, Muslim 13.7%, other 1.6%, none 0.2% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/ug.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Uganda"
+  },
+  "BFA": {
+    "population": "23,490,300 (2025 est.)",
+    "populationNote": "",
+    "establishment": "5 August 1960 (from France)",
+    "government": "presidential republic",
+    "religion": "Muslim 63.8%, Roman Catholic 20.1%, Animiste 9%, Protestant 6.2%, other 0.2%, none 0.7% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/uv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Burkina Faso"
+  },
+  "NAM": {
+    "population": "2,852,777 (2025 est.)",
+    "populationNote": "",
+    "establishment": "21 March 1990 (from South African mandate)",
+    "government": "presidential republic",
+    "religion": "Christian 97.5%, other 0.6% (includes Muslim, Baha'i, Jewish, Buddhist), unaffiliated 1.9% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/wa.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Namibia"
+  },
+  "ESH": {
+    "population": "652,271 (July 2020 est.)",
+    "populationNote": "note: estimate is based on projections by age, sex, fertility, mortality, and migration; fertility and mortality are based on data from neighboring countries",
+    "establishment": "",
+    "government": "legal status of territory and issue of sovereignty unresolved; territory contested by Morocco and Polisario Front (Popular Front for the Liberation of the Saguia el Hamra and Rio de Oro), which in February 1976 formally proclaimed a government-in-exile of the Sahrawi Arab Democratic Republic (SADR), near Tindouf, Algeria, led by President Mohamed ABDELAZIZ until his death in May 2016; current President Brahim GHALI elected in July 2016; territory partitioned between Morocco and Mauritania in April 1976 when Spain withdrew, with Morocco acquiring northern two-thirds; Mauritania, under pressure from Polisario guerrillas, abandoned all claims to its portion in August 1979; Morocco moved to occupy that sector shortly thereafter and has since asserted administrative control; the Polisario's government-in-exile was seated as an Organization of African Unity (OAU) member in 1984; Morocco between 1980 and 1987 built a fortified sand berm delineating the roughly 75% of Western Sahara west of the barrier that currently is controlled by Morocco; guerrilla activities continued sporadically until a UN-monitored cease-fire was implemented on 6 September 1991 (Security Council Resolution 690) by the United Nations Mission for the Referendum in Western Sahara (MINURSO)",
+    "religion": "Muslim",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/wi.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Western Sahara"
+  },
+  "SWZ": {
+    "population": "1,137,268 (2025 est.)",
+    "populationNote": "",
+    "establishment": "6 September 1968 (from the UK)",
+    "government": "absolute monarchy",
+    "religion": "Christian 90% (Zionist - a blend of Christianity and traditional African religions - 40%, Roman Catholic 20%, other Christian 30% - includes Anglican, Methodist, Church of Jesus Christ, Jehovah's Witness), Muslim 2%, other 8% (includes Baha'i, Buddhist, Hindu, indigenous, Jewish) (2015 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/wz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Eswatini"
+  },
+  "ZMB": {
+    "population": "22,021,971 (2025 est.)",
+    "populationNote": "",
+    "establishment": "24 October 1964 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Protestant 75.3%, Roman Catholic 20.2%, other 2.7% (includes Muslim, Buddhist, Hindu, and Baha'i), none 1.8% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/za.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Zambia"
+  },
+  "ZWE": {
+    "population": "17,472,752 (2025 est.)",
+    "populationNote": "",
+    "establishment": "18 April 1980 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Apostolic Sect 40.3%, Pentecostal 17%, Protestant 13.8%, other Christian 7.8%, Roman Catholic 6.4%, African traditionalist 5%, other 1.5% (includes Muslim, Jewish, Hindu), none 8.3% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/africa/zi.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Zimbabwe"
+  },
+  "ATA": {
+    "population": "no permanent inhabitants, but staff is present at year-round and summer-only research stations note: 56 countries have signed the 1959 Antarctic Treaty; 30 of those operate a number of seasonal-only (summer) and year-round research stations on the continent and its nearby islands; the population varies from approximately 5,000 in summer to 1,100 in winter, with about 1,000 support personnel on ships nearby as of 2024, peak summer (December-February) maximum capacity in scientific stations - 4,713 total; Argentina 425, Australia 238, Belarus 15, Belgium 55, Brazil 64, Bulgaria 25, Chile 375, China 164, Czechia 32, Ecuador 35, Finland 16, France 136, France and Italy jointly 70, Germany 60, India 72, Italy 150, Japan 130, South Korea 158, New Zealand 85, Norway 60, Peru 30, Poland 41, Russia 211, South Africa 80, Spain 79, Sweden 16, Ukraine 15, United Kingdom 315, United States 1,495 , Uruguay 66 (2024) winter (June-August) maximum capacity in scientific stations - 1,056 total; Argentina 221, Australia 52, Brazil 15, Chile 114, China 32, France 24, France and Italy jointly 13, Germany 9, India 48, Japan 40, Netherlands 10, South Korea 25, NZ 11, Norway 7, Poland 16, Russia 125, South Africa 15, Ukraine 12, UK 44, US 215, Uruguay 8 (2024)",
+    "populationNote": "",
+    "establishment": "",
+    "government": "the Antarctic Treaty and its follow-on agreements govern the use of Antarctica, ensuring it is used only for peaceful purposes and scientific research; signed in 1959 and in force since 1961, the original Treaty bans military activity, weapons testing, and nuclear waste disposal, while allowing military personnel to assist with research or other peaceful efforts; it promotes international cooperation in science, guarantees the free exchange of research, and freezes territorial claims; the Treaty covers all land and ice south of 60° south latitude, and allows Treaty nations to inspect any station or facility decisions are made by consensus at annual meetings, and member countries implement these decisions through their national laws (see “Legal system”); additional agreements have strengthened the Treaty system, including conventions to protect seals (1972) and other marine life (1980), as well as an environmental protocol (1991, took effect in 1998); the protocol bans mining and includes strict rules on environmental impact, waste, pollution, wildlife, and protected areas; as of December 2024, there are 58 member nations : 29 consultative members , including the 7 claimant countries (Argentina, Australia, Chile, France, New Zealand, Norway, and the UK), and 29 non-consultative members ; a permanent Antarctic Treaty Secretariat, established in 2004 in Buenos Aires, supports the system",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/antarctica/ay.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Antarctica"
+  },
+  "BVT": {
+    "population": "uninhabited",
+    "populationNote": "note: a small, seasonal research station is located in the northwest corner of Bouvet Island",
+    "establishment": "",
+    "government": "",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/antarctica/bv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bouvet Island"
+  },
+  "ATF": {
+    "population": "no permanent inhabitants",
+    "populationNote": "Ile Amsterdam (Ile Amsterdam et Ile Saint-Paul) : uninhabited but has a meteorological station Ile Saint-Paul (Ile Amsterdam et Ile Saint-Paul) : uninhabited but is visited by fishermen and researchers Iles Crozet : uninhabited except for staff of the Alfred Faure research station on Ile del la Possession Iles Kerguelen : researchers are located at the main base at Port-aux-Francais on Ile Kerguelen Bassas da India (Iles Eparses) : uninhabitable Europa Island, Glorioso Islands, Juan de Nova Island (Iles Eparses) : a small French military garrison and a few meteorologists on each possession; visited by researchers Tromelin Island (Iles Eparses) : uninhabited, visited by researchers",
+    "establishment": "",
+    "government": "",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/antarctica/fs.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "French Southern and Antarctic Lands"
+  },
+  "HMD": {
+    "population": "uninhabited",
+    "populationNote": "note: limited scientific research and expeditions",
+    "establishment": "",
+    "government": "",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/antarctica/hm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Heard Island and McDonald Islands"
+  },
+  "ASM": {
+    "population": "43,268 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (territory of the US)",
+    "government": "unincorporated, unorganized Territory of the US with local self-government; republican form of territorial government with separate executive, legislative, and judicial branches",
+    "religion": "Christian 98.3%, other <1%, unaffiliated <1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/aq.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "American Samoa"
+  },
+  "AUS": {
+    "population": "27,490,921 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1901 (from the federation of UK colonies)",
+    "government": "federal parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Roman Catholic 20%, Protestant 18.1% (Anglican 9.8%, Uniting Church 2.6%, Presbyterian and Reformed 1.6%, Baptist 1.4%, Pentecostal 1%, other Protestant 1.7%), other Christian 3.5%, Muslim 3.2%, Hindu 2.7%, Buddhist 2.4%, Orthodox 2.3% (Eastern Orthodox 2.1%, Oriental Orthodox 0.2%), other 2.1%, none 38.4%, unspecified 7.3% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/as.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Australia"
+  },
+  "SLB": {
+    "population": "738,774 (2025 est.)",
+    "populationNote": "",
+    "establishment": "7 July 1978 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 73.4% (Church of Melanesia 31.9%, South Sea Evangelical 17.1%, Seventh Day Adventist 11.7%, United Church 10.1%, Christian Fellowship Church 2.5%), Roman Catholic 19.6%, other Christian 2.9%, other 4%, unspecified 0.1% (2009 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/bp.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Solomon Islands"
+  },
+  "CCK": {
+    "population": "593 (2021 est.)",
+    "populationNote": "",
+    "establishment": "none (territory of Australia)",
+    "government": "non-self-governing overseas territory of Australia",
+    "religion": "Muslim (predominantly Sunni) 75%, Anglican 3.5%, Roman Catholic 2.2%, none 12.9%, unspecified 6.3% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ck.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cocos (Keeling) Islands"
+  },
+  "MNP": {
+    "population": "51,118 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (commonwealth in political union with the US)",
+    "government": "a commonwealth in political union with and under the sovereignty of the US; republican form of government with separate executive, legislative, and judicial branches",
+    "religion": "Christian (Roman Catholic majority, although traditional beliefs and taboos may still be found)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/cq.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Northern Mariana Islands"
+  },
+  "COK": {
+    "population": "7,592 (2025 est.)",
+    "populationNote": "",
+    "establishment": "4 August 1965 (Cook Islands became self-governing state in free association with New Zealand)",
+    "government": "parliamentary democracy",
+    "religion": "Protestant 55% (Cook Islands Christian Church 43.1%, Seventh Day Adventist 8.3%, Assemblies of God 3.6%), Roman Catholic 16.7%, Church of Jesus Christ 3.9%, Jehovah's Witness 2.2%, Apostolic Church 2.1%, other 4.5%, none/unspecified 15.6% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/cw.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cook Islands"
+  },
+  "FJI": {
+    "population": "951,611 (2024 est.)",
+    "populationNote": "",
+    "establishment": "10 October 1970 (from the UK)",
+    "government": "parliamentary republic",
+    "religion": "Protestant 45% (Methodist 34.6%, Assembly of God 5.7%, Seventh Day Adventist 3.9%, and Anglican 0.8%), Hindu 27.9%, other Christian 10.4%, Roman Catholic 9.1%, Muslim 6.3%, Sikh 0.3%, other 0.3%, none 0.8% (2007 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/fj.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Fiji"
+  },
+  "FSM": {
+    "population": "99,603 (2024 est.)",
+    "populationNote": "",
+    "establishment": "3 November 1986 (from the US-administered UN trusteeship)",
+    "government": "federal republic in free association with the US",
+    "religion": "Roman Catholic 54.7%, Protestant 41.1% (includes Congregational 38.5%, Baptist 1.1%, Seventh Day Adventist 0.8%, Assembly of God 0.7%), Church of Jesus Christ 1.5%, other 1.9%, none 0.7%, unspecified 0.1% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/fm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Federated States of Micronesia"
+  },
+  "PYF": {
+    "population": "305,507 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas land of France)",
+    "government": "parliamentary democracy (Assembly of French Polynesia); an overseas collectivity of France",
+    "religion": "Protestant 54%, Roman Catholic 30%, other 10%, no religion 6%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/fp.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "French Polynesia"
+  },
+  "GUM": {
+    "population": "169,532 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (territory of the US)",
+    "government": "unincorporated organized territory of the US with local self-government; republican form of territorial government with separate executive, legislative, and judicial branches",
+    "religion": "Christian (predominantly Roman Catholic) 94.2%, folk religions 1.5%, Buddhist 1.1%, other 1.6%, unaffiliated 1.7% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/gq.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Guam"
+  },
+  "KIR": {
+    "population": "116,545 (2024 est.)",
+    "populationNote": "",
+    "establishment": "12 July 1979 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 58.9%, Kiribati Uniting Church 21.2%, Kiribati Protestant Church 8.4%, Church of Jesus Christ 5.6%, Seventh Day Adventist 2.1%, Baha'i 2.1%, other 1.7% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/kr.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Kiribati"
+  },
+  "CXR": {
+    "population": "1,692 (2021 est.)",
+    "populationNote": "",
+    "establishment": "none (territory of Australia)",
+    "government": "non-self-governing overseas territory of Australia",
+    "religion": "Muslim 19.4%, Buddhist 18.3%, Roman Catholic 8.8%, Protestant 6.5% (includes Anglican 3.6%, Uniting Church 1.2%, other 1.7%), other Christian 3.3%, other 0.6%, none 15.3%, unspecified 27.7% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/kt.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Christmas Island"
+  },
+  "NCL": {
+    "population": "307,612 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas collectivity of France)",
+    "government": "parliamentary democracy (Territorial Congress); an overseas collectivity of France",
+    "religion": "Christian 85.2%, Muslim 2.8%, other 1.6%, unaffiliated 10.4% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nc.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "New Caledonia"
+  },
+  "NIU": {
+    "population": "1,815 (2024 est.)",
+    "populationNote": "",
+    "establishment": "19 October 1974 (Niue became a self-governing state in free association with New Zealand)",
+    "government": "parliamentary democracy",
+    "religion": "Ekalesia Niue 61.7%, Latter Day Saints 8.7%, Roman Catholic 8.4%, other 8.2%, not stated 5.1%, none 3.7%, Jehovah's Witnesses 2.7%, Seventh Day Adventist 1.4% (2017 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ne.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Niue"
+  },
+  "NFK": {
+    "population": "1,739 (2021)",
+    "populationNote": "",
+    "establishment": "none (territory of Australia)",
+    "government": "administered as an overseas territory of Australia",
+    "religion": "Protestant 46.8% (Anglican 29.2%, Uniting Church in Australia 9.8%, Presbyterian 2.9%, Seventh Day Adventist 2.7%, other 2.2%), Roman Catholic 12.6%, other Christian 2.9%, other 1.4%, none 26.7%, unspecified 9.5% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nf.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Norfolk Island"
+  },
+  "VUT": {
+    "population": "318,007 (2024 est.)",
+    "populationNote": "",
+    "establishment": "30 July 1980 (from France and the UK)",
+    "government": "parliamentary republic",
+    "religion": "Protestant 39.9% (Presbyterian 27.2%, Seventh Day Adventist 14.8%, Anglican 12%, Churches of Christ 5%, Assemblies of God 4.9%, Neil Thomas Ministry/Inner Life Ministry 3.2%), Roman Catholic 12.1%, Apostolic 2.3%, Church of Jesus Christ 1.8%, customary beliefs (including Jon Frum cargo cult) 3.1%, other 12%, none 1.4%, unspecified 0.1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nh.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Vanuatu"
+  },
+  "NRU": {
+    "population": "9,930 (2025 est.)",
+    "populationNote": "",
+    "establishment": "31 January 1968 (from the Australia-, NZ-, and UK-administered UN trusteeship)",
+    "government": "parliamentary republic",
+    "religion": "Protestant 60.4% (Nauruan Congregational 34.7%, Assemblies of God 11.6%, Pacific Light House 6.3%, Nauru Independent 3.6%, Baptist 1.5, Seventh Day Adventist 1.3%, other Protestant 1.4%), Roman Catholic 33.9%, other 4.2%, none 1.3%, no answer 0.3% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nr.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Nauru"
+  },
+  "NZL": {
+    "population": "5,161,211 (2024 est.)",
+    "populationNote": "",
+    "establishment": "26 September 1907 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Christian 37.3% (Catholic 10.1%, Anglican 6.8%, Presbyterian and Congregational 5.2%, Pentecostal 1.8%, Methodist 1.6%, Church of Jesus Christ 1.2%, other 10.7%), Hindu 2.7%, Maori 1.3%, Muslim, 1.3%, Buddhist 1.1%, other religion 1.6% (includes Judaism, Spiritualism and New Age religions, Baha'i, Asian religions other than Buddhism), no religion 48.6%, objected to answering 6.7% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "New Zealand"
+  },
+  "PCN": {
+    "population": "50 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "parliamentary democracy",
+    "religion": "Seventh Day Adventist 100%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/pc.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Pitcairn Islands"
+  },
+  "PLW": {
+    "population": "21,947 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 October 1994 (from the US-administered UN trusteeship)",
+    "government": "presidential republic in free association with the US",
+    "religion": "Roman Catholic 46.9%, Protestant 30.9% (Evangelical 24.6%, Seventh Day Adventist 5%, other Protestant 1.4%), Modekngei 5.1% (indigenous to Palau), Muslim 4.9%, other 12.3% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ps.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Palau"
+  },
+  "MHL": {
+    "population": "82,011 (2024 est.)",
+    "populationNote": "",
+    "establishment": "21 October 1986 (from the US-administered UN trusteeship)",
+    "government": "mixed presidential-parliamentary system in free association with the US",
+    "religion": "Protestant 79.3% (United Church of Christ 47.9%, Assembly of God 14.1%, Full Gospel 5%, Bukot Nan Jesus 3%, Salvation Army 2.3%, Reformed Congressional Church 2.2%, Seventh Day Adventist 1.7%, New Beginning Church 1.4%, other Protestant 1.6%), Roman Catholic 9.3%, Church of Jesus Christ 5.7%, Jehovah's Witness 1.3%, other 3.3%, none 1.1% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/rm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Marshall Islands"
+  },
+  "TKL": {
+    "population": "2,453 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (territory of New Zealand)",
+    "government": "parliamentary democracy under a constitutional monarchy",
+    "religion": "Congregational Christian Church 50.4%, Roman Catholic 38.7%, Presbyterian 5.9%, other Christian 4.2%, unspecified 0.8% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/tl.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Tokelau"
+  },
+  "TON": {
+    "population": "104,519 (2025 est.)",
+    "populationNote": "",
+    "establishment": "4 June 1970 (from UK protectorate status)",
+    "government": "constitutional monarchy",
+    "religion": "Protestant 63.9% (Free Wesleyan Church 34.2%, Free Church of Tonga 11.3%, Church of Tonga 6.8%, Seventh Day Adventist 2.5%, Assembly of God 2.5%, Tokaikolo/Maamafo'ou 1.5%, Constitutional Church of Tonga 1.2%, other Protestant 4%), Church of Jesus Christ 19.7%, Roman Catholic 13.7%, other 2.1%, none 0.6%, no answer 0.1% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/tn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Tonga"
+  },
+  "TUV": {
+    "population": "11,824 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 October 1978 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 92.7% (Congregational Christian Church of Tuvalu 85.9%, Brethren 2.8%, Seventh Day Adventist 2.5%, Assemblies of God 1.5%), Baha'i 1.5%, Jehovah's Witness 1.5%, other 3.9%, none or refused 0.4% (2017 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/tv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Tuvalu"
+  },
+  "UMI": {
+    "population": "note : entry is only allowed through a Special Use Permit when the activity is deemed appropriate with purposes to the refuge establishment.",
+    "populationNote": "",
+    "establishment": "",
+    "government": "",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/um.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "United States Minor Outlying Islands"
+  },
+  "WLF": {
+    "population": "15,998 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas collectivity of France)",
+    "government": "parliamentary democracy (Territorial Assembly); overseas collectivity of France",
+    "religion": "Roman Catholic 99%, other 1%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/wf.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Wallis and Futuna"
+  },
+  "WSM": {
+    "population": "210,223 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1962 (from New Zealand-administered UN trusteeship)",
+    "government": "parliamentary republic",
+    "religion": "Protestant 54.9% (Congregationalist 29%, Methodist 12.4%, Assembly of God 6.8%, Seventh Day Adventist 4.4%, other Protestant 2.3%), Roman Catholic 18.8%, Church of Jesus Christ 16.9%, Worship Centre 2.8%, other Christian 3.6%, other 2.9% (includes Baha'i, Muslim), none 0.2% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ws.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Samoa"
+  },
+  "ABW": {
+    "population": "125,063 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (part of the Kingdom of the Netherlands)",
+    "government": "parliamentary democracy; part of the Kingdom of the Netherlands",
+    "religion": "Roman Catholic 75.3%, Protestant 4.9% (includes Methodist 0.9%, Adventist 0.9%, Anglican 0.4%, other Protestant 2.7%), Jehovah's Witness 1.7%, other 12%, none 5.5%, unspecified 0.5% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/aa.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Aruba"
+  },
+  "ATG": {
+    "population": "102,634 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1 November 1981 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 68.3% (Anglican 17.6%, Seventh Day Adventist 12.4%, Pentecostal 12.2%, Moravian 8.3%, Methodist 5.6%, Wesleyan Holiness 4.5%, Church of God 4.1%, Baptist 3.6%), Roman Catholic 8.2%, other 12.2%, unspecified 5.5%, none 5.9% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ac.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Antigua and Barbuda"
+  },
+  "AIA": {
+    "population": "19,416 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "parliamentary democracy (House of Assembly); self-governing overseas territory of the UK",
+    "religion": "Protestant 73.2% (includes Anglican 22.7%, Methodist 19.4%, Pentecostal 10.5%, Seventh Day Adventist 8.3%, Baptist 7.1%, Church of God 4.9%, Presbyterian 0.2%, Brethren 0.1%), Roman Catholic 6.8%, Jehovah's Witness 1.1%, other Christian 10.9%, other 3.2%, unspecified 0.3%, none 4.5% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/av.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Anguilla"
+  },
+  "BRB": {
+    "population": "304,139 (2024 est.)",
+    "populationNote": "",
+    "establishment": "30 November 1966 (from the UK)",
+    "government": "parliamentary republic; a Commonwealth realm",
+    "religion": "Protestant 66.4% (includes Anglican 23.9%, other Pentecostal 19.5%, Adventist 5.9%, Methodist 4.2%, Wesleyan 3.4%, Nazarene 3.2%, Church of God 2.4%, Baptist 1.8%, Moravian 1.2%, other Protestant 0.9%), Roman Catholic 3.8%, other Christian 5.4% (includes Jehovah's Witness 2.0%, other 3.4%), Rastafarian 1%, other 1.5%, none 20.6%, unspecified 1.2% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bb.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Barbados"
+  },
+  "BHS": {
+    "population": "415,306 (2025 est.)",
+    "populationNote": "",
+    "establishment": "10 July 1973 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 69.9% (includes Baptist 34.9%, Anglican 13.7%, Pentecostal 8.9% Seventh Day Adventist 4.4%, Methodist 3.6%, Church of God 1.9%, Plymouth Brethren 1.6%, other Protestant 0.9%), Roman Catholic 12%, other Christian 13% (includes Jehovah's Witness 1.1%), other 0.6%, none 1.9%, unspecified 2.6% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bf.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bahamas"
+  },
+  "BLZ": {
+    "population": "421,960 (2025 est.)",
+    "populationNote": "",
+    "establishment": "21 September 1981 (from the UK)",
+    "government": "parliamentary democracy (National Assembly) under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Roman Catholic 40.1%, Protestant 31.5% (includes Pentecostal 8.4%, Seventh Day Adventist 5.4%, Anglican 4.7%, Mennonite 3.7%, Baptist 3.6%, Methodist 2.9%, Nazarene 2.8%), Jehovah's Witness 1.7%, other 10.5% (includes Baha'i, Buddhist, Hindu, Church of Jesus Christ, Muslim, Rastafarian, Salvation Army), unspecified 0.6%, none 15.5% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bh.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Belize"
+  },
+  "CYM": {
+    "population": "66,653 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "parliamentary democracy; self-governing overseas territory of the UK",
+    "religion": "Protestant 60.8% (includes Church of God 19.5%, Seventh Day Adventist 8.7%, non-denominational 8.3%, Baptist 6.9%, Pentecostal 6.8%, Presbyterian/United Church 5.7%, Anglican 2.8%, Wesleyan Holiness 1.5%, Methodist 0.5%), Roman Catholic 13.6%, Hindu 1.7%, Jehovah's Witness 0.9%, other 4.8%, none 16.7%, unspecified 1.4% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/cj.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cayman Islands"
+  },
+  "CRI": {
+    "population": "5,304,932 (2025 est.)",
+    "populationNote": "",
+    "establishment": "15 September 1821 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 47.5%, Evangelical and Pentecostal 19.8%, Jehovah's Witness 1.4%, other Protestant 1.2%, other 3.1%, none 27% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/cs.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Costa Rica"
+  },
+  "CUB": {
+    "population": "10,059,519 (2025 est.)",
+    "populationNote": "",
+    "establishment": "20 May 1902 (from US administration); 10 December 1898 (from Spain); not acknowledged by the Cuban Government as days of independence",
+    "government": "communist state",
+    "religion": "Christian 58.9%, folk religion 17.6%, Buddhist <1%, Hindu <1%, Jewish <1%, Muslim <1%, other <1%, none 23.2% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/cu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cuba"
+  },
+  "DMA": {
+    "population": "74,661 (2024 est.)",
+    "populationNote": "",
+    "establishment": "3 November 1978 (from the UK)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic 52.7%, Protestant 29.7% (includes Seventh Day Adventist 6.7%, Pentecostal 6.1%, Baptist 5.2%, Christian Union Church 3.9%, Methodist 2.6%, Gospel Mission 2.1%, other Protestant 3.1%), Jehovah's Witness 1.3%, Rastafarian 1.1%, other 4.3%, none 9.4%, unspecified 1.4% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/do.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Dominica"
+  },
+  "DOM": {
+    "population": "10,899,292 (2025 est.)",
+    "populationNote": "",
+    "establishment": "27 February 1844 (from Haiti)",
+    "government": "presidential republic",
+    "religion": "Evangelical 50.2%, Roman Catholic 30.1%, none 18.5%, unspecified 1.2% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/dr.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Dominican Republic"
+  },
+  "SLV": {
+    "population": "6,334,723 (2025 est.)",
+    "populationNote": "",
+    "establishment": "15 September 1821 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 43.9%, Protestant 39.6% (Evangelical - unspecified 38.2%, Evangelical - Methodist 1.3%, Evangelical - Baptist 0.1%), none 16.3%, unspecified 0.2% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/es.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "El Salvador"
+  },
+  "GRD": {
+    "population": "114,621 (2024 est.)",
+    "populationNote": "",
+    "establishment": "7 February 1974 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 49.2% (includes Pentecostal 17.2%, Seventh Day Adventist 13.2%, Anglican 8.5%, Baptist 3.2%, Church of God 2.4%, Evangelical 1.9%, Methodist 1.6%, other 1.2%), Roman Catholic 36%, Jehovah's Witness 1.2%, Rastafarian 1.2%, other 5.5%, none 5.7%, unspecified 1.3% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/gj.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Grenada"
+  },
+  "GTM": {
+    "population": "18,255,216 (2024 est.)",
+    "populationNote": "",
+    "establishment": "15 September 1821 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Evangelical 45.7%, Roman Catholic 42.4%, none 11%, unspecified 0.9% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/gt.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Guatemala"
+  },
+  "HTI": {
+    "population": "11,898,812 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1804 (from France)",
+    "government": "semi-presidential republic",
+    "religion": "Catholic 55%, Protestant 29%, Vodou 2.1%, other 4.6%, none 10% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ha.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Haiti"
+  },
+  "HND": {
+    "population": "9,529,188 (2024 est.)",
+    "populationNote": "",
+    "establishment": "15 September 1821 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Evangelical 55%, Roman Catholic 33.4%, none 10.1%, unspecified 1.5% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ho.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Honduras"
+  },
+  "JAM": {
+    "population": "2,938,503 (2025 est.)",
+    "populationNote": "",
+    "establishment": "6 August 1962 (from the UK)",
+    "government": "parliamentary democracy (Parliament) under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 64.8% (includes Seventh Day Adventist 12.0%, Pentecostal 11.0%, Other Church of God 9.2%, New Testament Church of God 7.2%, Baptist 6.7%, Church of God in Jamaica 4.8%, Church of God of Prophecy 4.5%, Anglican 2.8%, United Church 2.1%, Methodist 1.6%, Revived 1.4%, Brethren 0.9%, and Moravian 0.7%), Roman Catholic 2.2%, Jehovah's Witness 1.9%, Rastafarian 1.1%, other 6.5%, none 21.3%, unspecified 2.3% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/jm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Jamaica"
+  },
+  "MSR": {
+    "population": "5,468 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "parliamentary democracy; self-governing overseas territory of the UK",
+    "religion": "Protestant 71.4% (includes Anglican 17.7%, Pentecostal/Full Gospel 16.1%, Seventh Day Adventist 15%, Methodist 13.9%, Church of God 6.7%, other Protestant 2%), Roman Catholic 11.4%, Rastafarian 1.4%, Hindu 1.2%, Jehovah's Witness 1%, Muslim 0.4%, other/not stated 5.1%, none 7.9% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/mh.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Montserrat"
+  },
+  "SXM": {
+    "population": "46,738 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (part of the Kingdom of the Netherlands)",
+    "government": "parliamentary democracy under a constitutional monarchy",
+    "religion": "Protestant 41.9% (Pentecostal 14.7%, Methodist 10.0%, Seventh Day Adventist 6.6%, Baptist 4.7%, Anglican 3.1%, other Protestant 2.8%), Roman Catholic 33.1%, Hindu 5.2%, Christian 4.1%, Jehovah's Witness 1.7%, Evangelical 1.4%, Muslim/Jewish 1.1%, other 1.3% (includes Buddhist, Sikh, Rastafarian), none 7.9%, no response 2.4% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/nn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Sint Maarten"
+  },
+  "NIC": {
+    "population": "6,739,380 (2025 est.)",
+    "populationNote": "",
+    "establishment": "15 September 1821 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 44.9%, Protestant 38.7% (Evangelical 38.2, Adventist 0.5%), other 1.2%, (includes Jehovah's Witness and Church of Jesus Christ), believer but not belonging to a church 1%, agnostic or atheist 0.4%, none 13.7%, unspecified 0.2% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/nu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Nicaragua"
+  },
+  "PAN": {
+    "population": "4,536,008 (2025 est.)",
+    "populationNote": "",
+    "establishment": "3 November 1903 (from Colombia); 28 November 1821 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Evangelical 55%, Roman Catholic 33.4%, none 10.1%, unspecified 1.5% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/pm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Panama"
+  },
+  "MAF": {
+    "population": "33,093 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas collectivity of France)",
+    "government": "parliamentary democracy (Territorial Council); overseas collectivity of France",
+    "religion": "Roman Catholic, Jehovah's Witness, Protestant, Hindu",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/rn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Collectivity of Saint Martin"
+  },
+  "PRI": {
+    "population": "2,984,841 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (territory of the US with commonwealth status)",
+    "government": "unincorporated organized territory of the US with local self-government; republican form of territorial government with separate executive, legislative, and judicial branches; note - reference Puerto Rican Federal Relations Act, 2 March 1917, as amended by Public Law 600, 3 July 1950",
+    "religion": "Roman Catholic 56%, Protestant 33% (largely Pentecostal), other 2%, atheist 1%, none 7% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/rq.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Puerto Rico"
+  },
+  "KNA": {
+    "population": "55,434 (2025 est.)",
+    "populationNote": "",
+    "establishment": "19 September 1983 (from the UK)",
+    "government": "federal parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/sc.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Saint Kitts and Nevis"
+  },
+  "LCA": {
+    "population": "168,462 (2025 est.)",
+    "populationNote": "",
+    "establishment": "22 February 1979 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Roman Catholic 61.5%, Protestant 25.5% (includes Seventh Day Adventist 10.4%, Pentecostal 8.9%, Baptist 2.2%, Anglican 1.6%, Church of God 1.5%, other Protestant 0.9%), other Christian 3.4% (includes Evangelical 2.3% and Jehovah's Witness 1.1%), Rastafarian 1.9%, other 0.4%, none 5.9%, unspecified 1.4% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/st.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Saint Lucia"
+  },
+  "BLM": {
+    "population": "7,079 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas collectivity of France)",
+    "government": "parliamentary democracy (Territorial Council); overseas collectivity of France",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/tb.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Saint Barthélemy"
+  },
+  "TTO": {
+    "population": "1,410,170 (2025 est.)",
+    "populationNote": "",
+    "establishment": "31 August 1962 (from the UK)",
+    "government": "parliamentary republic",
+    "religion": "Protestant 32.1% (Pentecostal/Evangelical/Full Gospel 12%, Baptist 6.9%, Anglican 5.7%, Seventh Day Adventist 4.1%, Presbyterian/Congregational 2.5%, other Protestant 0.9%), Roman Catholic 21.6%, Hindu 18.2%, Muslim 5%, Jehovah's Witness 1.5%, other 8.4%, none 2.2%, unspecified 11.1% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/td.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Trinidad and Tobago"
+  },
+  "TCA": {
+    "population": "60,439 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "parliamentary democracy",
+    "religion": "Protestant 72.8% (Baptist 35.8%, Church of God 11.7%, Anglican 10%, Methodist 9.3%, Seventh Day Adventist 6%), Roman Catholic 11.4%, Jehovah's Witness 1.8%, other 14% (2006 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/tk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Turks and Caicos Islands"
+  },
+  "CUW": {
+    "population": "153,289 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (part of the Kingdom of the Netherlands)",
+    "government": "parliamentary democracy",
+    "religion": "Roman Catholic 72.8%, Pentecostal 6.6%, Protestant 3.2%, Adventist 3%, Jehovah's Witness 2%, Evangelical 1.9%, other 3.8%, none 6%, unspecified 0.6% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/uc.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Curaçao"
+  },
+  "VCT": {
+    "population": "100,647 (2024 est.)",
+    "populationNote": "",
+    "establishment": "27 October 1979 (from the UK)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 75% (Pentecostal 27.6%, Anglican 13.9%, Seventh Day Adventist 11.6%, Baptist 8.9%, Methodist 8.7%, Evangelical 3.8%, Salvation Army 0.3%, Presbyterian/Congregational 0.3%), Roman Catholic 6.3%, Rastafarian 1.1%, Jehovah's Witness 0.8%, other 4.7%, none 7.5%, unspecified 4.7% (2012 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/vc.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Saint Vincent and the Grenadines"
+  },
+  "VGB": {
+    "population": "40,102 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "Overseas Territory of the UK with limited self-government; parliamentary democracy",
+    "religion": "Protestant 70.2% (Methodist 17.6%, Church of God 10.4%, Anglican 9.5%, Seventh Day Adventist 9.0%, Pentecostal 8.2%, Baptist 7.4%, New Testament Church of God 6.9%, other Protestant 1.2%), Roman Catholic 8.9%, Jehovah's Witness 2.5%, Hindu 1.9%, other 6.2%, none 7.9%, unspecified 2.4% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/vi.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "British Virgin Islands"
+  },
+  "VIR": {
+    "population": "103,792 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (territory of the US)",
+    "government": "unincorporated organized territory of the US with local self-government; republican form of territorial government with separate executive, legislative, and judicial branches",
+    "religion": "Protestant 65.5%, Roman Catholic 27.1%, other Christians 2.2%, other 1.5%, none 3.7% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/vq.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "United States Virgin Islands"
+  },
+  "AZE": {
+    "population": "10,694,370 (2025 est.)",
+    "populationNote": "",
+    "establishment": "30 August 1991 (declared from the Soviet Union); 18 October 1991 (adopted by the Supreme Council of Azerbaijan)",
+    "government": "presidential republic",
+    "religion": "Muslim 97.3% (predominantly Shia), Christian 2.6%, other <0.1, unaffiliated <0.1 (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/aj.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Azerbaijan"
+  },
+  "ARM": {
+    "population": "2,963,837 (2025 est.)",
+    "populationNote": "",
+    "establishment": "21 September 1991 (from the Soviet Union); notable earlier dates: 321 B.C. (Kingdom of Armenia established under the Orontid Dynasty), A.D. 884 (Armenian Kingdom reestablished under the Bagratid Dynasty); 1198 (Cilician Kingdom established); 28 May 1918 (Democratic Republic of Armenia declared)",
+    "government": "parliamentary democracy; note - constitutional changes adopted in December 2015 transformed the government to a parliamentary system",
+    "religion": "Armenian Apostolic 95.2%, not stated 1.7%; less than 1%: Catholic, no religion, Evangelical, Shar-fadinian, other, Armenian Orthodox, Jehovah's Witness, Pagan, Molokan (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/am.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Armenia"
+  },
+  "GEO": {
+    "population": "4,900,961 (2024 est.)",
+    "populationNote": "",
+    "establishment": "9 April 1991 (from the Soviet Union); notable earlier date: A.D. 1008 (Georgia unified under King BAGRAT III)",
+    "government": "semi-presidential republic",
+    "religion": "Eastern Orthodox Christian (official) 83.4%, Muslim 10.7%, Armenian Apostolic Christian 2.9%, other 1.2% (includes Roman Catholic Christian, Jehovah's Witness, Yazidi, Protestant Christian, Jewish), none 0.5%, unspecified/no answer 1.2% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/gg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Georgia (country)"
+  },
+  "KGZ": {
+    "population": "6,219,751 (2025 est.)",
+    "populationNote": "",
+    "establishment": "31 August 1991 (from the Soviet Union)",
+    "government": "parliamentary republic",
+    "religion": "Muslim 90% (majority Sunni), Christian 7% (Russian Orthodox 3%), other 3% (includes Jewish, Buddhist, Baha'i) (2017 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/kg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Kyrgyzstan"
+  },
+  "KAZ": {
+    "population": "20,432,662 (2025 est.)",
+    "populationNote": "",
+    "establishment": "16 December 1991 (from the Soviet Union)",
+    "government": "presidential republic",
+    "religion": "Muslim 69.3%, Christian 17.2% (Orthodox 17%, other 0.2%), Buddhism 0.1%, other 0.1%, non-believers 2.3%, unspecified 11% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/kz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Kazakhstan"
+  },
+  "RUS": {
+    "population": "140,134,279 (2025 est.)",
+    "populationNote": "",
+    "establishment": "25 December 1991 (from the Soviet Union; Russian SFSR renamed Russian Federation); notable earlier dates: 1157 (Principality of Vladimir-Suzdal created); 16 January 1547 (Tsardom of Muscovy established); 22 October 1721 (Russian Empire proclaimed); 30 December 1922 (Soviet Union established)",
+    "government": "semi-presidential federation",
+    "religion": "Russian Orthodox 15-20%, Muslim 10-15%, other Christian 2% (2006 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/rs.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Russia"
+  },
+  "TJK": {
+    "population": "10,593,876 (2025 est.)",
+    "populationNote": "",
+    "establishment": "9 September 1991 (from the Soviet Union)",
+    "government": "presidential republic",
+    "religion": "Muslim 98% (Sunni 95%, Shia 3%) other 2% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/ti.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Tajikistan"
+  },
+  "TKM": {
+    "population": "5,744,151 (2024 est.)",
+    "populationNote": "",
+    "establishment": "27 October 1991 (from the Soviet Union)",
+    "government": "presidential republic; authoritarian",
+    "religion": "Muslim 93%, Christian 6.4%, Buddhist <1%, folk religion <1%, Jewish <1%, other <1%, unspecified <1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/tx.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Turkmenistan"
+  },
+  "UZB": {
+    "population": "37,015,151 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 September 1991 (from the Soviet Union)",
+    "government": "presidential republic; highly authoritarian",
+    "religion": "Muslim 88% (mostly Sunni), Eastern Orthodox 9%, other 3%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/central-asia/uz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Uzbekistan"
+  },
+  "MMR": {
+    "population": "57,931,718 (2025 est.)",
+    "populationNote": "",
+    "establishment": "4 January 1948 (from the UK)",
+    "government": "military regime",
+    "religion": "Buddhist 87.9%, Christian 6.2%, Muslim 4.3%, Animist 0.8%, Hindu 0.5%, other 0.2%, none 0.1% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/bm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Myanmar"
+  },
+  "BRN": {
+    "population": "491,900 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1984 (from the UK)",
+    "government": "absolute monarchy or sultanate",
+    "religion": "Muslim (official) 82.1%, Christian 6.7%, Buddhist 6.3%, other 4.9% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/bx.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Brunei"
+  },
+  "KHM": {
+    "population": "17,230,333 (2025 est.)",
+    "populationNote": "",
+    "establishment": "9 November 1953 (from France)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Buddhist (official) 97.1%, Muslim 2%, Christian 0.3%, other 0.5% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/cb.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cambodia"
+  },
+  "CHN": {
+    "population": "1,407,181,209 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 October 1949 (People's Republic of China established); notable earlier dates: 221 B.C. (unification under the Qin Dynasty); 1 January 1912 (Qing Dynasty replaced by the Republic of China)",
+    "government": "communist party-led state",
+    "religion": "folk religion 21.9%, Buddhist 18.2%, Christian 5.1%, Muslim 1.8%, Hindu < 0.1%, Jewish < 0.1%, other 0.7% (includes Daoist (Taoist)), unaffiliated 52.1% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ch.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "China"
+  },
+  "HKG": {
+    "population": "7,305,556 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (special administrative region of China)",
+    "government": "presidential limited democracy; a special administrative region of the People's Republic of China",
+    "religion": "Buddhist or Taoist 27.9%, Protestant 6.7%, Roman Catholic 5.3%, Muslim 4.2%, Hindu 1.4%, Sikh 0.2%, other or none 54.3% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/hk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Hong Kong"
+  },
+  "IDN": {
+    "population": "283,587,097 (2025 est.)",
+    "populationNote": "",
+    "establishment": "17 August 1945 (declared independence from the Netherlands)",
+    "government": "presidential republic",
+    "religion": "Muslim 87.4%, Protestant 7.5%, Roman Catholic 3.1%, Hindu 1.7%, other 0.8% (includes Buddhist and Confucian) (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/id.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Indonesia"
+  },
+  "JPN": {
+    "population": "123,201,945 (2024 est.)",
+    "populationNote": "",
+    "establishment": "3 May 1947 (current constitution adopted as amendment to Meiji Constitution); notable earlier dates: 11 February 660 B.C. (mythological date of Emperor JIMMU founding the nation); 29 November 1890 (Meiji Constitution provides for constitutional monarchy)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Shintoism 48.6%, Buddhism 46.4%, Christianity 1.1%, other 4% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ja.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Japan"
+  },
+  "PRK": {
+    "population": "26,402,841 (2025 est.)",
+    "populationNote": "",
+    "establishment": "15 August 1945 (from Japan)",
+    "government": "dictatorship, single-party communist state",
+    "religion": "traditionally Buddhist and Confucian, some Christian and syncretic Chondogyo (Religion of the Heavenly Way)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/kn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "North Korea"
+  },
+  "KOR": {
+    "population": "51,486,343 (2025 est.)",
+    "populationNote": "",
+    "establishment": "15 August 1945 (from Japan)",
+    "government": "presidential republic",
+    "religion": "Protestant 17%, Buddhist 16%, Catholic 6%, none 60% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ks.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "South Korea"
+  },
+  "LAO": {
+    "population": "7,953,556 (2024 est.)",
+    "populationNote": "",
+    "establishment": "19 July 1949 (from France); 22 October 1953 (Franco-Lao Treaty recognizes full independence)",
+    "government": "communist party-led state",
+    "religion": "Buddhist 64.7%, Christian 1.7%, none 31.4%, other/not stated 2.1% (2015 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/la.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Laos"
+  },
+  "MAC": {
+    "population": "644,426 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (special administrative region of China)",
+    "government": "executive-led limited democracy; a special administrative region of the People's Republic of China",
+    "religion": "folk religion 58.9%, Buddhist 17.3%, Christian 7.2%, other 1.2%, none 15.4% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/mc.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Macau"
+  },
+  "MNG": {
+    "population": "3,281,676 (2024 est.)",
+    "populationNote": "",
+    "establishment": "29 December 1911 (independence declared from China; in actuality, autonomy attained); 11 July 1921 (from China)",
+    "government": "semi-presidential republic",
+    "religion": "Buddhist 51.8%, no religion 40.6%, Muslim 3.2%, Shaman 2.5%, Christian 1.3%, Other 0.6% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/mg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Mongolia"
+  },
+  "MYS": {
+    "population": "34,905,275 (2025 est.)",
+    "populationNote": "",
+    "establishment": "31 August 1957 (from the UK)",
+    "government": "federal parliamentary constitutional monarchy",
+    "religion": "Muslim (official) 63.5%, Buddhist 18.7%, Christian 9.1%, Hindu 6.1%, other (Confucianism, Taoism, other traditional Chinese religions) 0.9%, none/unspecified 1.8% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/my.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Malaysia"
+  },
+  "PNG": {
+    "population": "10,273,996 (2025 est.)",
+    "populationNote": "",
+    "establishment": "16 September 1975 (from the Australia-administered UN trusteeship)",
+    "government": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
+    "religion": "Protestant 64.3% (Evangelical Lutheran 18.4%, Seventh Day Adventist 12.9%, Pentecostal 10.4%, United Church 10.3%, Evangelical Alliance 5.9%, Anglican 3.2%, Baptist 2.8%, Salvation Army 0.4%), Roman Catholic 26%, other Christian 5.3%, non-Christian 1.4%, unspecified 3.1% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/pp.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Papua New Guinea"
+  },
+  "PHL": {
+    "population": "118,277,063 (2024 est.)",
+    "populationNote": "",
+    "establishment": "4 July 1946 (from the US)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 78.8%, Muslim 6.4%, Iglesia ni Cristo 2.6%, other Christian 3.9%, other 8.2%, none/unspecified <0.1 (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/rp.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Philippines"
+  },
+  "SGP": {
+    "population": "6,080,545 (2025 est.)",
+    "populationNote": "",
+    "establishment": "9 August 1965 (from Malaysian Federation)",
+    "government": "parliamentary republic",
+    "religion": "Buddhist 31.1%, Christian 18.9%, Muslim 15.6%, Taoist 8.8%, Hindu 5%, other 0.6%, none 20% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/sn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Singapore"
+  },
+  "THA": {
+    "population": "70,025,248 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1238 (traditional founding date; never colonized)",
+    "government": "constitutional monarchy",
+    "religion": "Buddhist 92.5%, Muslim 5.4%, Christian 1.2%, other 0.9% (includes animist, Confucian, Hindu, Jewish, Sikh, and Taoist) (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/th.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Thailand"
+  },
+  "TLS": {
+    "population": "1,404,785 (2025 est.)",
+    "populationNote": "",
+    "establishment": "28 November 1975 (from Portugal); 20 May 2002 (from Indonesia)",
+    "government": "semi-presidential republic",
+    "religion": "Catholic 90.7%, other 7.1%, Protestant Evangelical 1.9%; less than 1%: Islam, Buddhist, Hindu (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/tt.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Timor-Leste"
+  },
+  "TWN": {
+    "population": "23,600,776 (2025 est.)",
+    "populationNote": "",
+    "establishment": "",
+    "government": "semi-presidential republic",
+    "religion": "Buddhist 35.3%, Taoist 33.2%, Christian 3.9%, folk religion (includes Confucian) approximately 10%, none or unspecified 18.2% (2005 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/tw.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Taiwan"
+  },
+  "VNM": {
+    "population": "106,688,169 (2025 est.)",
+    "populationNote": "",
+    "establishment": "2 September 1945 (from France)",
+    "government": "communist party-led state",
+    "religion": "Catholic 6.1%, Buddhist 5.8%, Protestant 1%, other 0.8%, none 86.3% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/vm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Vietnam"
+  },
+  "ALB": {
+    "population": "2,551,837 (2025 est.)",
+    "populationNote": "",
+    "establishment": "28 November 1912 (from the Ottoman Empire)",
+    "government": "parliamentary republic",
+    "religion": "Muslim 56.7%, Roman Catholic 10%, Orthodox 6.8%, atheist 2.5%, Bektashi (a Sufi order) 2.1%, other 5.7%, unspecified 16.2% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/al.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Albania"
+  },
+  "AND": {
+    "population": "85,370 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1278 (formed under the joint sovereignty of the French Count of Foix and the Spanish Bishop of Urgell)",
+    "government": "parliamentary democracy (since March 1993) that retains its chiefs of state in the form of a co-principality; the two princes are the President of France and Bishop of Seu d'Urgell, Spain",
+    "religion": "Christian (predominantly Roman Catholic) 89.5, other 8.8%, unaffiliated 1.7% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/an.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Andorra"
+  },
+  "AUT": {
+    "population": "9,174,390 (2025 est.)",
+    "populationNote": "",
+    "establishment": "no official date of independence: 976 (Margravate of Austria established); 17 September 1156 (Duchy of Austria founded); 6 January 1453 (Archduchy of Austria acknowledged); 11 August 1804 (Austrian Empire proclaimed); 30 March 1867 (Austro-Hungarian dual monarchy established); 12 November 1918 (First Republic proclaimed); 27 April 1945 (Second Republic proclaimed)",
+    "government": "federal parliamentary republic",
+    "religion": "Roman Catholic 55.2%, Muslim 8.3%, Orthodox 4.9%, Evangelical Christian 3.8%, Jewish 0.1%, other 5.4%, none 22.4% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/au.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Austria"
+  },
+  "BEL": {
+    "population": "11,960,170 (2025 est.)",
+    "populationNote": "",
+    "establishment": "4 October 1830 (a provisional government declared independence from the Netherlands); 21 July 1831 (King LEOPOLD I ascended to the throne)",
+    "government": "federal parliamentary democracy under a constitutional monarchy",
+    "religion": "Roman Catholic 57.1%, Protestant 2.3%, other Christian, 2.8%, Muslim 6.8%, other 1.7%, atheist 9.1%, nonbeliever/agnostic 20.2% (2018 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/be.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Belgium"
+  },
+  "BIH": {
+    "population": "3,653,499 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 March 1992 (from Yugoslavia)",
+    "government": "parliamentary republic",
+    "religion": "Muslim 50.7%, Orthodox 30.7%, Roman Catholic 15.2%, atheist 0.8%, agnostic 0.3%, other 1.2%, undeclared/no answer 1.1% (2013 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/bk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bosnia and Herzegovina"
+  },
+  "BLR": {
+    "population": "9,460,972 (2025 est.)",
+    "populationNote": "",
+    "establishment": "25 August 1991 (from the Soviet Union)",
+    "government": "presidential republic in name, although in fact a dictatorship",
+    "religion": "Orthodox 48.3%, Catholic 7.1%, other 3.5%, non-believers 41.1% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/bo.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Belarus"
+  },
+  "BGR": {
+    "population": "6,737,997 (2025 est.)",
+    "populationNote": "",
+    "establishment": "3 March 1878 (as an autonomous principality within the Ottoman Empire); 22 September 1908 (complete independence from the Ottoman Empire)",
+    "government": "parliamentary republic",
+    "religion": "Christian 64.7%, Muslim 9.8%, other 0.1%, none 4.7%, unspecified 20.7% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/bu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bulgaria"
+  },
+  "CYP": {
+    "population": "1,332,293 (2025 est.)",
+    "populationNote": "",
+    "establishment": "16 August 1960 (from the UK)",
+    "government": "Republic of Cyprus - presidential republic; self-declared \"Turkish Republic of Northern Cyprus\" (TRNC) - parliamentary republic with enhanced presidency",
+    "religion": "Eastern Orthodox Christian 89.1%, Roman Catholic 2.9%, Protestant/Anglican 2%, Muslim 1.8%, Buddhist 1%, other (includes Maronite Catholic, Armenian Apostolic, Hindu) 1.4%, unknown 1.1%, none/atheist 0.6% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/cy.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Cyprus"
+  },
+  "DNK": {
+    "population": "6,051,491 (2025 est.)",
+    "populationNote": "",
+    "establishment": "ca. 965 (unified and Christianized under Harald I GORMSSON); 5 June 1849 (became a parliamentary constitutional monarchy)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Evangelical Lutheran (official) 71.4%, Muslim 4.3%, other/none/unspecified (denominations include Roman Catholic, Jehovah's Witness, Serbian Orthodox Christian, Jewish, Baptist, Buddhist, Church of Jesus Christ, Pentecostal, and nondenominational Christian) 24.3% (2024 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/da.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Denmark"
+  },
+  "IRL": {
+    "population": "5,233,461 (2024 est.)",
+    "populationNote": "",
+    "establishment": "6 December 1921 (from the UK); 6 December 1922 (Irish Free State established); 18 April 1949 (Republic of Ireland Act enabled)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic 69.2% (includes lapsed), Protestant 3.7% (Church of Ireland/England/Anglican/Episcopalian 2.5%, other Protestant 1.2%), Orthodox 2%, other Christian 0.9%, Muslim 1.6%, other 1.4%, agnostic/atheist 0.1%, none 14.5%, unspecified 6.7% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/ei.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Ireland"
+  },
+  "EST": {
+    "population": "1,340,478 (2025 est.)",
+    "populationNote": "",
+    "establishment": "24 February 1918 (from Soviet Russia); 20 August 1991 (declared from the Soviet Union); 6 September 1991 (recognized by the Soviet Union)",
+    "government": "parliamentary republic",
+    "religion": "Orthodox 16.5%, Protestant 9.2% (Lutheran 7.7%, other Protestant 1.5%), other 3% (includes Roman Catholic, Muslim, Jehovah's Witness, Pentecostal, Buddhist, and Taara Believer), none 58.4%, unspecified 12.9% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/en.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Estonia"
+  },
+  "CZE": {
+    "population": "10,838,703 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1993 (Czechoslovakia split into the Czech Republic and Slovakia)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic 7%, other believers belonging to a church or religious society 6% (includes Evangelical United Brethren Church and Czechoslovak Hussite Church), believers unaffiliated with a religious society 9.1%, none 47.8%, unspecified 30.1% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/ez.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Czechia"
+  },
+  "FIN": {
+    "population": "5,550,449 (2025 est.)",
+    "populationNote": "",
+    "establishment": "6 December 1917 (from Russia)",
+    "government": "parliamentary republic",
+    "religion": "Lutheran 66.6%, Greek Orthodox 1.1%, other 1.7%, none 30.6% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/fi.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Finland"
+  },
+  "FRO": {
+    "population": "52,933 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (self-governing overseas administrative division of Denmark)",
+    "government": "parliamentary democracy (Faroese Parliament); part of the Kingdom of Denmark",
+    "religion": "Christian 87% (predominantly Evangelical Lutheran), other 0.9%, none 3.7%, unspecified 8.9% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/fo.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Faroe Islands"
+  },
+  "FRA": {
+    "population": "68,512,806 (2025 est.)",
+    "populationNote": "",
+    "establishment": "no official date of independence: 486 (Frankish tribes unified under Merovingian kingship); 10 August 843 (Western Francia established from the division of the Carolingian Empire); 14 July 1789 (French monarchy overthrown); 22 September 1792 (First French Republic established); 4 October 1958 (Fifth French Republic established)",
+    "government": "semi-presidential republic",
+    "religion": "Roman Catholic 47%, Muslim 4%, Protestant 2%, Buddhist 2%, Orthodox 1%, Jewish 1%, other 1%, none 33%, unspecified 9% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/fr.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "France"
+  },
+  "GIB": {
+    "population": "29,733 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "parliamentary democracy (Parliament); self-governing overseas territory of the UK",
+    "religion": "Roman Catholic 72.1%, Church of England 7.7%, other Christian 3.8%, Muslim 3.6%, Jewish 2.4%, Hindu 2%, other 1.1%, none 7.1%, unspecified 0.1% (2012 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/gi.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Gibraltar"
+  },
+  "GGY": {
+    "population": "67,923 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (British Crown dependency)",
+    "government": "parliamentary democracy (States of Deliberation)",
+    "religion": "Protestant (Anglican, Presbyterian, Baptist, Congregational, Methodist), Roman Catholic",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/gk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Guernsey"
+  },
+  "DEU": {
+    "population": "84,012,284 (2025 est.)",
+    "populationNote": "",
+    "establishment": "18 January 1871 (establishment of the German Empire); divided into four zones of occupation (UK, US, USSR, and France) in 1945 after World War II; Federal Republic of Germany (FRG or West Germany) proclaimed on 23 May 1949 and included the former UK, US, and French zones; German Democratic Republic (GDR or East Germany) proclaimed on 7 October 1949 and included the former USSR zone; West Germany and East Germany unified on 3 October 1990, with all four powers formally relinquishing rights on 15 March 1991; notable earlier dates: 10 August 843 (Eastern Francia established from the division of the Carolingian Empire); 2 February 962 (crowning of OTTO I, recognized as the first Holy Roman Emperor)",
+    "government": "federal parliamentary republic",
+    "religion": "Roman Catholic 24.8%, Protestant 22.6%, Muslim 3.7%, other 5.1%, none 43.8% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/gm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Germany"
+  },
+  "GRC": {
+    "population": "10,424,536 (2025 est.)",
+    "populationNote": "",
+    "establishment": "3 February 1830 (from the Ottoman Empire)",
+    "government": "parliamentary republic",
+    "religion": "Greek Orthodox 81-90%, Muslim 2%, other 3%, none 4-15%, unspecified 1% (2015 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/gr.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Greece"
+  },
+  "HRV": {
+    "population": "4,071,208 (2025 est.)",
+    "populationNote": "",
+    "establishment": "25 June 1991 (from Yugoslavia); notable earlier dates: ca. 925 (Kingdom of Croatia established), 1 December 1918 (Kingdom of Serbs, Croats, and Slovenes established, later became Yugoslavia)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic 79%, Orthodox 3.3%, Protestant 0.3%, other Christian 4.8%, Muslim 1.3%, other 1.1%, agnostic 1.7%, none or atheist 4.7%, unspecified 3.9% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/hr.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Croatia"
+  },
+  "HUN": {
+    "population": "9,855,745 (2024 est.)",
+    "populationNote": "",
+    "establishment": "16 November 1918 (republic proclaimed); notable earlier dates: 25 December 1000 (crowning of King STEPHEN I, traditional founding date); 30 March 1867 (Austro-Hungarian dual monarchy established)",
+    "government": "parliamentary republic",
+    "religion": "Catholic 30.1% (Roman Catholic 27.5%, Greek Catholic 1.7%, other Catholic 0.9%), Calvinist 9.8%, Lutheran 1.8%, other Christian (includes Orthodox) 1.6%, other 0.4%, none 16.1%, no answer 40.1% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/hu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Hungary"
+  },
+  "ISL": {
+    "population": "364,036 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1 December 1918 (became a sovereign state under the Danish Crown); 17 June 1944 (from Denmark; birthday of Jon SIGURDSSON, leader of Iceland's 19th-century independence movement)",
+    "government": "unitary parliamentary republic",
+    "religion": "Evangelical Lutheran Church of Iceland (official) 58.6% Roman Catholic 3.8%, Independent Congregation of Reykjavik 2.6%, Independent Congregation of Hafnarfjordur 1.9%, pagan worship 1.5%, Icelandic Ethical Humanist Association 1.4%, other (includes Zuist and Pentecostal) or unspecified 18.7%, none 7.7% (2024 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/ic.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Iceland"
+  },
+  "IMN": {
+    "population": "92,666 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (British Crown dependency)",
+    "government": "parliamentary democracy (Tynwald)",
+    "religion": "Christian 54.7%, Muslim 0.5%, Buddhist 0.5%, Hindu 0.4%, Jewish 0.2%, none 43.8% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/im.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Isle of Man"
+  },
+  "ITA": {
+    "population": "60,924,851 (2025 est.)",
+    "populationNote": "",
+    "establishment": "17 March 1861",
+    "government": "parliamentary republic",
+    "religion": "Christian 80.8% (overwhelmingly Roman Catholic with very small groups of Jehovah's Witnesses and Protestants), Muslim 4.9%, unaffiliated 13.4%, other 0.9% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/it.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Italy"
+  },
+  "JEY": {
+    "population": "103,944 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (British Crown dependency)",
+    "government": "parliamentary democracy (Assembly of the States of Jersey)",
+    "religion": "Christian 85.2%, Baha'i 0.3%, Hindu 0.1%, Jewish 0.1%, Muslim 0.1%, atheist 1.1%, agnostic 13.1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/je.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Jersey"
+  },
+  "UNK": {
+    "population": "1,977,093 (2024 est.)",
+    "populationNote": "",
+    "establishment": "17 February 2008 (from Serbia)",
+    "government": "parliamentary republic",
+    "religion": "Muslim 95.6%, Roman Catholic 2.2%, Orthodox 1.5%, other 0.1%, none 0.1%, unspecified 0.6% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/kv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Kosovo"
+  },
+  "LVA": {
+    "population": "1,888,439 (2025 est.)",
+    "populationNote": "",
+    "establishment": "18 November 1918 (from Soviet Russia); 4 May 1990 (declared from the Soviet Union); 6 September 1991 (recognized by the Soviet Union)",
+    "government": "parliamentary republic",
+    "religion": "Lutheran 36.2%, Roman Catholic 19.5%, Orthodox 19.1%, other Christian 1.6%, other 0.1%, unspecified/none 23.5% (2017 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/lg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Latvia"
+  },
+  "LTU": {
+    "population": "2,815,687 (2025 est.)",
+    "populationNote": "",
+    "establishment": "16 February 1918 (from Soviet Russia and Germany); 11 March 1990 (declared from the Soviet Union); 6 September 1991 (recognized by the Soviet Union); notable earlier dates: 6 July 1253 (coronation of MINDAUGAS, traditional founding date); 1 July 1569 (Polish-Lithuanian Commonwealth created)",
+    "government": "semi-presidential republic",
+    "religion": "Roman Catholic 74.2%, Russian Orthodox 3.7%, Old Believer 0.6%, Evangelical Lutheran 0.6%, Evangelical Reformist 0.2%, other (including Sunni Muslim, Jewish, Greek Catholic, and Karaite) 0.9%, none 6.1%, unspecified 13.7% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/lh.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Lithuania"
+  },
+  "SVK": {
+    "population": "5,563,649 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1 January 1993 (Czechoslovakia split into the Czech Republic and Slovakia)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic 55.8%, Evangelical Church of the Augsburg Confession 5.3%, Greek Catholic 4%, Reformed Christian 1.6%, other 3%, none 23.8%, unspecified 6.5% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/lo.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Slovakia"
+  },
+  "LIE": {
+    "population": "40,547 (2025 est.)",
+    "populationNote": "",
+    "establishment": "23 January 1719 (Principality of Liechtenstein established); 12 July 1806 (independence from the Holy Roman Empire); 24 August 1866 (independence from the German Confederation)",
+    "government": "constitutional monarchy",
+    "religion": "Roman Catholic (official) 73.4%, Protestant Reformed 6.3%, Muslim 5.9%, Christian Orthodox 1.3%, Lutheran 1.2%, other Protestant 0.7%, other Christian 0.3%, other 0.8%, none 7%, unspecified 3.3% (2015 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/ls.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Liechtenstein"
+  },
+  "LUX": {
+    "population": "671,254 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1839 (from the Netherlands)",
+    "government": "constitutional monarchy",
+    "religion": "Christian (predominantly Roman Catholic) 70.6%, Muslim 2.3%, other (includes Buddhist, folk religions, Hindu, Jewish) 0.4%, unaffiliated 26.7% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/lu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Luxembourg"
+  },
+  "MDA": {
+    "population": "3,578,930 (2025 est.)",
+    "populationNote": "",
+    "establishment": "27 August 1991 (from the Soviet Union)",
+    "government": "parliamentary republic",
+    "religion": "Orthodox 90.1%, other Christian 2.6%, other 0.1%, agnostic <0.1%, atheist 0.2%, unspecified 6.9% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/md.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Moldova"
+  },
+  "MNE": {
+    "population": "599,849 (2024 est.)",
+    "populationNote": "",
+    "establishment": "3 June 2006 (from the State Union of Serbia and Montenegro); notable earlier dates: 13 March 1852 (Principality of Montenegro established); 13 July 1878 (Congress of Berlin recognizes Montenegrin independence); 28 August 1910 (Kingdom of Montenegro established)",
+    "government": "parliamentary republic",
+    "religion": "Orthodox 72.1%, Muslim 19.1%, Catholic 3.4%, atheist 1.2%, other 1.5%, unspecified 2.6% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/mj.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Montenegro"
+  },
+  "MKD": {
+    "population": "2,137,556 (2025 est.)",
+    "populationNote": "",
+    "establishment": "8 September 1991 (referendum endorsed independence from Yugoslavia)",
+    "government": "parliamentary republic",
+    "religion": "Orthodox 46.1%, Islam 32.2%, Christian 13.2%, Other 7.2%; less than 1%: atheist, Catholic, other religions, not specified, Protestant (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/mk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "North Macedonia"
+  },
+  "MCO": {
+    "population": "32,047 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1419 (beginning of permanent rule by the House of GRIMALDI)",
+    "government": "constitutional monarchy",
+    "religion": "Roman Catholic 90% (official), other 10%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/mn.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Monaco"
+  },
+  "MLT": {
+    "population": "521,828 (2025 est.)",
+    "populationNote": "",
+    "establishment": "21 September 1964 (from the UK)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic (official) more than 90% (2006 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/mt.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Malta"
+  },
+  "NLD": {
+    "population": "17,833,885 (2025 est.)",
+    "populationNote": "",
+    "establishment": "26 July 1581",
+    "government": "parliamentary constitutional monarchy; part of the Kingdom of the Netherlands",
+    "religion": "Roman Catholic 20.1%, Protestant 14.8% (includes Dutch Reformed, Protestant Church of The Netherlands, Calvinist), Muslim 5%, other 5.9% (includes Hindu, Buddhist, Jewish), none 54.1% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/nl.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Netherlands"
+  },
+  "NOR": {
+    "population": "5,509,733 (2024 est.)",
+    "populationNote": "",
+    "establishment": "7 June 1905 (union with Sweden declared dissolved); 26 October 1905 (Sweden agreed to the repeal of the union); notable earlier dates: ca. 872 (traditional unification of Norwegian kingdoms by HARALD Fairhair); 1397 (Kalmar Union of Denmark, Norway, and Sweden); 1524 (Denmark-Norway); 17 May 1814 (Norwegian constitution adopted); 4 November 1814 (Sweden-Norway union confirmed)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Church of Norway (Evangelical Lutheran - official) 67.5%, Muslim 3.1%, Roman Catholic 3.1%, other Christian 3.8%, other 2.6%, unspecified 19.9% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/no.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Norway"
+  },
+  "POL": {
+    "population": "38,746,310 (2024 est.)",
+    "populationNote": "",
+    "establishment": "11 November 1918 (republic proclaimed); notable earlier dates: 14 April 966 (adoption of Christianity, traditional founding date), 1 July 1569 (Polish-Lithuanian Commonwealth created)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic 70.7%, refused to answer 20.9%, no religion 6.9%; less than 1 percent: Orthodox, Jehovah Witness, Evangelic of Augsburg, Greek Catholic, Pentecostal, other Protestant, not stated, old Catholic Mariavite Church, other Christians, Islam, Buddhist, Polish Catholic Church, other, Baptist Union of Poland, Pagan, Seventh Day Adventist, Hindu, other Catholic (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/pl.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Poland"
+  },
+  "PRT": {
+    "population": "10,194,277 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1143 (Kingdom of Portugal recognized); 1 December 1640 (independence reestablished after 60 years of Spanish rule); 5 October 1910 (republic proclaimed)",
+    "government": "semi-presidential republic",
+    "religion": "Catholic 68.1%, not applicable 12.9%, no religion 12.0%, no response 2.2%, Protestant 1.8%, other 1.0%; less than 1%: other Christians, Orthodox, Muslim (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/po.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Portugal"
+  },
+  "SRB": {
+    "population": "6,652,212 (2024 est.)",
+    "populationNote": "",
+    "establishment": "5 June 2006 (from the State Union of Serbia and Montenegro); notable earlier dates: 1217 (Serbian Kingdom established); 16 April 1346 (Serbian Empire established); 13 July 1878 (Congress of Berlin recognizes Serbian independence); 1 December 1918 (Kingdom of Serbs, Croats, and Slovenes established, later known as Yugoslavia)",
+    "government": "parliamentary republic",
+    "religion": "Serbian Orthodox 81.1%, unknown 5.3%, Islam 4.2%, Catholic 3.9%, no response 2.5%, atheist 1.1%; less than 1%: other Christians, Protestant, agnostic (2022)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/ri.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Serbia"
+  },
+  "ROU": {
+    "population": "18,148,155 (2024 est.)",
+    "populationNote": "",
+    "establishment": "9 May 1877 (independence proclaimed from the Ottoman Empire; 13 July 1878 (independence recognized by the Treaty of Berlin); 26 March 1881 (kingdom proclaimed); 30 December 1947 (republic proclaimed)",
+    "government": "semi-presidential republic",
+    "religion": "Romanian Orthodox 85.3%, Roman Catholic 4.5%, Reformed 3%, Pentecostal 2.5%, other 4.7% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/ro.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Romania"
+  },
+  "SVN": {
+    "population": "2,097,893 (2024 est.)",
+    "populationNote": "",
+    "establishment": "25 June 1991 (from Yugoslavia)",
+    "government": "parliamentary republic",
+    "religion": "Catholic 69%, Orthodox 4%, Muslim 3%, Christian 1%, other 3%, atheist 14%, non-believer/agnostic 4%, refused to answer 2% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/si.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Slovenia"
+  },
+  "SMR": {
+    "population": "35,291 (2025 est.)",
+    "populationNote": "",
+    "establishment": "3 September 301 (traditional founding date)",
+    "government": "parliamentary republic",
+    "religion": "Roman Catholic",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/sm.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "San Marino"
+  },
+  "ESP": {
+    "population": "47,280,433 (2024 est.)",
+    "populationNote": "",
+    "establishment": "1492",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Roman Catholic 58.2%, atheist 16.2%, agnostic 10.8%, other 2.7%, non-believer 10.5%, unspecified 1.7% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/sp.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Spain"
+  },
+  "SWE": {
+    "population": "10,643,745 (2025 est.)",
+    "populationNote": "",
+    "establishment": "6 June 1523 (Gustav VASA elected king of Sweden, marking the abolishment of the Kalmar Union of Denmark, Norway, and Sweden)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Church of Sweden (Lutheran) 53.9%, other (includes Roman Catholic, Orthodox, Baptist, Muslim, Jewish, and Buddhist) 8.9%, none or unspecified 37.2% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/sw.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Sweden"
+  },
+  "CHE": {
+    "population": "8,925,741 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 August 1291 (founding of the Swiss Confederation)",
+    "government": "federal republic (formally a confederation)",
+    "religion": "Roman Catholic 34.4%, Protestant 22.5%, other Christian 5.7%, Muslim 5.4%, other 1.5%, none 29.4%, unspecified 1.1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/sz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Switzerland"
+  },
+  "GBR": {
+    "population": "68,751,311 (2025 est.)",
+    "populationNote": "",
+    "establishment": "no official date of independence: 927 (minor English kingdoms unite); 3 March 1284 (enactment of the Statute of Rhuddlan uniting England and Wales); 1536 (Act of Union incorporates England and Wales); 1 May 1707 (Acts of Union unite England, Scotland, and Wales as Great Britain); 1 January 1801 (Acts of Union unite Great Britain and Ireland as the United Kingdom of Great Britain and Ireland); 6 December 1921 (Anglo-Irish Treaty formalizes partition of Ireland; six counties become Northern Ireland and remain part of the UK); 12 April 1927 (Royal and Parliamentary Titles Act establishes current name of the United Kingdom of Great Britain and Northern Ireland)",
+    "government": "parliamentary constitutional monarchy; a Commonwealth realm",
+    "religion": "Christian (includes Anglican, Roman Catholic, Presbyterian, Methodist) 59.5%, Muslim 4.4%, Hindu 1.3%, other 2%, unspecified 7.2%, none 25.7% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/uk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "United Kingdom"
+  },
+  "UKR": {
+    "population": "35,661,826 (2024 est.)",
+    "populationNote": "",
+    "establishment": "24 August 1991 (from the Soviet Union); notable earlier dates: ca. 982 (VOLODYMYR I consolidates Kyivan Rus); 1199 (Principality (later Kingdom) of Ruthenia formed); 1648 (establishment of the Cossack Hetmanate); 22 January 1918 (from Soviet Russia)",
+    "government": "semi-presidential republic",
+    "religion": "Orthodox (includes the Orthodox Church of Ukraine (OCU), Ukrainian Autocephalous Orthodox Church (UAOC), and the Ukrainian Orthodox - Moscow Patriarchate (UOC-MP)), Ukrainian Greek Catholic, Roman Catholic, Protestant, Muslim, Jewish (2013 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/up.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Ukraine"
+  },
+  "VAT": {
+    "population": "1,000 (2024)",
+    "populationNote": "",
+    "establishment": "11 February 1929",
+    "government": "ecclesiastical elective monarchy; self-described as an \"absolute monarchy\"",
+    "religion": "Roman Catholic",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/europe/vt.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Vatican City"
+  },
+  "ARE": {
+    "population": "10,093,593 (2025 est.)",
+    "populationNote": "",
+    "establishment": "2 December 1971 (from the UK)",
+    "government": "federation of monarchies",
+    "religion": "Muslim 74.5% (official) (Sunni 63.3%, Shia 6.7%, other 4.4%), Christian 12.9%, Hindu 6.2%, Buddhist 3.2%, agnostic 1.3%, other 1.9% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/ae.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "United Arab Emirates"
+  },
+  "BHR": {
+    "population": "1,566,888 (2024 est.)",
+    "populationNote": "",
+    "establishment": "15 August 1971 (from the UK)",
+    "government": "constitutional monarchy",
+    "religion": "Muslim 74.2%, other 25.9% (2020 est)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/ba.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bahrain"
+  },
+  "IRN": {
+    "population": "89,177,357 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 April 1979 (Islamic Republic of Iran proclaimed); notable earlier dates: ca. 550 B.C. (Achaemenid or Persian Empire established); A.D. 1501 (Iran reunified under the Safavid dynasty); 1794 (beginning of Qajar dynasty); 12 December 1925 (modern Iran established under the PAHLAVI dynasty)",
+    "government": "theocratic republic",
+    "religion": "Muslim (official) 98.5%, Christian 0.7%, Baha'i 0.3%, agnostic 0.3%, other (includes Zoroastrian, Jewish, Hindu) 0.2% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/ir.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Iran"
+  },
+  "ISR": {
+    "population": "9,402,617 (2024 est.)",
+    "populationNote": "note: approximately 236,600 Israeli settlers live in East Jerusalem (2021); following the March 2019 US recognition of the Golan Heights as being part of Israel, The World Factbook no longer includes Israeli settler population of the Golan Heights (estimated at 23,400 in 2019) in its overall Israeli settler total",
+    "establishment": "14 May 1948 (following League of Nations mandate under British administration)",
+    "government": "parliamentary democracy",
+    "religion": "Jewish 73.5%, Muslim 18.1%, Christian 1.9%, Druze 1.6%, other 4.9% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/is.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Israel"
+  },
+  "IRQ": {
+    "population": "42,917,742 (2025 est.)",
+    "populationNote": "",
+    "establishment": "3 October 1932 (from League of Nations mandate under British administration)",
+    "government": "federal parliamentary republic",
+    "religion": "Muslim (official) 95-98% (Shia 61-64%, Sunni 29-34%), Christian 1% (includes Catholic, Orthodox, Protestant, Assyrian Church of the East), other 1-4% (2015 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/iz.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Iraq"
+  },
+  "JOR": {
+    "population": "11,312,507 (2025 est.)",
+    "populationNote": "",
+    "establishment": "25 May 1946 (from League of Nations mandate under British administration)",
+    "government": "parliamentary constitutional monarchy",
+    "religion": "Muslim 97.1% (official; predominantly Sunni), Christian 2.1% (majority Greek Orthodox, but some Greek and Roman Catholics, Syrian Orthodox, Coptic Orthodox, Armenian Orthodox, and Protestant denominations), Buddhist 0.4%, Hindu 0.1%, Jewish <0.1%, folk <0.1%, other <0.1%, unaffiliated <0.1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/jo.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Jordan"
+  },
+  "KWT": {
+    "population": "3,172,511 (2025 est.)",
+    "populationNote": "",
+    "establishment": "19 June 1961 (from the UK)",
+    "government": "constitutional monarchy (emirate)",
+    "religion": "Muslim (official) 74.6%, Christian 18.2%, other and unspecified 7.2% (2013 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/ku.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Kuwait"
+  },
+  "LBN": {
+    "population": "5,364,482 (2024 est.)",
+    "populationNote": "",
+    "establishment": "22 November 1943 (from League of Nations mandate under French administration)",
+    "government": "parliamentary democratic republic",
+    "religion": "Muslim 67.8% (31.9% Sunni, 31.2% Shia, smaller percentages of Alawites and Ismailis), Christian 32.4% (Maronite Catholics are the largest Christian group), Druze 4.5%, very small numbers of Jews, Baha'is, Buddhists, and Hindus (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/le.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Lebanon"
+  },
+  "OMN": {
+    "population": "3,969,824 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1650 (expulsion of the Portuguese)",
+    "government": "absolute monarchy",
+    "religion": "Muslim 85.9%, Christian 6.4%, Hindu 5.7%, other and unaffiliated 2% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/mu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Oman"
+  },
+  "QAT": {
+    "population": "2,568,426 (2025 est.)",
+    "populationNote": "",
+    "establishment": "3 September 1971 (from the UK)",
+    "government": "absolute monarchy",
+    "religion": "Muslim 65.2%, Christian 13.7%, Hindu 15.9%, Buddhist 3.8%, folk religion <0.1%, Jewish <0.1%, other <1%, unaffiliated <1% (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/qa.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Qatar"
+  },
+  "SAU": {
+    "population": "36,544,431 (2024 est.)",
+    "populationNote": "",
+    "establishment": "23 September 1932 (unification of the kingdom)",
+    "government": "absolute monarchy",
+    "religion": "Muslim (official; citizens are 85-90% Sunni and 10-12% Shia), other (includes Eastern Orthodox, Protestant, Roman Catholic, Jewish, Hindu, Buddhist, and Sikh) (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/sa.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Saudi Arabia"
+  },
+  "SYR": {
+    "population": "24,261,882 (2025 est.)",
+    "populationNote": "",
+    "establishment": "17 April 1946 (from League of Nations mandate under French administration)",
+    "government": "transitional presidential republic",
+    "religion": "Muslim 87% (official; includes Sunni 74% and Alawi, Ismaili, and Shia 13%), Christian 10% (includes Orthodox, Uniate, and Nestorian), Druze 3%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/sy.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Syria"
+  },
+  "TUR": {
+    "population": "84,625,585 (2025 est.)",
+    "populationNote": "",
+    "establishment": "29 October 1923 (republic proclaimed, succeeding the Ottoman Empire)",
+    "government": "presidential republic",
+    "religion": "Muslim 99.8% (mostly Sunni), other 0.2% (mostly Christians and Jews)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/tu.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Turkey"
+  },
+  "YEM": {
+    "population": "34,505,496 (2025 est.)",
+    "populationNote": "",
+    "establishment": "22 May 1990 (Republic of Yemen established with the merger of the Yemen Arab Republic [Yemen (Sanaa) or North Yemen] and the People's Democratic Republic of Yemen [Yemen (Aden) or South Yemen]); notable earlier dates: 1 November 1918 (North Yemen independent from the Ottoman Empire), 27 September 1962 (North Yemen becomes republic), 30 November 1967 (South Yemen independent from the UK)",
+    "government": "in transition",
+    "religion": "Muslim 99.1% (official; virtually all are citizens, an estimated 65% are Sunni and 35% are Shia), other 0.9% (includes Jewish, Baha'i, Hindu, and Christian; many are refugees or temporary foreign residents) (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/middle-east/ym.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Yemen"
+  },
+  "BMU": {
+    "population": "72,800 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas territory of the UK)",
+    "government": "Overseas Territory of the UK with limited self-government; parliamentary democracy",
+    "religion": "Protestant 46.2% (includes Anglican 15.8%, African Methodist Episcopal 8.6%, Seventh Day Adventist 6.7%, Pentecostal 3.5%, Methodist 2.7%, Presbyterian 2.0%, Church of God 1.6%, Baptist 1.2%, Salvation Army 1.1%, Brethren 1.0%, other Protestant 2.0%), Roman Catholic 14.5%, Jehovah's Witness 1.3%, other Christian 9.1%, Muslim 1%, other 3.9%, none 17.8%, unspecified 6.2% (2010 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/north-america/bd.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bermuda"
+  },
+  "CAN": {
+    "population": "39,187,155 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1 July 1867 (union of British North American colonies); 11 December 1931 (recognized by UK per Statute of Westminster)",
+    "government": "federal parliamentary democracy (Parliament of Canada) under a constitutional monarchy; a Commonwealth realm; federal and state authorities and responsibilities regulated in constitution",
+    "religion": "Christian 53.3%, Muslim 4.9%, Hindu 2.3%, Sikh 2.1%, Buddhist 1%, Jewish 0.9%, Traditional (North American Indigenous) 0.2%, other religions and traditional spirituality 0.6%, none 34.6% (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/north-america/ca.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Canada"
+  },
+  "GRL": {
+    "population": "57,751 (2024 est.)",
+    "populationNote": "",
+    "establishment": "none (extensive self-rule as part of the Kingdom of Denmark)",
+    "government": "parliamentary democracy (Parliament of Greenland or Inatsisartut)",
+    "religion": "Evangelical Lutheran, traditional Inuit spiritual beliefs",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/north-america/gl.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Greenland"
+  },
+  "MEX": {
+    "population": "130,739,927 (2024 est.)",
+    "populationNote": "",
+    "establishment": "16 September 1810 (declared independence from Spain); 27 September 1821 (recognized by Spain)",
+    "government": "federal presidential republic",
+    "religion": "Catholic 77.7%, no religion 10.6%, other Evangelical Churches 7.5%, Jehovah Witness 1.2%; less than 1 percent: Pentecostal, Seventh Day Adventist, Historics, not specified, Latter Day Saints, other religions (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/north-america/mx.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Mexico"
+  },
+  "SPM": {
+    "population": "5,070 (2025 est.)",
+    "populationNote": "",
+    "establishment": "none (overseas collectivity collectivity of France; has been under French control since 1763)",
+    "government": "parliamentary democracy (Territorial Council); overseas collectivity of France",
+    "religion": "Roman Catholic 99%, other 1%",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/north-america/sb.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Saint Pierre and Miquelon"
+  },
+  "USA": {
+    "population": "338,016,259 (2025 est.)",
+    "populationNote": "",
+    "establishment": "4 July 1776 (declared independence from Great Britain); 3 September 1783 (recognized by Great Britain)",
+    "government": "constitutional federal republic",
+    "religion": "Protestant 46.5%, Roman Catholic 20.8%, Jewish 1.9%, Church of Jesus Christ 1.6%, other Christian 0.9%, Muslim 0.9%, Jehovah's Witness 0.8%, Buddhist 0.7%, Hindu 0.7%, other 1.8%, unaffiliated 22.8%, don't know/refused 0.6% (2014 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/north-america/us.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "United States"
+  },
+  "ARG": {
+    "population": "45,418,098 (2025 est.)",
+    "populationNote": "",
+    "establishment": "9 July 1816 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 62.9%, Evangelical 15.3% (Pentecostal 13%, other Evangelical 2.3%), Jehovah's Witness and Church of Jesus Christ 1.4%, other 1.2% (includes Muslim, Jewish), none 18.9% (includes agnostic and atheist), unspecified 0.3% (2019 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/ar.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Argentina"
+  },
+  "BOL": {
+    "population": "12,436,103 (2025 est.)",
+    "populationNote": "",
+    "establishment": "6 August 1825 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 65%, Protestant 19.6% (Evangelical (non-specific) 11.9%, Evangelical Baptist 2.1%, Evangelical Pentecostal 1.8%, Evangelical Methodist 0.7%, Adventist 2.8%, Protestant (non-specific) 0.3%), Believer (not belonging to the church) 0.9%, other 4.8%, atheist 1.7%, agnostic 0.6%, none 6.1%, unspecified 1.3% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/bl.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bolivia"
+  },
+  "BRA": {
+    "population": "221,359,387 (2025 est.)",
+    "populationNote": "",
+    "establishment": "7 September 1822 (from Portugal)",
+    "government": "federal presidential republic",
+    "religion": "Roman Catholic 56.8%, Evangelical 26.9%, none 9.3%, other 4%, Spirtism (Espírita) 1.8%, unspecified 1.4%, Umbanda and Candomblé 1.1%, Indigenous religions .06%, undeclared 0.2% (2022)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/br.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Brazil"
+  },
+  "CHL": {
+    "population": "19,091,343 (2025 est.)",
+    "populationNote": "",
+    "establishment": "18 September 1810 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Catholic 57%, none 25.7%, Evangelical or Protestant 16.2%, other Christians and traditions related to Christ 1.3%; less than 1%: Buddhist, Catholic Orthodox, Church of Jesus Christ of Latter-Day Saints, Islam, Judaism, other religions, no religion (2024)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/ci.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Chile"
+  },
+  "COL": {
+    "population": "49,842,298 (2025 est.)",
+    "populationNote": "",
+    "establishment": "20 July 1810 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 63.6%, Protestant 17.2% (Evangelical 16.7%, Adventist 0.3%, other Protestant 0.2%), Jehovah's Witness 0.6%, Church of Jesus Christ 0.1%, other 0.3%, believer, 0.2%. agnostic 1%, atheist 1%, none 14.2%, unspecified 1.8% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/co.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Colombia"
+  },
+  "ECU": {
+    "population": "18,479,841 (2025 est.)",
+    "populationNote": "",
+    "establishment": "24 May 1822 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 68.2%, Protestant 19% (Evangelical 18.3%, Adventist 0.6%, other Protestant 0.2%), Jehovah's Witness 1.4%, other 2.3%, none 8.2% don't know/no response 1% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/ec.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Ecuador"
+  },
+  "FLK": {
+    "population": "3,142 (2021)",
+    "populationNote": "note: data include all persons usually resident in the islands at the time of the 2021 census",
+    "establishment": "none (overseas territory of the UK; also claimed by Argentina)",
+    "government": "parliamentary democracy (Legislative Assembly); self-governing overseas territory of the UK",
+    "religion": "Christian 57.1%, other 1.6%, none 35.4%, unspecified 6% (2016 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/fk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Falkland Islands"
+  },
+  "GUY": {
+    "population": "794,099 (2024 est.)",
+    "populationNote": "",
+    "establishment": "26 May 1966 (from the UK)",
+    "government": "parliamentary republic",
+    "religion": "Protestant 34.8% (Pentecostal 22.8%, Seventh Day Adventist 5.4%, Anglican 5.2%, Methodist 1.4%), Hindu 24.8%, other Christian 20.8%, Roman Catholic 7.1%, Muslim 6.8%, Jehovah's Witness 1.3%, Rastafarian 0.5%, other 0.9%, none 3.1% (2012 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/gy.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Guyana"
+  },
+  "SUR": {
+    "population": "653,605 (2025 est.)",
+    "populationNote": "",
+    "establishment": "25 November 1975 (from the Netherlands)",
+    "government": "presidential republic",
+    "religion": "Protestant 23.6% (includes Evangelical 11.2%, Moravian 11.2%, Reformed 0.7%, Lutheran 0.5%), Hindu 22.3%, Roman Catholic 21.6%, Muslim 13.8%, other Christian 3.2%, Winti 1.8%, Jehovah's Witness 1.2%, other 1.7%, none 7.5%, unspecified 3.2% (2012 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/ns.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Suriname"
+  },
+  "PRY": {
+    "population": "7,604,044 (2025 est.)",
+    "populationNote": "",
+    "establishment": "14-15 May 1811 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 80.4%, Protestant 7% (Evangelical (non-specific) 6.7%, Evangelical Pentecostal <0.1%, Adventist <0.1%, Protestant (non-specific) <0.1%), Believer (not belonging to the church) 5.7%, other 0.6%, agnostic <0.1%, none 0.2%, unspecified 6.2% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/pa.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Paraguay"
+  },
+  "PER": {
+    "population": "32,768,614 (2025 est.)",
+    "populationNote": "",
+    "establishment": "28 July 1821 (from Spain)",
+    "government": "presidential republic",
+    "religion": "Catholic 76%, Evangelical Christian 15.7%, no religion 5.1%, other religions 3.2% (2017 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/pe.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Peru"
+  },
+  "SGS": {
+    "population": "no permanent inhabitants",
+    "populationNote": "",
+    "establishment": "",
+    "government": "",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/sx.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "South Georgia"
+  },
+  "URY": {
+    "population": "3,449,444 (2025 est.)",
+    "populationNote": "",
+    "establishment": "25 August 1825 (from Brazil)",
+    "government": "presidential republic",
+    "religion": "Roman Catholic 36.5%, Protestant 5% (Evangelical (non-specific) 4.6%, Adventist 0.2%, Protestant (non-specific) 0.3%), African American Cults/Umbanda 2.8%, Jehovah's Witness 0.6%, Church of Jesus Christ 0.2%, other 1%, Believer (not belonging to the church) 1.8%, agnostic 0.3%, atheist 1.3%, none 47.3%, unspecified 3.4% Roman Catholic 42%, Protestant 15%, other 6%, agnostic 3%, atheist 10%, unspecified 24% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/uy.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Uruguay"
+  },
+  "VEN": {
+    "population": "31,755,435 (2025 est.)",
+    "populationNote": "",
+    "establishment": "5 July 1811 (from Spain)",
+    "government": "federal presidential republic",
+    "religion": "Roman Catholic 48.1%, Protestant 31.6% (Evangelical 31.4%, Adventist 0.2%), Jehovah's Witness 1.4%, African American/umbanda 0.7%, other 0.1%, believer 3.5%, agnostic 0.1%, atheist, 0.4%, none 13.6%, unspecified 0.6% (2023 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-america/ve.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Venezuela"
+  },
+  "AFG": {
+    "population": "49,474,805 (2025 est.)",
+    "populationNote": "",
+    "establishment": "19 August 1919 (from UK control over Afghan foreign affairs)",
+    "government": "theocratic; the United States does not recognize the Taliban Government",
+    "religion": "Muslim 99.7% (Sunni 84.7 - 89.7%, Shia 10 - 15%), other <0.3% (2009 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/af.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Afghanistan"
+  },
+  "BGD": {
+    "population": "174,370,536 (2025 est.)",
+    "populationNote": "",
+    "establishment": "16 December 1971 (from Pakistan)",
+    "government": "parliamentary republic",
+    "religion": "Muslim 91%, Hindu 8%, other 1% (2022 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/bg.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bangladesh"
+  },
+  "BTN": {
+    "population": "892,877 (2025 est.)",
+    "populationNote": "",
+    "establishment": "17 December 1907 (became a unified kingdom under its first hereditary king); 8 August 1949 (Treaty of Friendship with India maintains Bhutanese independence)",
+    "government": "constitutional monarchy",
+    "religion": "Lamaistic Buddhist 75.3%, Indian- and Nepali-influenced Hinduism 22.1%, other 2.6% (2005 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/bt.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Bhutan"
+  },
+  "LKA": {
+    "population": "22,050,561 (2025 est.)",
+    "populationNote": "",
+    "establishment": "4 February 1948 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Buddhist (official) 70.2%, Hindu 12.6%, Muslim 9.7%, Roman Catholic 6.1%, other Christian 1.3%, other 0.05% (2012 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/ce.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Sri Lanka"
+  },
+  "IND": {
+    "population": "1,419,316,933 (2025 est.)",
+    "populationNote": "",
+    "establishment": "15 August 1947 (from the UK)",
+    "government": "federal parliamentary republic",
+    "religion": "Hindu 79.8%, Muslim 14.2%, Christian 2.3%, Sikh 1.7%, other and unspecified 2% (2011 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/in.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "India"
+  },
+  "IOT": {
+    "population": "no permanent inhabitants",
+    "populationNote": "note: Diego Garcia, the largest of the 58 islands, hosts a joint UK-US military facility",
+    "establishment": "",
+    "government": "",
+    "religion": "",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/io.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "British Indian Ocean Territory"
+  },
+  "MDV": {
+    "population": "388,858 (2024 est.)",
+    "populationNote": "",
+    "establishment": "26 July 1965 (from the UK)",
+    "government": "presidential republic",
+    "religion": "Sunni Muslim (official)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/mv.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Maldives"
+  },
+  "NPL": {
+    "population": "31,334,402 (2025 est.)",
+    "populationNote": "",
+    "establishment": "1768 (unified by Prithvi Narayan SHAH)",
+    "government": "federal parliamentary republic",
+    "religion": "Hindu 81.2%, Buddhist 8.2%, Muslim 5.1%, Kirat 3.2%, Christian 1.8%; less than 1%: Prakriti, Bon, Jains, Sikh (2021 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/np.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Nepal"
+  },
+  "PAK": {
+    "population": "257,047,044 (2025 est.)",
+    "populationNote": "",
+    "establishment": "14 August 1947 (from British India)",
+    "government": "federal parliamentary republic",
+    "religion": "Muslim 96.4%, Hindu 1.6%, Christian 1.4%; less than 1%: scheduled castes, Qadiani/Ahmadi, other, Sikh. (2020 est.)",
+    "sourceURL": "https://github.com/factbook/factbook.json/blob/master/south-asia/pk.json",
+    "retrieved": "2026-10-11",
+    "wikipediaTitle": "Pakistan"
+  },
+  "ALA": {
+    "wikipediaTitle": "Åland Islands"
+  },
+  "BES": {
+    "wikipediaTitle": "Caribbean Netherlands"
+  },
+  "GLP": {
+    "wikipediaTitle": "Guadeloupe"
+  },
+  "GUF": {
+    "wikipediaTitle": "French Guiana"
+  },
+  "MTQ": {
+    "wikipediaTitle": "Martinique"
+  },
+  "MYT": {
+    "wikipediaTitle": "Mayotte"
+  },
+  "PSE": {
+    "wikipediaTitle": "State of Palestine"
+  },
+  "REU": {
+    "wikipediaTitle": "Réunion"
+  },
+  "SJM": {
+    "wikipediaTitle": "Svalbard and Jan Mayen"
+  }
+}

@@ -819,15 +819,63 @@ test("every historical family has commentary and the mobile comparison releases 
         html.indexOf("</table>"),
       );
       assert.equal(table.includes('class="family-column"'), !mobile);
-      assert.match(html, new RegExp(`aria-expanded="${!mobile}"`));
-      assert.equal(html.includes("Historical family notes ("), mobile);
+      assert.match(html, /aria-label="About Aleph family"/);
+      assert.doesNotMatch(html, /Historical family notes \(/);
       assert.match(table, /aria-label="Aleph family"/);
       assert.match(table, /Latin/);
       assert.match(table, /Hebrew/);
-      assert.match(html, /Latin Q came through the old Greek Qoppa branch/);
+      assert.match(html, /Correspondence mode/);
+      assert.doesNotMatch(html, /Sort comparison by|Sort letters/);
     }
   } finally {
     if (previous) Object.defineProperty(globalThis, "window", previous);
     else Reflect.deleteProperty(globalThis, "window");
   }
+});
+
+test("comparison headings cycle forward, reverse, and correspondence order without losing row coverage", async () => {
+  const { nextComparisonSort } = await import("./comparison-controls");
+  const { comparisonRows } = await import("./alphabets");
+  const forward = nextComparisonSort(undefined, "greek");
+  assert.deepEqual(forward, { alphabetId: "greek", direction: "asc" });
+  const reverse = nextComparisonSort(forward, "greek");
+  assert.deepEqual(reverse, { alphabetId: "greek", direction: "desc" });
+  assert.equal(nextComparisonSort(reverse, "greek"), undefined);
+  assert.deepEqual(nextComparisonSort(reverse, "hebrew"), {
+    alphabetId: "hebrew",
+    direction: "asc",
+  });
+  const selection = ["latin", "greek", "arabic", "hebrew"];
+  const original = comparisonRows(selection, "historical");
+  for (const sort of [forward, reverse]) {
+    const rows = comparisonRows(selection, "historical", sort);
+    assert.deepEqual(
+      rows.map((row) => row.key).sort(),
+      original.map((row) => row.key).sort(),
+    );
+    const rank = (row: (typeof rows)[number]) =>
+      row.cells.find((cell) => cell.alphabet.id === "greek")!.letters[0]?.slug;
+    assert.equal(rank(rows[0]), sort?.direction === "asc" ? "alpha" : "psi");
+  }
+});
+
+test("comparison starts with compact controls and contextual notes while secondary panels are closed", async () => {
+  const { createElement } = await import("react");
+  const { renderToStaticMarkup } = await import("react-dom/server");
+  const { default: AlphabetComparison } =
+    await import("../screens/AlphabetComparison");
+  const html = renderToStaticMarkup(createElement(AlphabetComparison));
+  assert.match(html, />History<\/button>/);
+  assert.match(html, />Sounds<\/button>/);
+  assert.match(html, />Romanization<\/button>/);
+  assert.match(html, /Alphabets · 5/);
+  assert.match(html, /aria-label="Sort forward by Latin"/);
+  assert.match(html, /aria-label="About Latin"/);
+  assert.match(html, /aria-label="About Aleph family"/);
+  assert.doesNotMatch(
+    html,
+    /<fieldset|<dialog|Sort comparison by|Sort letters/,
+  );
+  assert.match(html, /<summary>About the selected alphabets<\/summary>/);
+  assert.match(html, /<summary>Sources &amp; references<\/summary>/);
 });

@@ -378,7 +378,7 @@ export default function App() {
           </div>
         </header>
         <main ref={mainContent}>
-          <LetterFormToggle scope={mainContent} />
+          {active !== "compare" && <LetterFormToggle scope={mainContent} />}
           {active === "home" && <Home progress={progress} />}
           {(active === "world" || active === "states") && (
             <World

@@ -3598,52 +3598,6 @@ footer > span {
   }
 }
 /* Side-by-side script reference and subdivision directories */
-.alphabet-select {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f0f3e8;
-  padding: 20px;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.alphabet-select legend {
-  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
-  padding: 0 7px;
-}
-.alphabet-select label {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  background: #fbfcf5;
-  border: 1px solid #dce5cf;
-  border-radius: 6px;
-  padding: 12px;
-  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
-  cursor: pointer;
-}
-.alphabet-select input {
-  accent-color: var(--green);
-  width: 16px;
-  height: 16px;
-}
-.alphabet-select small {
-  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
-  color: #5f6e54;
-}
-.comparison-note {
-  background: #eef2e5;
-  border-left: 3px solid #8da473;
-  border-radius: 5px;
-  padding: 18px 21px;
-  margin-bottom: 22px;
-  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
-  color: #526749;
-}
-.comparison-note p {
-  margin: 7px 0 0;
-  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
-}
 .table-scroll {
   width: 100%;
   overflow: auto;
@@ -3783,17 +3737,6 @@ footer > span {
   pointer-events: none;
 }
 @media (max-width: 760px) {
-  .alphabet-select {
-    padding: 16px;
-    gap: 8px;
-  }
-  .alphabet-select label {
-    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
-    padding: 9px;
-  }
-  .alphabet-select small {
-    font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
-  }
   .comparison-table td {
     min-width: 115px;
     padding: 9px;
@@ -3839,27 +3782,6 @@ footer > span {
   overflow-y: auto;
 }
 
-.comparison-sort {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: clamp(0.9375rem, 0.85rem + 0.25vw, 1.0625rem);
-}
-.comparison-sort select {
-  max-width: 220px;
-  padding: 8px;
-  border: 1px solid #c4d4af;
-  border-radius: 6px;
-  background: #fbfcf6;
-  color: var(--ink);
-}
-.comparison-table th .alphabet-sort-button {
-  margin-top: 12px;
-  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
-  color: #586c46;
-  justify-content: flex-start;
-  gap: 6px;
-}
 .comparison-letters > button > .letter-meaning,
 .letter-tile .letter-meaning {
   color: #3d5830;
@@ -3894,17 +3816,6 @@ footer > span {
 .meaning-glyph {
   font-family: var(--serif);
   font-size: clamp(1.859rem, 1.641rem + 0.8vw, 2.188rem);
-}
-
-.historical-row-note {
-  white-space: normal;
-  max-width: 160px;
-  display: block;
-  font-size: clamp(0.8125rem, 0.75rem + 0.2vw, 0.9375rem);
-  font-weight: 400;
-  line-height: 1.5;
-  margin-top: 8px;
-  color: #5f6e54;
 }
 
 .country-labels .country-label {
@@ -4479,17 +4390,10 @@ footer {
   .state-toolbar .select-label select {
     max-width: none;
   }
-  .comparison-sort {
-    flex-wrap: wrap;
-  }
   .comparison-table .family-column {
     min-width: 120px;
     max-width: 160px;
     white-space: normal;
-  }
-  .historical-row-note {
-    min-width: 0;
-    width: 130px;
   }
   footer {
     gap: 12px;
@@ -4666,35 +4570,274 @@ main p {
   }
 }
 
-.family-column-toggle {
+/* One comparison toolbar; secondary controls live in focused panels. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.compare-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.compare-modes {
+  display: flex;
+  border: 1px solid #cbd8be;
+  border-radius: 9px;
+  padding: 3px;
+  background: #eff3e8;
+}
+.compare-modes button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #53664a;
+}
+.compare-modes button.active {
+  background: #294d35;
+  color: #fff;
+}
+.compare-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.compare-actions > button {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #cbd8be;
+  border-radius: 7px;
+  background: #fafbf5;
+}
+.compare-actions > button:hover {
+  background: #eaf0e1;
+}
+main .compare-summary {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #5f6e54;
+  margin: 10px 0;
+}
+main .compare-guidance {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  margin: 8px 0 16px;
+}
+.compare-guidance span {
+  color: #5f6e54;
+}
+main .compare-sort-status {
+  font-size: 0.875rem;
+  color: #526749;
+  margin: 8px 0 12px;
+}
+.comparison-table .compare-column-heading {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.comparison-table .compare-header-sort {
+  min-height: 44px;
   gap: 8px;
+  flex: 1;
+  width: auto;
+}
+.comparison-icon-button,
+.comparison-table th .comparison-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  padding: 0;
+  border-radius: 6px;
+}
+.comparison-icon-button:hover {
+  background: #dce7d0;
+}
+.comparison-table .family-info-column {
+  min-width: 44px;
+  width: 44px;
+  max-width: 44px;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+.comparison-table.no-family-column .family-info-column {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #f6f8ef;
+  border-right: 1px solid #dce4d1;
+}
+.comparison-table.no-family-column thead .family-info-column {
+  z-index: 3;
+  background: #e9efdf;
+}
+.comparison-reference {
+  margin: 16px 0;
+  border-top: 1px solid #dce4d1;
+}
+.comparison-reference summary {
+  cursor: pointer;
+  padding: 16px 0;
+  font-weight: 550;
+}
+.comparison-panel {
+  position: fixed;
+  inset: 6rem auto auto 1rem;
+  margin: 0;
+  padding: 0;
+  width: min(430px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  color: #293b2f;
+  background: #fafbf5;
+  border: 1px solid #cbd8be;
+  border-radius: 12px;
+  box-shadow: 0 12px 50px #19382033;
+}
+.comparison-panel::backdrop {
+  background: #19382026;
+}
+.comparison-panel-content {
+  padding: 20px;
+}
+.comparison-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.comparison-panel-heading h2 {
+  font-size: 1.375rem;
+  margin: 0;
+}
+.comparison-panel p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.comparison-panel-done {
+  margin-top: 16px;
   min-height: 44px;
 }
-.historical-family-notes {
-  margin: 16px 0;
-  padding: 16px;
-  border: 1px solid #dce3d0;
-  border-radius: 8px;
-  background: #fafaf5;
-}
-.historical-family-notes summary {
-  cursor: pointer;
-  padding: 8px 0;
-  font-weight: 600;
-}
-.historical-family-notes dl {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-  gap: 20px;
-  margin: 20px 0 0;
-}
-.historical-family-notes dt {
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-.historical-family-notes dd {
+.compare-alphabet-options,
+.compare-form-options {
+  border: 0;
   margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.compare-alphabet-options label,
+.compare-form-options label,
+.compare-family-setting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.compare-alphabet-options label:hover,
+.compare-form-options label:hover {
+  background: #eaf0e1;
+}
+.compare-alphabet-options input,
+.compare-form-options input,
+.compare-family-setting input {
+  width: 18px;
+  height: 18px;
+  accent-color: #294d35;
+  flex-shrink: 0;
+}
+.compare-alphabet-options small {
+  display: block;
+  margin-top: 3px;
+  color: #5f6e54;
+  font-size: 0.875rem;
+}
+.compare-form-options legend {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.compare-family-members {
+  padding-left: 20px;
   line-height: 1.6;
+}
+.compare-family-members li {
+  margin: 12px 0;
+}
+.compare-family-glyphs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+.compare-family-glyphs > span {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compare-family-glyphs .glyph-forms {
+  font-size: 1.75rem;
+}
+.compare-family-glyphs small {
+  margin-top: 4px;
+}
+@media (max-width: 760px) {
+  .compare-controls {
+    display: grid;
+    gap: 10px;
+  }
+  .compare-modes {
+    width: 100%;
+  }
+  .compare-modes button {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 0.875rem;
+  }
+  .compare-actions {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 6px;
+  }
+  .compare-actions > button {
+    justify-content: center;
+    padding: 8px;
+    font-size: 0.875rem;
+  }
+  .comparison-panel {
+    inset: auto 0 0 !important;
+    width: 100%;
+    max-height: 85dvh;
+    border-radius: 16px 16px 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .comparison-panel-done {
+    width: 100%;
+  }
+}
+
+.compare-actions > button:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
